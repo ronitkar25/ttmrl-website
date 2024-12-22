@@ -4,26 +4,126 @@
         <title>TTMRL</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body style="background-color:powderblue;">
-        <h1>This is a Heading</h1>
-        <p>This is a paragraph.</p>
-        <h1>This is heading 1</h1>
-        <hr>
-        <!-- This is a comment -->
-        <h2>This is heading 2</h2>
-        <h1 style="background-color:yellowgreen;">This is a heading</h1>
-        <p style="background-color:tomato;">This is a paragraph.</p>
-        <p>This is<br>a paragraph<br>with line breaks.</p>
-        <h3 style="color:red;">This is heading 3</h3>
-        <img style="background-color: white;" src="assets/images/ttmrl-logo.png" alt="TTMRL Logo" width="100">
-        <img style="background-color: black;" src="assets/images/ttmrl-logo-negative.png" alt="TTMRL Logo Negative" width="100">
-        <p>This is a <br> paragraph with a line break.</p>
-        <a href="https://www.w3schools.com">Visit W3Schools</a>
-        <h1 style="text-align:center;">Centered Heading</h1>
-        <p style="text-align:center;">Centered paragraph.</p>
-        <p>Do not forget to buy <mark>milk</mark> today.</p>
-        <p>Do not forget to buy <i style="background-color: red;">milk</i> today.</p>
-        <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-        <p></p>
+    <body>
+        <header class="hero">
+            <nav>
+                <div class="logo">
+                    <img src="assets/images/ttmrl-logo-negative-with-text.png" alt="TTMRL Logo" height="40px">
+                </div>
+                <ul>
+                    <li><a href="our-team.html">Our Team</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Affiliations</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
+                            <hr>
+                            <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
+                            <hr>
+                            <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">TTMRC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>            
+            <div class="hero-content">
+                
+            </div>
+            <div class="hero-blocks">
+                <div class="block">
+                    <hr>
+                    <p>Understanding the biological response to trauma ❯</p>
+                </div>
+                <div class="block">
+                    <hr>
+                    <p>Creating novel synthetic blood products ❯</p>
+                </div>
+                <div class="block">
+                    <hr>
+                    <p>Efficacy of pre-hospital TXA administration ❯</p>
+                </div>
+                <div class="block">
+                    <hr>
+                    <p>VWF-targeting aptamers in stroke thrombolysis ❯</p>
+                </div>
+            </div>            
+        </header>
+
+        <section class="about-section">
+            <div class="image-container">
+                <img src="assets/images/pis-home.png" alt="Description of image">
+            </div>
+            <div class="text-container">
+                <p>
+                    Led by Dr. Susan Shea, PhD and Dr. Matthew Neal, MD, FACS, the Trauma and Transfusion Medicine Research Laboratory is focused on improving clinical outcomes and quality of life for patients with trauma injury through improved prevention and interventions by conducting basic and translational science to using implementation and dissemination science principles to improve adoption of preventative measures to reduce traumatic injury, by describing the pathophysiology of traumatic injury, and advancing surgical and therapeutic strategies.
+                    <br><br>The mission also includes improving the effectiveness and safety of blood products for all critically ill patients by investigating the differential biologic effects of blood product manufacturing and leveraging these differences to achieve precision transfusion medicine where the blood products transfused is optimal based on the patients' clinical condition and genetic predisposition.
+                </p>
+            </div>
+        </section>
+        
+        <section class="research-panel">
+            <div class="research-block">
+                <img src="assets/images/home-research-panel-1.png" alt="Image 1">
+                <div class="text-and-button">
+                    <p>This is the first research panel. Add your text here.</p>
+                    <button class="arrow-button"></button>
+                </div>
+            </div>
+            <div class="research-block">
+                <img src="assets/images/home-research-panel-2.png" alt="Image 2">
+                <div class="text-and-button">
+                    <p>This is the second research panel. Add your text here.</p>
+                    <button class="arrow-button"></button>
+                </div>
+            </div>
+            <div class="research-block">
+                <img src="assets/images/home-research-panel-3.png" alt="Image 3">
+                <div class="text-and-button">
+                    <p>This is the third research panel. Add your text here.</p>
+                    <button class="arrow-button"></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="split-section">
+            <div class="science-spotlight">
+                <div class="spotlight-content">
+                    <h2>Science Spotlight</h2>
+                    <p>
+                        VWF-targeting stroke thrombolysis reveals unique dynamics with thrombus formation/ maturation. Recently published in JOURNAL.
+                    </p>
+                    <button class="arrow-button"></button>
+                </div>
+            </div>
+            <div class="spotlight-right">
+                <p>
+                    This is the right section. Add your paragraph here to describe or complement the science spotlight.
+                </p>
+            </div>
+        </section>
     </body>
+    <footer>
+        <!-- Top Banner -->
+        <div class="footer-top">
+            <div class="footer-left">
+                <h1>TTMRL</h1>
+                <p><em>Trauma and Transfusion Medicine Research Laboratory</em></p>
+            </div>
+            <div class="footer-middle">
+                <h2><strong>Relevant Links</strong></h2>
+                <div class="footer-links">
+                    <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+                    <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+                    <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center (TTMRC)</a>
+                    <a href="https://www.upmc.com/">University of Pittsburgh Medical Center (UPMC)</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Bottom Banner -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 TTMRL. All rights reserved.</p>
+        </div>
+    </footer>    
 </html>
