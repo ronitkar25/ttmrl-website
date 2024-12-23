@@ -1,21 +1,31 @@
-// Toggle the navigation menu when the hamburger icon is clicked
-document.querySelector('.hamburger input').addEventListener('change', function () {
-    const navLinks = document.querySelector('.nav-links');
+// Get references to elements
+const hamburgerInput = document.querySelector('#hamburger-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navOverlay = document.querySelector('.nav-overlay');
+
+// Toggle navigation and overlay visibility
+hamburgerInput.addEventListener('change', function () {
     if (this.checked) {
-        navLinks.classList.add('active'); // Show the menu
+        navLinks.classList.add('active'); // Show navigation links
+        navOverlay.classList.add('active'); // Show overlay
     } else {
-        navLinks.classList.remove('active'); // Hide the menu
+        navLinks.classList.remove('active'); // Hide navigation links
+        navOverlay.classList.remove('active'); // Hide overlay
     }
 });
 
-// Optional: Close the menu when a navigation link is clicked
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', function () {
-        const hamburgerInput = document.querySelector('.hamburger input');
-        if (hamburgerInput.checked) {
-            hamburgerInput.checked = false; // Uncheck the hamburger input
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.remove('active'); // Hide the menu
-        }
-    });
+// Close menu when overlay is clicked
+navOverlay.addEventListener('click', function () {
+    hamburgerInput.checked = false; // Uncheck the hamburger input
+    navLinks.classList.remove('active'); // Hide navigation links
+    navOverlay.classList.remove('active'); // Hide overlay
+});
+
+// Close menu when a navigation link is clicked
+navLinks.addEventListener('click', function (event) {
+    if (event.target.tagName === 'A') {
+        hamburgerInput.checked = false; // Uncheck the hamburger input
+        navLinks.classList.remove('active'); // Hide navigation links
+        navOverlay.classList.remove('active'); // Hide overlay
+    }
 });

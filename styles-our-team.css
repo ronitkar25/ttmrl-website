@@ -42,48 +42,54 @@ header {
 nav {
     display: flex;
     align-items: center;
-}
-
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 36px;
-    font-size: 1.1rem;
+    justify-content: space-between; /* Space between logo and links */
     padding-right: 20px;
 }
 
-.nav-links a {
+/* Overlay for Navigation Menu */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 999; /* Place it above other content */
+    opacity: 0; /* Invisible by default */
+    visibility: hidden; /* Hidden for accessibility */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.nav-overlay.active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Enable interaction */
+}
+
+/* Navigation Links (Desktop Default) */
+.nav-links {
+    display: flex; /* Horizontally aligned by default */
+    list-style: none;
+    gap: 40px; /* Space between links */
+    font-size: 1.2rem;
+    z-index: 1000; /* Ensure links are above content */
+}
+
+.nav-links li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-.nav-links {
-    display: none; /* Hidden by default for small screens */
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: black;
-    width: 100%;
-    padding: 20px;
-    z-index: 1000;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+.nav-links li a:hover {
+    color: #ED1C24; /* Highlight on hover */
 }
 
-.hamburger input:checked ~ .nav-links {
-    display: flex; /* Show navigation when toggled */
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* General Hamburger Menu Styling */
+/* Hamburger Menu (Hidden by Default) */
 .hamburger {
     cursor: pointer;
     z-index: 1001; /* Ensure it's above other elements */
-    display: none; /* Hidden by default */
+    display: none; /* Hidden on larger screens */
 }
 
 .hamburger input {
@@ -478,39 +484,87 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 900px) {
+    
+    nav {
+        padding-right: 0px;
+    }
+
     .hamburger {
-        display: block;
+        display: block; /* Show hamburger menu */
     }
 
     .nav-links {
-        display: none;
-        flex-direction: column;
-        background: black;
-        position: absolute;
-        padding: 40px 20px;
-        top: 80px;
-        right: 0;
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        text-align: center;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9); /* Fullscreen dark background */
+        align-items: center; /* Center links horizontally */
+        justify-content: center; /* Center links vertically */
+        z-index: 1000; /* Ensure it's above content */
+        opacity: 0; /* Start hidden */
+        pointer-events: none; /* Disable interaction when not visible */
+        transition: opacity 0.3s ease-in-out;
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex; /* Show links when active */
+        opacity: 1; /* Fully visible */
+        pointer-events: auto; /* Enable interaction */
     }
 
     .about, .research, .split {
         flex-direction: column;
     }
 
-    .dropdown-menu {
-        position: static; /* Stacks in the flow of the hamburger menu */
-        width: 100%; /* Full width for small screens */
-        margin-top: 10px;
+    /* Parent Dropdown */
+    .dropdown {
+        text-align: center;
+        width: 100%; /* Ensure full-width alignment in the nav */
+        position: relative; /* Make it the reference point for the dropdown menu */
     }
 
+    /* Dropdown Menu */
+    .dropdown-menu {
+        position: absolute; /* Position relative to the parent .dropdown */
+        top: 120%; /* Directly below the Affiliations link */
+        left: 0; /* Align to the left edge of the parent */
+        right: 0; /* Align to the right edge of the parent */
+        margin: 0 auto; /* Center the dropdown within the parent */
+        width: 50%; /* Adjust width for responsiveness */
+        max-width: 300px; /* Prevent the menu from being too wide */
+        background: rgba(190, 190, 190, 0.2); /* Semi-transparent background */
+        text-align: center; /* Center-align dropdown links */
+        padding: 5px; /* Add padding inside the dropdown */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+        z-index: 1000; /* Ensure it appears above other elements */
+        display: none; /* Initially hidden */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    }
+
+    /* Show Dropdown Menu on Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block; /* Make the dropdown visible */
+    }
+
+    /* Dropdown Menu Items */
     .dropdown-menu li {
-        padding: 10px 0;
+        padding: 10px 0; /* Add spacing between links */
         text-align: center;
+    }
+
+    /* Dropdown Links */
+    .dropdown-menu li a {
+        color: white; /* White text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1rem; /* Set font size */
+    }
+
+    .dropdown-menu li a:hover {
+        color: #ED1C24; /* Highlight color on hover */
     }
 
     .info-block {
@@ -600,8 +654,12 @@ footer {
         position: static;
         width: auto;
         background: transparent;
-        padding: 0px 20px;
+        padding: 0;
         opacity: 1;
         transform: none;
+    }
+
+    .nav-links.active {
+        display: flex; /* No special behavior on desktop */
     }
 }
