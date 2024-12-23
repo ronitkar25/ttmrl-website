@@ -121,7 +121,7 @@ nav {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     background: url('assets/images/home-hero-2.jpg') center/cover no-repeat;
 }
 
