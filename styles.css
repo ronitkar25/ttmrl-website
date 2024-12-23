@@ -1,4 +1,4 @@
-/* Global Reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,49 +9,120 @@
     border-width: 1px;*/
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 200, 0, 0); /* Semi-transparent background */
+    color: white;
+    position: absolute; /* Position it over the hero section */
+    top: 0;
+    width: 100%; /* Ensure it spans the full width of the screen */
+    z-index: 1000; /* Keep it on top of other elements */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+}
+
+.logo img {
+    height: 50px; /* Set the fixed height for the logo */
+    width: auto; /* Maintain the aspect ratio */
+    padding-left: 10px;
+}
+
 nav {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and links */
+    padding-right: 20px;
+}
+
+/* Overlay for Navigation Menu */
+.nav-overlay {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    padding: 10px 20px;
-    font-size: 18px;
-    z-index: 3; /* Ensures nav is above all other elements */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 999; /* Place it above other content */
+    opacity: 0; /* Invisible by default */
+    visibility: hidden; /* Hidden for accessibility */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-nav ul {
-    display: flex;
+.nav-overlay.active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Enable interaction */
+}
+
+/* Navigation Links (Desktop Default) */
+.nav-links {
+    display: flex; /* Horizontally aligned by default */
     list-style: none;
-    margin-top: 15px;
+    gap: 40px; /* Space between links */
+    font-size: 0.8rem;
+    z-index: 1000; /* Ensure links are above content */
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
+.nav-links li a {
     color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ED1C24;
+.nav-links li a:hover {
+    color: #ED1C24; /* Highlight on hover */
 }
 
-nav img {
-    height: 60px;
-    margin-top: 5px;
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+    cursor: pointer;
+    z-index: 1001; /* Ensure it's above other elements */
+    display: none; /* Hidden on larger screens */
+}
+
+.hamburger input {
+    display: none; /* Hide the checkbox */
+}
+
+.hamburger svg {
+    height: 2.5rem; /* Adjust the size */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
 }
 
 /* Dropdown */
@@ -60,204 +131,252 @@ nav img {
 }
 
 .dropdown-menu {
-    display: block; /* Initially hidden */
-    position: absolute;
-    top: 100%; /* Position below the parent */
-    margin-top: 5px; /* Adds spacing below the parent */
-    right: 0; /* Align with the right edge of the parent */
-    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
-    padding: 5px 0;
+    display: none; /* Initially hide the dropdown menu */
+    position: absolute; /* Relative to the parent */
+    top: 24px; /* Position just below the parent */
+    right: 0; /* Align the right edge with the parent */
+    background: rgba(240, 240, 240, 0.2); /* Original semi-transparent background */
+    padding: 5px 0; /* Top and bottom padding */
     list-style: none;
     z-index: 10;
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    opacity: 0; /* Initially invisible */
-    transform: translateY(-10px); /* Shift upward slightly */
-    visibility: hidden; /* Hide from view */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth show/hide transition */
-    white-space: nowrap; /* Prevent text wrapping */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    opacity: 0; /* Start hidden */
+    transform: translateY(-10px); /* Start slightly above */
+    visibility: hidden; /* Hidden for accessibility */
 }
 
 .dropdown-menu li {
-    margin: 0;
-    padding: 5px 15px; /* Adds padding around the text */
+    margin: 0; /* No margin for list items */
+    padding: 5px 15px; /* Padding around the text */
     text-align: right; /* Align text to the right */
 }
 
 .dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-    display: block; /* Ensure the entire list item is clickable */
-    font-size: 16px;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the entire item clickable */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 .dropdown-menu li a:hover {
     color: #ED1C24; /* Highlight color on hover */
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* No offset */
-    visibility: visible; /* Ensure visibility */
+.dropdown-menu hr {
+    border: none; /* Remove default border */
+    border-top: 1px solid lightgray; /* Add subtle gray line */
+    margin: 0px 10px; /* Add horizontal padding around the line */
 }
 
-.dropdown-menu hr {
-    border: none; /* Removes default border */
-    border-top: 1px solid lightgray; /* Adds a gray top border */
-    margin: 0px 10px; /* Adds spacing around the line */
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Make dropdown visible */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* No offset */
+    visibility: visible; /* Fully visible for accessibility */
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+    height: 100dvh;
+    background: url('assets/images/home-hero-2.jpg') center/cover no-repeat;
 }
 
-/* Darkened Background Image */
-.hero::before {
-    content: "";
+.hero .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('assets/images/home-hero-2.jpg') no-repeat center center/cover;
-    filter: brightness(0.8); /* Darkens the background image */
-    z-index: 1; /* Ensures it's below other content */
-    pointer-events: none; /* Allows interaction with elements above */
+    background: rgba(0, 0, 0, 0.2);
 }
 
-/* Hero Content */
-.hero-content {
-    position: relative;
-    z-index: 2; /* Places content above the darkened image */
-}
-
-.hero-content h1 {
-    font-size: 3em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero-content p {
-    font-size: 1.5em;
-    margin-top: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Hero Blocks Container */
-.hero-blocks {
-    display: flex; /* Align blocks horizontally */
-    justify-content: space-around; /* Distribute blocks evenly with space between */
+.info-blocks {
     position: absolute;
-    bottom: 40px; /* Position at the bottom of the hero section */
-    left: 0;
-    right: 0;
-    padding: 0 5%; /* Add padding to ensure blocks don't touch edges */
-    z-index: 2; /* Ensure it’s above the background */
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 40px;
+    padding: 40px 100px;
 }
 
-/* Individual Block */
-.block {
-    flex: 1; /* Make each block take up equal space */
-    text-align: left; /* Center-align the content */
-    color: white; /* White text */
-    margin: 0 20px; /* Add spacing between blocks */
+.info-block {
+    width: 600px;
+    text-align: center;
+    color: white;
 }
 
-/* White Line in Each Block */
-.block hr {
-    border: none;
-    border-top: 2px solid white; /* White line */
-    margin: 10px auto; /* Add spacing above/below the line */
-    width: 100%; /* Adjust line width */
+.info-block hr {
+    width: 100%;
+    margin: 0 auto;
+    border: 0.8px solid white;
 }
 
-/* Block Text */
-.block p {
+.info-block p {
     margin-top: 10px;
-    font-size: 1.6em; /* Adjust text size */
+    font-size: 0.8rem;
+    line-height: 1.25;
 }
 
-/* General Section Styles */
-.about-section {
-    display: flex; /* Flexbox layout for horizontal alignment */
-    align-items: center; /* Align items vertically */
-    padding: 40px 100px; /* Padding around the section */
-    gap: 20px; /* Space between the image and text */
-    background-color: #f4f4f4; /* Light background color for contrast */
+/* About Section */
+.about {
+    display: flex;
+    align-items: stretch;
+    padding: 40px 100px;
+    gap: 20px;
 }
 
-/* Image Container */
-.image-container {
-    flex-basis: 30%; /* Image takes up 30% of the section width */
-    flex-shrink: 0; /* Prevents the image from shrinking below its allocated space */
-    text-align: center; /* Centers the image within its container */
+.about-left {
+    flex: 0 0 auto; /* Allow the width of the image to be independent */
+    display: flex; /* Use flexbox for the image container */
+    max-width: 24%;
+    min-width: 20%;
+    align-items: stretch;
 }
 
-.image-container img {
-    width: 100%; /* Ensures the image fills its container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Optional: Rounds the corners of the image */
+.about-left img {
+    width: 100%; /* Maintain aspect ratio */
+    height: 100%; /* Match the height of the container */
+    object-fit: cover; /* Ensure the image covers its container without distortion */
+    border-radius: 8px; /* Keep rounded corners */
 }
 
-/* Text Container */
-.text-container {
-    flex-basis: 70%; /* Text takes up 70% of the section width */
-    font-size: 1.2em; /* Adjust font size for readability */
-    line-height: 1.6; /* Improve text spacing */
-    color: #333; /* Dark text for readability */
+.about-right {
+    flex: 1; /* Take up the remaining space */
+    padding: 20px;
 }
 
-/* Research Panel Section */
-.research-panel {
-    display: flex; /* Flexbox layout for horizontal alignment */
-    justify-content: space-between; /* Even spacing between blocks */
-    gap: 20px; /* Space between the blocks */
-    padding: 0px 40px 40px 40px; /* Padding around the section */
-    background-color: #f4f4f4; /* Light background color for contrast */
+.research {
+    display: flex; /* Aligns blocks horizontally */
+    gap: 20px; /* Adds space between blocks */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    flex-wrap: nowrap; /* Ensures blocks wrap if they overflow */
+    justify-content: space-between; /* Spreads blocks evenly if they shrink */
 }
 
-/* Individual Research Block */
 .research-block {
-    flex: 1; /* All blocks take up equal space */
-    text-align: center; /* Center-align content */
+    flex: 1; /* Ensures equal width for all blocks */
+    min-width: 300px; /* Prevents blocks from shrinking too much */
+    max-width: 32%; /* Allows up to 3 blocks per row */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
     background-color: white; /* Optional: White background for each block */
-    border-radius: 8px; /* Optional: Rounded corners */
-    padding: 20px; /* Padding inside each block */
+    border-radius: 8px;
+    padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
 }
 
-/* Research Block Image */
 .research-block img {
-    max-width: 100%; /* Ensure the image fits its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounds image corners */
+    width: 100%;
+    border-radius: 8px;
 }
 
-/* Text and Button Container */
-.text-and-button {
-    display: flex; /* Flexbox for text and button alignment */
-    justify-content: space-between; /* Space text and button apart */
-    align-items: center; /* Align items vertically */
-    margin-top: 15px; /* Space between image and text/button */
+.research-block .content {
+    display: flex; /* Aligns text and button horizontally */
+    justify-content: space-between; /* Pushes button to the right */
+    align-items: flex-start; /* Aligns both text and button at the top */
+    margin-top: 10px; /* Optional: Adds spacing between image and content */
 }
 
-/* Text */
-.text-and-button p {
-    flex: 1; /* Text takes remaining space */
-    font-size: 1.2em;
-    margin: 0;
+.research-block p {
+    margin: 0; /* Remove extra margin */
     text-align: left; /* Align text to the left */
+    font-size: 1rem;
+    line-height: 1;
 }
 
-/* Arrow Button */
+.research-block .arrow-button {
+    width: 30px;
+    height: 30px;
+    background-color: #ED1C24;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex; /* Centers the arrow within the button */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Optional: Arrow styling */
+.research-block .arrow-button::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 42%; /* Adjust to move the arrow slightly left */
+    width: 10px; /* Arrow width */
+    height: 10px; /* Arrow height */
+    border-top: 2px solid white; /* Top part of the arrow */
+    border-right: 2px solid white; /* Right part of the arrow */
+    transform: translate(-50%, -50%) rotate(45deg); /* Rotate to create arrow */
+}
+
+/* Split Section */
+.split {
+    display: flex;
+    height: 600px;
+}
+
+.split-left {
+    flex: 1;
+    background: url('assets/images/science-spotlight.png') center/cover no-repeat;
+    position: relative;
+    color: white;
+    padding: 0px;
+}
+
+.split-left .text-container {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom of the section */
+    right: 20px;
+    left: 40px;
+    font-size: 1.4rem;
+}
+
+.split-left .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.split-left .text-container::before {
+    content: "";
+    width: 3px; /* Vertical line width */
+    height: 100%; /* Line spans the full content height */
+    background-color: white; /* Vertical line color */
+    position: absolute; /* Separate positioning for the line */
+    left: -10px; /* Position slightly to the left of the content */
+    top: 0; /* Align with the top of the content */
+}
+
+.split-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-y: auto; /* Ensures the content is scrollable if it overflows */
+    max-height: 600px; /* Optional: Limit the height of the feed */
+}
+
+.twitter-feed {
+    max-height: 100%; /* Limit the height of the Twitter timeline */
+    overflow-y: scroll; /* Add vertical scrolling */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for aesthetics */
+}
+
 .arrow-button {
     flex-shrink: 0; /* Prevent button from shrinking */
     width: 40px; /* Fixed square size */
@@ -285,63 +404,6 @@ nav img {
     transform: translate(-50%, -50%) rotate(45deg); /* Rotate to create arrow */
 }
 
-/* Split Section Layout */
-.split-section {
-    display: flex; /* Flexbox for side-by-side layout */
-    height: 600px; /* Set a consistent height */
-    width: 100%; /* Full-width layout */
-}
-
-/* Left Section: Science Spotlight */
-.science-spotlight {
-    flex: 1; /* Takes up half the width */
-    position: relative; /* For positioning content within */
-    background: url('assets/images/science-spotlight.png') no-repeat center center/cover;
-    overflow: hidden; /* Ensure nothing exceeds the boundaries */
-}
-
-/* Spotlight Content */
-.spotlight-content {
-    position: absolute;
-    bottom: 30px; /* Position at the bottom */
-    left: 40px; /* Add some space from the left */
-    right: 40px;
-    color: white;
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the left */
-    gap: 10px; /* Space between each element */
-}
-
-/* Spotlight Content Vertical Line */
-.spotlight-content::before {
-    content: "";
-    width: 3px; /* Vertical line width */
-    height: 100%; /* Line spans the full content height */
-    background-color: white; /* Vertical line color */
-    position: absolute; /* Separate positioning for the line */
-    left: -10px; /* Position slightly to the left of the content */
-    top: 0; /* Align with the top of the content */
-}
-
-/* Title Text */
-.spotlight-content h2 {
-    font-size: 2em; /* Title size */
-    margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
-}
-
-/* Paragraph Text */
-.spotlight-content p {
-    margin: 0;
-    font-size: 1.4em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
-}
-
-/* Button */
-.arrow-button {
-    margin-top: 10px; /* Space between paragraph and button */
-}
 /* Footer Styles */
 footer {
     width: 100%;
@@ -355,7 +417,7 @@ footer {
     justify-content: space-between; /* Even spacing between left and middle/right */
     align-items: flex-start; /* Align content at the top */
     background-color: #ED1C24; /* Bright red background */
-    padding: 20px; /* Padding inside the top banner */
+    padding: 10px 20px; /* Padding inside the top banner */
 }
 
 /* Left Section */
@@ -411,4 +473,198 @@ footer {
     padding: 10px 20px; /* Add padding */
     font-size: 0.9em;
     color: #f4f4f4; /* Slightly lighter text color for readability */
+}
+
+@media (max-width: 1200px) {
+    .info-block p {
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    
+    nav {
+        padding-right: 0px;
+    }
+
+    .logo img {
+        padding-left: 0px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9); /* Fullscreen dark background */
+        align-items: center; /* Center links horizontally */
+        justify-content: center; /* Center links vertically */
+        z-index: 1000; /* Ensure it's above content */
+        opacity: 0; /* Start hidden */
+        pointer-events: none; /* Disable interaction when not visible */
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+        opacity: 1; /* Fully visible */
+        pointer-events: auto; /* Enable interaction */
+    }
+
+    .about, .research, .split {
+        flex-direction: column;
+    }
+
+    /* Parent Dropdown */
+    .dropdown {
+        text-align: center;
+        width: 100%; /* Ensure full-width alignment in the nav */
+        position: relative; /* Make it the reference point for the dropdown menu */
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        position: absolute; /* Position relative to the parent .dropdown */
+        top: 120%; /* Directly below the Affiliations link */
+        left: 0; /* Align to the left edge of the parent */
+        right: 0; /* Align to the right edge of the parent */
+        margin: 0 auto; /* Center the dropdown within the parent */
+        width: 50%; /* Adjust width for responsiveness */
+        max-width: 300px; /* Prevent the menu from being too wide */
+        background: rgba(190, 190, 190, 0.2); /* Semi-transparent background */
+        text-align: center; /* Center-align dropdown links */
+        padding: 5px; /* Add padding inside the dropdown */
+        border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
+        z-index: 1000; /* Ensure it appears above other elements */
+        display: none; /* Initially hidden */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    }
+
+    /* Show Dropdown Menu on Hover */
+    .dropdown:hover .dropdown-menu {
+        display: block; /* Make the dropdown visible */
+    }
+
+    /* Dropdown Menu Items */
+    .dropdown-menu li {
+        padding: 10px 0; /* Add spacing between links */
+        text-align: center;
+    }
+
+    /* Dropdown Links */
+    .dropdown-menu li a {
+        color: white; /* White text color */
+        text-decoration: none; /* Remove underline */
+        font-size: 1rem; /* Set font size */
+    }
+
+    .dropdown-menu li a:hover {
+        color: #ED1C24; /* Highlight color on hover */
+    }
+
+    .info-block {
+        display: none; /* Hide all blocks by default */
+    }
+
+    .info-block:nth-child(1) {
+        display: block; /* Show only the first block */
+        flex: 1; /* Ensure it spans the container */
+        width: 100%; /* Full width for better readability */
+        padding: 0px 0px;
+        margin: 0 auto; /* Center it horizontally */
+        text-align: center;
+    }
+
+    .info-blocks {
+        justify-content: center; /* Center the visible block */
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        gap: 20px; /* Adds spacing between the image and text */
+    }
+    
+    .about-left {
+        flex: 0 0 auto; /* Allow the width of the image to be independent */
+        display: flex; /* Use flexbox for the image container */
+        max-width: 60%;
+        align-items: stretch;
+    }
+    
+    .about-left img {
+        width: 100%; /* Ensure the image fills the 30% container */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 8px; /* Optional: Keep rounded corners */
+    }
+    
+    .about-right {
+        flex: 1; /* Take up the remaining space */
+        padding: 20px;
+    }
+
+    .research {
+        flex-direction: column; /* Stack blocks vertically */
+        align-items: center; /* Center the blocks */
+    }
+
+    .research-block {
+        max-width: 100%; /* Full width when stacked */
+        margin-bottom: 20px; /* Spacing between stacked blocks */
+    }
+
+    .split {
+        height: 800px;
+    }
+
+    .split-left {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .split-left .text-container {
+        bottom: 40px;
+    }
+
+    .split-left .text-container::before {
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        height: 100dvh;
+    }
+}
+
+@media (min-width: 900px) {
+    .hamburger {
+        display: none; /* Hide hamburger menu on large screens */
+    }
+
+    .nav-links {
+        display: flex; /* Show navigation links inline */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        opacity: 1;
+        transform: none;
+    }
+
+    .nav-links.active {
+        display: flex; /* No special behavior on desktop */
+    }
 }

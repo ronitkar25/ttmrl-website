@@ -1,108 +1,133 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <title>TTMRL</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header class="hero">
-            <nav>
-                <div class="logo">
-                    <img src="assets/images/ttmrl-logo-negative-with-text.png" alt="TTMRL Logo" height="40px">
-                </div>
-                <ul>
-                    <li><a href="our-team.html">Our Team</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li class="dropdown">
-                        <a href="#">Affiliations</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                            <hr>
-                            <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                            <hr>
-                            <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">TTMRC</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>            
-            <div class="hero-content">
-                
-            </div>
-            <div class="hero-blocks">
-                <div class="block">
-                    <hr>
-                    <p>Understanding the biological response to trauma ❯</p>
-                </div>
-                <div class="block">
-                    <hr>
-                    <p>Creating novel synthetic blood products ❯</p>
-                </div>
-                <div class="block">
-                    <hr>
-                    <p>Efficacy of pre-hospital TXA administration ❯</p>
-                </div>
-                <div class="block">
-                    <hr>
-                    <p>VWF-targeting aptamers in stroke thrombolysis ❯</p>
-                </div>
-            </div>            
-        </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trauma and Transfusion Medicine Research Laboratory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/ttmrl-logo-negative-with-text.png" alt="Lab Logo"></a>
+        </div>
+        <nav>
+            <!-- Hamburger menu from Uiverse.io -->
+            <label class="hamburger">
+                <input type="checkbox" id="hamburger-toggle">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        
+            <!-- Overlay -->
+            <div class="nav-overlay"></div>
+        
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="dropdown">
+                    Affiliations
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
+                        <hr>
+                        <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
+                        <hr>
+                        <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">TTMRC</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
 
-        <section class="about-section">
-            <div class="image-container">
-                <img src="assets/images/pis-home.png" alt="Description of image">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="info-blocks">
+            <div class="info-block">
+                <hr><p>Understanding the biological response to trauma with novel platelet assays ❯</p>
             </div>
+            <div class="info-block">
+                <hr><p>Creating novel synthetic blood products: testing lyophilized SynthoPlate ❯</p>
+            </div>
+            <div class="info-block">
+                <hr><p>Efficacy of pre-hospital TXA administration (TAMPITI) ❯</p>
+            </div>
+            <div class="info-block">
+                <hr><p>VWF-targeting reversible aptamers as novel stroke thrombolysis ❯</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-left">
+            <img src="assets/images/pis-home.png" alt="Principal Investigators">
+        </div>
+        <div class="about-right">
+            <p>Led by Dr. Susan Shea, PhD and Dr. Matthew Neal, MD, FACS, the Trauma and Transfusion Medicine Research Laboratory is focused on improving clinical outcomes and quality of life for patients with trauma injury through improved prevention and interventions by conducting basic and translational science to using implementation and dissemination science principles to improve adoption of preventative measures to reduce traumatic injury, by describing the pathophysiology of traumatic injury, and advancing surgical and therapeutic strategies.
+                <br><br>The mission also includes improving the effectiveness and safety of blood products for all critically ill patients by investigating the differential biologic effects of blood product manufacturing and leveraging these differences to achieve precision transfusion medicine where the blood products transfused is optimal based on the patients' clinical condition and genetic predisposition.</p>
+        </div>
+    </section>
+
+   <!-- Research Panel Section -->
+    <section class="research">
+        <div class="research-block">
+            <img src="assets/images/home-research-panel-1.png" alt="Research 1">
+            <div class="content">
+                <p>This is the research panel. Add your text here with a bit more description.</p>
+                <a href="#" class="arrow-button"></a>
+            </div>
+        </div>
+        <div class="research-block">
+            <img src="assets/images/home-research-panel-2.png" alt="Research 2">
+            <div class="content">
+                <p>This is the research panel. Add your text here with a bit more description.</p>
+                <a href="#" class="arrow-button"></a>
+            </div>
+        </div>
+        <div class="research-block">
+            <img src="assets/images/home-research-panel-3.png" alt="Research 3">
+            <div class="content">
+                <p>This is the research panel. Add your text here with a bit more description.</p>
+                <a href="#" class="arrow-button"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Split Section -->
+    <section class="split">
+        <div class="split-left">
+            <div class="overlay"></div>
             <div class="text-container">
-                <p>
-                    Led by Dr. Susan Shea, PhD and Dr. Matthew Neal, MD, FACS, the Trauma and Transfusion Medicine Research Laboratory is focused on improving clinical outcomes and quality of life for patients with trauma injury through improved prevention and interventions by conducting basic and translational science to using implementation and dissemination science principles to improve adoption of preventative measures to reduce traumatic injury, by describing the pathophysiology of traumatic injury, and advancing surgical and therapeutic strategies.
-                    <br><br>The mission also includes improving the effectiveness and safety of blood products for all critically ill patients by investigating the differential biologic effects of blood product manufacturing and leveraging these differences to achieve precision transfusion medicine where the blood products transfused is optimal based on the patients' clinical condition and genetic predisposition.
-                </p>
+                <h2>Science Spotlight</h2>
+                <p>VWF-targeting stroke thrombolysis reveals unique dynamics with thrombus formation/ maturation. Recently published in JOURNAL.</p>
+                <a href="#" class="button"></a>
             </div>
-        </section>
+        </div>
+        <div class="split-right">
+            <div class="twitter-feed">
+                <a class="twitter-timeline" 
+                   href="https://twitter.com/SMSheaLab?ref_src=twsrc%5Etfw">
+                   Tweets by SMSheaLab
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
         
-        <section class="research-panel">
-            <div class="research-block">
-                <img src="assets/images/home-research-panel-1.png" alt="Image 1">
-                <div class="text-and-button">
-                    <p>This is the first research panel. Add your text here.</p>
-                    <button class="arrow-button"></button>
-                </div>
-            </div>
-            <div class="research-block">
-                <img src="assets/images/home-research-panel-2.png" alt="Image 2">
-                <div class="text-and-button">
-                    <p>This is the second research panel. Add your text here.</p>
-                    <button class="arrow-button"></button>
-                </div>
-            </div>
-            <div class="research-block">
-                <img src="assets/images/home-research-panel-3.png" alt="Image 3">
-                <div class="text-and-button">
-                    <p>This is the third research panel. Add your text here.</p>
-                    <button class="arrow-button"></button>
-                </div>
-            </div>
-        </section>
-        
-        <section class="split-section">
-            <div class="science-spotlight">
-                <div class="spotlight-content">
-                    <h2>Science Spotlight</h2>
-                    <p>
-                        VWF-targeting stroke thrombolysis reveals unique dynamics with thrombus formation/ maturation. Recently published in JOURNAL.
-                    </p>
-                    <button class="arrow-button"></button>
-                </div>
-            </div>
-            <div class="spotlight-right">
-                <p>
-                    This is the right section. Add your paragraph here to describe or complement the science spotlight.
-                </p>
-            </div>
-        </section>
-    </body>
+    </section>
+
+    <h1>version 1.01</h1>
+
+    <!-- Footer Section -->
     <footer>
         <!-- Top Banner -->
         <div class="footer-top">
@@ -125,5 +150,8 @@
         <div class="footer-bottom">
             <p>&copy; 2024 TTMRL. All rights reserved.</p>
         </div>
-    </footer>    
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
