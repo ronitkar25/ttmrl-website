@@ -133,7 +133,7 @@ nav {
 .dropdown-menu {
     display: none; /* Initially hide the dropdown menu */
     position: absolute; /* Relative to the parent */
-    top: 24px; /* Position just below the parent */
+    top: 28px; /* Position just below the parent */
     right: 0; /* Align the right edge with the parent */
     background: rgba(240, 240, 240, 0.2); /* Original semi-transparent background */
     padding: 5px 0; /* Top and bottom padding */
