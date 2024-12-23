@@ -71,14 +71,14 @@ nav {
     display: flex; /* Horizontally aligned by default */
     list-style: none;
     gap: 40px; /* Space between links */
-    font-size: 0.8rem;
+    font-size: 1rem;
     z-index: 1000; /* Ensure links are above content */
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -215,12 +215,12 @@ nav {
 .info-block hr {
     width: 100%;
     margin: 0 auto;
-    border: 0.8px solid white;
+    border: 1px solid white;
 }
 
 .info-block p {
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.25;
 }
 
