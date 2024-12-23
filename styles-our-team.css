@@ -600,7 +600,7 @@ footer {
         position: static;
         width: auto;
         background: transparent;
-        padding: 0;
+        padding: 0px 20px;
         opacity: 1;
         transform: none;
     }
