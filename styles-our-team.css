@@ -146,7 +146,7 @@ nav {
 
 .info-block {
     width: 600px;
-    text-align: left;
+    text-align: center;
     color: white;
 }
 
@@ -411,6 +411,14 @@ footer {
     padding: 10px 20px; /* Add padding */
     font-size: 0.9em;
     color: #f4f4f4; /* Slightly lighter text color for readability */
+}
+
+@media (max-width: 1200px) {
+    .info-block p {
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
 }
 
 /* Responsive Design */
