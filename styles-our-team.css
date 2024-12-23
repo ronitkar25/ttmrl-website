@@ -44,6 +44,7 @@ nav {
     align-items: center;
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     list-style: none;
@@ -57,10 +58,64 @@ nav {
     text-decoration: none;
 }
 
-.hamburger-menu {
-    display: none;
-    font-size: 1.8rem;
+.nav-links {
+    display: none; /* Hidden by default for small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hamburger input:checked ~ .nav-links {
+    display: flex; /* Show navigation when toggled */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* General Hamburger Menu Styling */
+.hamburger {
     cursor: pointer;
+    z-index: 1001; /* Ensure it's above other elements */
+    display: none; /* Hidden by default */
+}
+
+.hamburger input {
+    display: none; /* Hide the checkbox */
+}
+
+.hamburger svg {
+    height: 2.5rem; /* Adjust the size */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
 }
 
 /* Dropdown */
@@ -423,7 +478,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 900px) {
-    .hamburger-menu {
+    .hamburger {
         display: block;
     }
 
@@ -531,5 +586,22 @@ footer {
 @media (max-width: 500px) {
     .hero {
         height: 100dvh;
+    }
+}
+
+@media (min-width: 900px) {
+    .hamburger {
+        display: none; /* Hide hamburger menu on large screens */
+    }
+
+    .nav-links {
+        display: flex; /* Show navigation links inline */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        opacity: 1;
+        transform: none;
     }
 }
