@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgba(0, 200, 0, 0); /* Semi-transparent background */
     color: white;
     position: absolute; /* Position it over the hero section */
@@ -35,8 +35,9 @@ header {
 }
 
 .logo img {
-    height: 60px; /* Set the fixed height for the logo */
+    height: 50px; /* Set the fixed height for the logo */
     width: auto; /* Maintain the aspect ratio */
+    padding-left: 10px;
 }
 
 nav {
@@ -70,14 +71,14 @@ nav {
     display: flex; /* Horizontally aligned by default */
     list-style: none;
     gap: 40px; /* Space between links */
-    font-size: 1.2rem;
+    font-size: 1rem;
     z-index: 1000; /* Ensure links are above content */
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
@@ -132,7 +133,7 @@ nav {
 .dropdown-menu {
     display: none; /* Initially hide the dropdown menu */
     position: absolute; /* Relative to the parent */
-    top: 30px; /* Position just below the parent */
+    top: 24px; /* Position just below the parent */
     right: 0; /* Align the right edge with the parent */
     background: rgba(240, 240, 240, 0.2); /* Original semi-transparent background */
     padding: 5px 0; /* Top and bottom padding */
@@ -219,7 +220,7 @@ nav {
 
 .info-block p {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.25;
 }
 
@@ -289,13 +290,13 @@ nav {
 .research-block p {
     margin: 0; /* Remove extra margin */
     text-align: left; /* Align text to the left */
-    font-size: 1.2rem;
-    line-height: 1.2;
+    font-size: 1rem;
+    line-height: 1;
 }
 
 .research-block .arrow-button {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: #ED1C24;
     border: none;
     border-radius: 4px;
@@ -487,6 +488,10 @@ footer {
     
     nav {
         padding-right: 0px;
+    }
+
+    .logo img {
+        padding-left: 0px;
     }
 
     .hamburger {
