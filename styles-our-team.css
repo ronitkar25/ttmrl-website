@@ -48,7 +48,7 @@ nav {
     display: flex;
     list-style: none;
     gap: 36px;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     padding-right: 20px;
 }
 
@@ -158,7 +158,7 @@ nav {
 
 .info-block p {
     margin-top: 10px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.25;
 }
 
