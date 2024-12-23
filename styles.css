@@ -60,18 +60,22 @@ nav img {
 }
 
 .dropdown-menu {
-    display: none; /* Initially hide the dropdown menu */
+    display: block; /* Initially hidden */
     position: absolute;
-    top: 10px; /* Position below the parent */
-    right: 0; /* Align the right edge with the parent */
-    background: rgba(240, 240, 240, 0.2); /* Dropdown background */
+    top: 100%; /* Position below the parent */
+    margin-top: 5px; /* Adds spacing below the parent */
+    right: 0; /* Align with the right edge of the parent */
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
     padding: 5px 0;
     list-style: none;
     z-index: 10;
     border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow */
-    width: auto; /* Auto width based on content */
-    white-space: nowrap; /* Prevent the text from wrapping */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    opacity: 0; /* Initially invisible */
+    transform: translateY(-10px); /* Shift upward slightly */
+    visibility: hidden; /* Hide from view */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth show/hide transition */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .dropdown-menu li {
@@ -93,12 +97,14 @@ nav img {
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
-    display: block; /* Make dropdown visible */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* No offset */
+    visibility: visible; /* Ensure visibility */
 }
 
 .dropdown-menu hr {
-    border: none; /* Removes the default border style */
-    border-top: 1px solid lightgray; /* Adds a blue top border */
+    border: none; /* Removes default border */
+    border-top: 1px solid lightgray; /* Adds a gray top border */
     margin: 0px 10px; /* Adds spacing around the line */
 }
 
