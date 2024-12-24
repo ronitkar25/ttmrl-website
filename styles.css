@@ -224,7 +224,7 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
 
     background-size: cover;
     background-position: center;
@@ -245,7 +245,7 @@ body {
     width: 100%;
     height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
 
     z-index: 0;/
 }
@@ -272,7 +272,7 @@ body {
 .mission-statement h1 {
     padding: 10px 0px;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .mission-statement-content {
@@ -287,7 +287,7 @@ body {
 
 .mission-statement-content p {
     font-size: 1.25vw;
-    line-height: 1.25;
+    line-height: 1.5;
     flex: 1;
     padding: 20px;
 }
@@ -548,7 +548,7 @@ body {
     }
 
     .dropdown-menu li a:hover {
-        color: #ED1C24; /* Highlight color on hover */
+        color: #ED1C24;
     }
 
     .nav-hr {
@@ -576,15 +576,11 @@ body {
         padding: 20px;
     }
 
-    .mission-statement h1 {
-        font-size: 4vw;
-    }
-
     .mission-statement-content {
         flex-direction: column;
     }
 
     .mission-statement-content p {
-        font-size: 2vw;
+        font-size: 1rem;
     }
 }
