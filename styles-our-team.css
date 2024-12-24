@@ -221,11 +221,7 @@ footer {
 
 .content-section h1 {
     font-weight: normal;
-    font-size: 2vw;
-}
-
-.content-section p {
-    font-size: 1vw;
+    font-size: 2rem;
 }
 
 @media (max-width: 1000px) {
@@ -324,14 +320,5 @@ footer {
 
     .content-section {
         padding: 20px 20px;
-    }
-
-    .content-section h1 {
-        font-weight: normal;
-        font-size: 4vw;
-    }
-
-    .content-section p {
-        font-size: 2vw;
     }
 }
