@@ -1,104 +1,125 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*
-    border-color: green;
-    border-style: dashed;
-    border-width: 1px;*/
+    /*border-color: green; border-style: dashed; border-width: 1px;*/
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    border-color: cyan;
 }
 
-/* Header Section */
 header {
+    position: absolute; /* Absolute for the home page */
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: rgba(0, 200, 0, 0); /* Semi-transparent background */
-    color: white;
-    position: absolute; /* Position it over the hero section */
-    top: 0;
-    width: 100%; /* Ensure it spans the full width of the screen */
-    z-index: 1000; /* Keep it on top of other elements */
+    align-items: flex-end;
+
+    padding: 20px 100px 0px 100px;
+    
+    width: 100%;
 }
 
-/* Logo */
 .logo {
     display: flex;
-    align-items: center; /* Vertically center the logo */
+    align-items: center;
 }
 
 .logo img {
-    height: 50px; /* Set the fixed height for the logo */
-    width: auto; /* Maintain the aspect ratio */
-    padding-left: 10px;
+    height: 50px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between logo and links */
-    padding-right: 20px;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+    color: white;
 }
 
-/* Overlay for Navigation Menu */
-.nav-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    z-index: 999; /* Place it above other content */
-    opacity: 0; /* Invisible by default */
-    visibility: hidden; /* Hidden for accessibility */
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.nav-overlay.active {
-    opacity: 1; /* Fully visible */
-    visibility: visible; /* Enable interaction */
-}
-
-/* Navigation Links (Desktop Default) */
 .nav-links {
-    display: flex; /* Horizontally aligned by default */
+    display: flex;
+    align-items: center;
+
     list-style: none;
-    gap: 40px; /* Space between links */
-    font-size: 1rem;
-    z-index: 1000; /* Ensure links are above content */
+    gap: 40px;
 }
 
 .nav-links li a {
     color: white;
-    text-decoration: none;
-    font-size: 1rem;
+    text-decoration: none; /* Removes underline */
+
     transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-    color: #ED1C24; /* Highlight on hover */
+    color: #ED1C24;
 }
 
-/* Hamburger Menu (Hidden by Default) */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 10;
+
+    list-style: none;
+    white-space: nowrap;
+    
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 9px rgba(250, 250, 250, 0.4);
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    text-align: right;
+    color: #333;
+}
+
+.dropdown-menu li:hover {
+    color: #ED1C24;
+}
+
+.dropdown-menu hr {
+    border-top: 1px solid #333;
+    margin: 0px 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-hr {
+    margin: 0px 100px;
+    border-top: 2px solid #ED1C24;
+}
+
 .hamburger {
     cursor: pointer;
-    z-index: 1001; /* Ensure it's above other elements */
-    display: none; /* Hidden on larger screens */
+    z-index: 1001;
+    display: none;
 }
 
 .hamburger input {
-    display: none; /* Hide the checkbox */
+    display: none;
 }
 
 .hamburger svg {
-    height: 2.5rem; /* Adjust the size */
+    height: 2.5rem;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -117,74 +138,88 @@ nav {
 }
 
 .hamburger input:checked + svg {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg);   
+}
+
+.hamburger input:checked + svg .line {
+    stroke: white
 }
 
 .hamburger input:checked + svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
+    stroke: white;
 }
 
-/* Dropdown */
-.dropdown {
-    position: relative;
+footer {
+    width: 100%;
+    border-color: red;
 }
 
-.dropdown-menu {
-    display: none; /* Initially hide the dropdown menu */
-    position: absolute; /* Relative to the parent */
-    top: 28px; /* Position just below the parent */
-    right: 0; /* Align the right edge with the parent */
-    background: rgba(240, 240, 240, 0.2); /* Original semi-transparent background */
-    padding: 5px 0; /* Top and bottom padding */
+.footer-top {
+    display: flex;
+
+    width: 100%;
+    padding: 20px 100px;
+
+    font-size: 1rem;
+    color: white;
+    background-color: #ED1C24;
+}
+
+.footer-top h2 {
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.footer-top p {
+    padding: 5px;
+}
+
+.footer-top li {
+    padding: 5px;
+    font-size: 0.8rem;
     list-style: none;
-    z-index: 10;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    white-space: nowrap; /* Prevent the text from wrapping */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-    opacity: 0; /* Start hidden */
-    transform: translateY(-10px); /* Start slightly above */
-    visibility: hidden; /* Hidden for accessibility */
 }
 
-.dropdown-menu li {
-    margin: 0; /* No margin for list items */
-    padding: 5px 15px; /* Padding around the text */
-    text-align: right; /* Align text to the right */
+.footer-top-left {
+    padding: 20px 0px;
+    min-width: 50%;
 }
 
-.dropdown-menu li a {
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Make the entire item clickable */
-    font-size: 16px; /* Font size */
-    transition: color 0.3s ease; /* Smooth hover transition */
+.footer-top-left li a{
+    color: white;
+    text-decoration: none;
 }
 
-.dropdown-menu li a:hover {
-    color: #ED1C24; /* Highlight color on hover */
+.footer-top-right {
+    padding: 20px 0px;
 }
 
-.dropdown-menu hr {
-    border: none; /* Remove default border */
-    border-top: 1px solid lightgray; /* Add subtle gray line */
-    margin: 0px 10px; /* Add horizontal padding around the line */
+.footer-top-right a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-    display: block; /* Make dropdown visible */
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* No offset */
-    visibility: visible; /* Fully visible for accessibility */
+.footer-bottom {
+    width: 100%;
+    padding: 20px 100px;
+
+    font-size: 0.8rem;
+    color: white;
+    background-color: #b30000;
+}
+
+/* This is where the content goes */
+.content-section {
+    padding: 20px 100px;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     height: 100dvh;
-    background: url('assets/images/home-hero-2.jpg') center/cover no-repeat;
+    background: url('assets/images/home-hero-4.jpeg') center/cover no-repeat;
 }
 
 .hero .overlay {
@@ -193,7 +228,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .info-blocks {
@@ -244,7 +279,6 @@ nav {
     width: 100%; /* Maintain aspect ratio */
     height: 100%; /* Match the height of the container */
     object-fit: cover; /* Ensure the image covers its container without distortion */
-    border-radius: 8px; /* Keep rounded corners */
 }
 
 .about-right {
@@ -255,7 +289,7 @@ nav {
 .research {
     display: flex; /* Aligns blocks horizontally */
     gap: 20px; /* Adds space between blocks */
-    padding: 20px;
+    padding: 40px 100px;
     background-color: #f4f4f4; /* Light background color */
     flex-wrap: nowrap; /* Ensures blocks wrap if they overflow */
     justify-content: space-between; /* Spreads blocks evenly if they shrink */
@@ -270,25 +304,23 @@ nav {
     justify-content: flex-start;
     text-align: center;
     background-color: white; /* Optional: White background for each block */
-    border-radius: 8px;
-    padding: 20px;
+    padding: 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
 }
 
 .research-block img {
     width: 100%;
-    border-radius: 8px;
 }
 
 .research-block .content {
     display: flex; /* Aligns text and button horizontally */
     justify-content: space-between; /* Pushes button to the right */
     align-items: flex-start; /* Aligns both text and button at the top */
-    margin-top: 10px; /* Optional: Adds spacing between image and content */
+    align-items: center;
 }
 
 .research-block p {
-    margin: 0; /* Remove extra margin */
+    margin: 10px; /* Remove extra margin */
     text-align: left; /* Align text to the left */
     font-size: 1rem;
     line-height: 1;
@@ -298,6 +330,7 @@ nav {
     width: 30px;
     height: 30px;
     background-color: #ED1C24;
+    margin-right: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -339,7 +372,7 @@ nav {
     bottom: 20px; /* Distance from the bottom of the section */
     right: 20px;
     left: 40px;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .split-left .overlay {
@@ -404,160 +437,73 @@ nav {
     transform: translate(-50%, -50%) rotate(45deg); /* Rotate to create arrow */
 }
 
-/* Footer Styles */
-footer {
-    width: 100%;
-    font-family: Arial, sans-serif;
-    color: white;
-}
-
-/* Top Banner */
-.footer-top {
-    display: flex; /* Align left and middle sections side by side */
-    justify-content: space-between; /* Even spacing between left and middle/right */
-    align-items: flex-start; /* Align content at the top */
-    background-color: #ED1C24; /* Bright red background */
-    padding: 10px 20px; /* Padding inside the top banner */
-}
-
-/* Left Section */
-.footer-left {
-    flex: 1; /* Takes up space on the left */
-}
-
-.footer-left h1 {
-    font-size: 2.5em; /* Big letters for TTMRL */
-    margin: 0 0 10px 0; /* Space below TTMRL */
-}
-
-.footer-left p {
-    font-size: 1em;
-    font-style: italic; /* Italics for subtitle */
-    margin: 0;
-}
-
-/* Middle Section */
-.footer-middle {
-    flex: 2; /* Takes more space in the middle/right */
-    text-align: left; /* Align content to the left */
-    padding-left: 20px; /* Add padding for spacing */
-}
-
-.footer-middle h2 {
-    margin-bottom: 15px;
-}
-
-.footer-links {
-    display: grid; /* Create a grid for the links */
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 10px; /* Space between links */
-    text-align: left; /* Ensure links are aligned to the left */
-    margin: 0; /* Remove auto-centering */
-}
-
-.footer-links a {
-    color: white; /* White text for links */
-    text-decoration: none; /* Remove underline */
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #ffcccc; /* Lighter red on hover */
-}
-
-/* Bottom Banner */
-.footer-bottom {
-    background-color: #b30000; /* Dark red background */
-    text-align: left; /* Align paragraph to the left */
-    padding: 10px 20px; /* Add padding */
-    font-size: 0.9em;
-    color: #f4f4f4; /* Slightly lighter text color for readability */
-}
-
-@media (max-width: 1200px) {
-    .info-block p {
-        margin-top: 10px;
-        font-size: 1rem;
-        line-height: 1.25;
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-    
-    nav {
-        padding-right: 0px;
-    }
-
-    .logo img {
-        padding-left: 0px;
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 20px 0px;
     }
 
     .hamburger {
-        display: block; /* Show hamburger menu */
+        display: block;
     }
 
     .nav-links {
-        display: none; /* Hide links by default */
-        flex-direction: column; /* Stack links vertically */
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
+
+        flex-direction: column;
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.9); /* Fullscreen dark background */
-        align-items: center; /* Center links horizontally */
-        justify-content: center; /* Center links vertically */
-        z-index: 1000; /* Ensure it's above content */
-        opacity: 0; /* Start hidden */
-        pointer-events: none; /* Disable interaction when not visible */
+        align-items: center;
+        justify-content: center;
+
+        color: white;
+        background: rgba(0, 0, 0, 0.9);
+        font-size: 2rem;
+        font-weight: lighter;
+        
+        z-index: 1000;
+        
+        pointer-events: none;
         transition: opacity 0.3s ease-in-out;
     }
 
+    .nav-links li a {
+        color: white;
+    }
+
     .nav-links.active {
-        display: flex; /* Show links when active */
-        opacity: 1; /* Fully visible */
-        pointer-events: auto; /* Enable interaction */
+        display: flex;
+        opacity: 1;
+        pointer-events: auto;
     }
 
-    .about, .research, .split {
-        flex-direction: column;
-    }
-
-    /* Parent Dropdown */
     .dropdown {
         text-align: center;
-        width: 100%; /* Ensure full-width alignment in the nav */
-        position: relative; /* Make it the reference point for the dropdown menu */
+        width: 100%;
+        position: relative;
     }
 
     /* Dropdown Menu */
     .dropdown-menu {
         position: absolute; /* Position relative to the parent .dropdown */
-        top: 120%; /* Directly below the Affiliations link */
-        left: 0; /* Align to the left edge of the parent */
-        right: 0; /* Align to the right edge of the parent */
-        margin: 0 auto; /* Center the dropdown within the parent */
-        width: 50%; /* Adjust width for responsiveness */
-        max-width: 300px; /* Prevent the menu from being too wide */
-        background: rgba(190, 190, 190, 0.2); /* Semi-transparent background */
-        text-align: center; /* Center-align dropdown links */
-        padding: 5px; /* Add padding inside the dropdown */
-        border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border */
-        z-index: 1000; /* Ensure it appears above other elements */
-        display: none; /* Initially hidden */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+        top: 120%;
+        left: 0;
+        width: 100%;
+
+        background: #222;
+        text-align: center;
+        border: 1px solid #888;
+        z-index: 1000;
     }
 
-    /* Show Dropdown Menu on Hover */
     .dropdown:hover .dropdown-menu {
-        display: block; /* Make the dropdown visible */
+        display: block;
     }
 
-    /* Dropdown Menu Items */
     .dropdown-menu li {
-        padding: 10px 0; /* Add spacing between links */
+        padding: 10px; /* Add spacing between links */
         text-align: center;
     }
 
@@ -565,106 +511,23 @@ footer {
     .dropdown-menu li a {
         color: white; /* White text color */
         text-decoration: none; /* Remove underline */
-        font-size: 1rem; /* Set font size */
+        font-size: 1.2rem;
     }
 
     .dropdown-menu li a:hover {
         color: #ED1C24; /* Highlight color on hover */
     }
 
-    .info-block {
-        display: none; /* Hide all blocks by default */
+    .nav-hr {
+        margin: 0px 20px 20px 20px;
     }
 
-    .info-block:nth-child(1) {
-        display: block; /* Show only the first block */
-        flex: 1; /* Ensure it spans the container */
-        width: 100%; /* Full width for better readability */
-        padding: 0px 0px;
-        margin: 0 auto; /* Center it horizontally */
-        text-align: center;
-    }
-
-    .info-blocks {
-        justify-content: center; /* Center the visible block */
-    }
-
-    .about {
-        display: flex;
-        align-items: center;
-        padding: 40px;
-        gap: 20px; /* Adds spacing between the image and text */
-    }
-    
-    .about-left {
-        flex: 0 0 auto; /* Allow the width of the image to be independent */
-        display: flex; /* Use flexbox for the image container */
-        max-width: 60%;
-        align-items: stretch;
-    }
-    
-    .about-left img {
-        width: 100%; /* Ensure the image fills the 30% container */
-        height: auto; /* Maintain the aspect ratio */
-        border-radius: 8px; /* Optional: Keep rounded corners */
-    }
-    
-    .about-right {
-        flex: 1; /* Take up the remaining space */
+    .footer-top {
+        flex-direction: column;
         padding: 20px;
     }
 
-    .research {
-        flex-direction: column; /* Stack blocks vertically */
-        align-items: center; /* Center the blocks */
-    }
-
-    .research-block {
-        max-width: 100%; /* Full width when stacked */
-        margin-bottom: 20px; /* Spacing between stacked blocks */
-    }
-
-    .split {
-        height: 800px;
-    }
-
-    .split-left {
-        font-size: 1rem;
-        line-height: 1;
-    }
-
-    .split-left .text-container {
-        bottom: 40px;
-    }
-
-    .split-left .text-container::before {
-        height: 100%;
-    }
-}
-
-@media (max-width: 500px) {
-    .hero {
-        height: 100dvh;
-    }
-}
-
-@media (min-width: 900px) {
-    .hamburger {
-        display: none; /* Hide hamburger menu on large screens */
-    }
-
-    .nav-links {
-        display: flex; /* Show navigation links inline */
-        flex-direction: row;
-        position: static;
-        width: auto;
-        background: transparent;
-        padding: 0;
-        opacity: 1;
-        transform: none;
-    }
-
-    .nav-links.active {
-        display: flex; /* No special behavior on desktop */
+    .footer-bottom {
+        padding: 20px;
     }
 }
