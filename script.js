@@ -1,3 +1,6 @@
+console.log("Script is running!");
+
+
 // Get references to elements
 const hamburgerInput = document.querySelector('#hamburger-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -14,13 +17,6 @@ hamburgerInput.addEventListener('change', function () {
     }
 });
 
-// Close menu when overlay is clicked
-navOverlay.addEventListener('click', function () {
-    hamburgerInput.checked = false; // Uncheck the hamburger input
-    navLinks.classList.remove('active'); // Hide navigation links
-    navOverlay.classList.remove('active'); // Hide overlay
-});
-
 // Close menu when a navigation link is clicked
 navLinks.addEventListener('click', function (event) {
     if (event.target.tagName === 'A') {
@@ -28,4 +24,60 @@ navLinks.addEventListener('click', function (event) {
         navLinks.classList.remove('active'); // Hide navigation links
         navOverlay.classList.remove('active'); // Hide overlay
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded');
+
+    const heroElement = document.querySelector('.hero');
+    const heroTextElement = document.querySelector('#heroText');
+
+    if (!heroElement || !heroTextElement) {
+        console.error('Hero element or text element not found!');
+        return;
+    }
+
+    console.log('Hero element:', heroElement);
+    console.log('Hero text element:', heroTextElement);
+
+    const slides = [
+        {
+            image: 'assets/images/home-hero-1.jpeg',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            image: 'assets/images/home-hero-2.jpg',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        },
+        {
+            image: 'assets/images/home-hero-4.jpeg',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        }
+    ];
+
+    let currentIndex = 2;
+
+    function changeSlide() {
+        console.log('Changing to slide:', currentIndex + 1);
+
+        // Update background image
+        currentIndex = (currentIndex + 1) % slides.length;
+        heroElement.style.backgroundImage = `url(${slides[currentIndex].image})`;
+
+        // Fade out text
+        heroTextElement.classList.remove('visible');
+        setTimeout(() => {
+            // Change text and fade in
+            heroTextElement.textContent = slides[currentIndex].text;
+            heroTextElement.classList.add('visible');
+        }, 1000); // Sync with the CSS transition duration
+    }
+
+    // Initial setup: Set background image and make text visible
+    heroElement.style.backgroundImage = `url(${slides[currentIndex].image})`;
+    heroTextElement.textContent = slides[currentIndex].text;
+    heroTextElement.classList.add('visible'); // Add the visible class initially
+
+    console.log('Initial slide loaded');
+    setInterval(changeSlide, 6000); // Change slide every 10 seconds
 });

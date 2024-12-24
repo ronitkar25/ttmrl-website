@@ -215,48 +215,81 @@ footer {
     padding: 20px 100px;
 }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 100dvh;
-    background: url('assets/images/home-hero-4.jpeg') center/cover no-repeat;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.hero .overlay {
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image 1s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: 0;/
 }
 
-.info-blocks {
+.hero-text {
     position: absolute;
-    bottom: 10px;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    gap: 40px;
-    padding: 40px 100px;
-}
+    left: 100px;
+    bottom: 60px;
+    max-width: 24%;
 
-.info-block {
-    width: 600px;
-    text-align: center;
     color: white;
-}
-
-.info-block hr {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid white;
-}
-
-.info-block p {
-    margin-top: 10px;
     font-size: 1rem;
+
+    z-index: 1;
+
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-text.visible {
+    opacity: 1;
+}
+
+.mission-statement h1 {
+    padding: 10px 0px;
+    font-weight: normal;
+    font-size: 2vw;
+}
+
+.mission-statement-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-statement-content img {
+    max-height: 300px;
+}
+
+.mission-statement-content p {
+    font-size: 1.25vw;
     line-height: 1.25;
+    flex: 1;
+    padding: 20px;
 }
 
 /* About Section */
@@ -529,5 +562,28 @@ footer {
 
     .footer-bottom {
         padding: 20px;
+    }
+
+    .hero-text {
+        left: 20px;
+        right: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .mission-statement h1 {
+        font-size: 4vw;
+    }
+
+    .mission-statement-content {
+        flex-direction: column;
+    }
+
+    .mission-statement-content p {
+        font-size: 2vw;
     }
 }
