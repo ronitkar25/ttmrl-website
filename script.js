@@ -42,20 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const slides = [
         {
-            image: 'assets/images/home-hero-1.jpeg',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            image: 'assets/images/home-hero-1.jpg',
+            text: 'Pioneering blood research to advance transfusion medicine and enhance outcomes for critically ill and trauma patients.'
         },
         {
-            image: 'assets/images/home-hero-2.jpg',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        },
-        {
-            image: 'assets/images/home-hero-4.jpeg',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            image: 'assets/images/home-hero-4.jpg',
+            text: 'Advancing trauma care through innovative research, clinical collaboration, and insights from the University of Pittsburgh and UPMC.'
         }
     ];
 
-    let currentIndex = 2;
+    let currentIndex = 0;
 
     function changeSlide() {
         console.log('Changing to slide:', currentIndex + 1);

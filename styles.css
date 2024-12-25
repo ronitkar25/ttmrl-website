@@ -13,7 +13,8 @@ body {
 }
 
 header {
-    position: absolute; /* Absolute for the home page */
+    position: absolute;
+    /* Absolute for the home page */
     z-index: 1000;
 
     display: flex;
@@ -21,7 +22,7 @@ header {
     align-items: flex-end;
 
     padding: 20px 100px 0px 100px;
-    
+
     width: 100%;
 }
 
@@ -53,7 +54,7 @@ nav {
 
 .nav-links li a {
     color: white;
-    text-decoration: none; /* Removes underline */
+    text-decoration: none;
 
     transition: color 0.3s ease;
 }
@@ -74,10 +75,10 @@ nav {
 
     list-style: none;
     white-space: nowrap;
-    
+
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 9px rgba(250, 250, 250, 0.4);
-    
+
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -130,22 +131,22 @@ nav {
     stroke-linejoin: round;
     stroke-width: 3;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
     stroke-dasharray: 12 63;
 }
 
-.hamburger input:checked + svg {
-    transform: rotate(-45deg);   
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
 }
 
-.hamburger input:checked + svg .line {
+.hamburger input:checked+svg .line {
     stroke: white
 }
 
-.hamburger input:checked + svg .line-top-bottom {
+.hamburger input:checked+svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
     stroke: white;
@@ -187,7 +188,7 @@ footer {
     min-width: 50%;
 }
 
-.footer-top-left li a{
+.footer-top-left li a {
     color: white;
     text-decoration: none;
 }
@@ -258,6 +259,7 @@ body {
 
     color: white;
     font-size: 1rem;
+    line-height: 1.2;
 
     z-index: 1;
 
@@ -292,53 +294,136 @@ body {
     padding: 20px;
 }
 
-/* About Section */
-.about {
+.our-location-content {
     display: flex;
-    align-items: stretch;
-    padding: 40px 100px;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.about-left {
-    flex: 0 0 auto; /* Allow the width of the image to be independent */
-    display: flex; /* Use flexbox for the image container */
-    max-width: 24%;
-    min-width: 20%;
-    align-items: stretch;
+.our-location-content img {
+    max-height: 200px;
 }
 
-.about-left img {
-    width: 100%; /* Maintain aspect ratio */
-    height: 100%; /* Match the height of the container */
-    object-fit: cover; /* Ensure the image covers its container without distortion */
-}
-
-.about-right {
-    flex: 1; /* Take up the remaining space */
+.our-location-content p {
+    font-size: 1.25vw;
+    line-height: 1.5;
+    flex: 1;
     padding: 20px;
 }
 
+.our-team h1 {
+    padding: 10px 0px;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.our-team p {
+    font-size: 1.25vw;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.our-team a {
+    color: #ED1C24;
+    text-decoration: none;
+}
+
+.team-pics-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    grid-gap: 10px;
+}
+
+.team-pic-item {
+    background-size: cover;
+    background-position: center;
+}
+
+.team-pic-item1 {
+    background-image: url("assets/images/team-pics/team-8.png");
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.team-pic-item2 {
+    background-image: url("assets/images/team-pics/team-2.png");
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.team-pic-item3 {
+    background-image: url("assets/images/team-pics/team-4.png");
+    grid-column: 1/5;
+    grid-row: 5/5;
+}
+
+.team-pic-item4 {
+    background-image: url("assets/images/team-pics/team-7.png");
+    grid-column: 2/4;
+    grid-row: 2/5;
+}
+
+.team-pic-item5 {
+    background-image: url("assets/images/team-pics/team-5.png");
+    grid-column: 4/6;
+    grid-row: 1/3;
+}
+
+.team-pic-item6 {
+    background-image: url("assets/images/team-pics/team-6.png");
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+
+.team-pic-item7 {
+    background-image: url("assets/images/team-pics/team-10.png");
+    grid-column: 5/6;
+    grid-row: 3/6;
+}
+
+.team-pic-item8 {
+    background-image: url("assets/images/team-pics/team-1.png");
+    grid-column: 6/8;
+    grid-row: 1/6;
+}
+
+
+
+
 .research {
-    display: flex; /* Aligns blocks horizontally */
-    gap: 20px; /* Adds space between blocks */
+    display: flex;
+    /* Aligns blocks horizontally */
+    gap: 20px;
+    /* Adds space between blocks */
     padding: 40px 100px;
-    background-color: #f4f4f4; /* Light background color */
-    flex-wrap: nowrap; /* Ensures blocks wrap if they overflow */
-    justify-content: space-between; /* Spreads blocks evenly if they shrink */
+    background-color: #f4f4f4;
+    /* Light background color */
+    flex-wrap: nowrap;
+    /* Ensures blocks wrap if they overflow */
+    justify-content: space-between;
+    /* Spreads blocks evenly if they shrink */
 }
 
 .research-block {
-    flex: 1; /* Ensures equal width for all blocks */
-    min-width: 300px; /* Prevents blocks from shrinking too much */
-    max-width: 32%; /* Allows up to 3 blocks per row */
+    flex: 1;
+    /* Ensures equal width for all blocks */
+    min-width: 300px;
+    /* Prevents blocks from shrinking too much */
+    max-width: 32%;
+    /* Allows up to 3 blocks per row */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-    background-color: white; /* Optional: White background for each block */
+    background-color: white;
+    /* Optional: White background for each block */
     padding: 0px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Subtle shadow */
 }
 
 .research-block img {
@@ -346,15 +431,20 @@ body {
 }
 
 .research-block .content {
-    display: flex; /* Aligns text and button horizontally */
-    justify-content: space-between; /* Pushes button to the right */
-    align-items: flex-start; /* Aligns both text and button at the top */
+    display: flex;
+    /* Aligns text and button horizontally */
+    justify-content: space-between;
+    /* Pushes button to the right */
+    align-items: flex-start;
+    /* Aligns both text and button at the top */
     align-items: center;
 }
 
 .research-block p {
-    margin: 10px; /* Remove extra margin */
-    text-align: left; /* Align text to the left */
+    margin: 10px;
+    /* Remove extra margin */
+    text-align: left;
+    /* Align text to the left */
     font-size: 1rem;
     line-height: 1;
 }
@@ -367,7 +457,8 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    display: flex; /* Centers the arrow within the button */
+    display: flex;
+    /* Centers the arrow within the button */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -377,13 +468,20 @@ body {
 .research-block .arrow-button::after {
     content: "";
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 42%; /* Adjust to move the arrow slightly left */
-    width: 10px; /* Arrow width */
-    height: 10px; /* Arrow height */
-    border-top: 2px solid white; /* Top part of the arrow */
-    border-right: 2px solid white; /* Right part of the arrow */
-    transform: translate(-50%, -50%) rotate(45deg); /* Rotate to create arrow */
+    top: 50%;
+    /* Center vertically */
+    left: 42%;
+    /* Adjust to move the arrow slightly left */
+    width: 10px;
+    /* Arrow width */
+    height: 10px;
+    /* Arrow height */
+    border-top: 2px solid white;
+    /* Top part of the arrow */
+    border-right: 2px solid white;
+    /* Right part of the arrow */
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* Rotate to create arrow */
 }
 
 /* Split Section */
@@ -402,7 +500,8 @@ body {
 
 .split-left .text-container {
     position: absolute;
-    bottom: 20px; /* Distance from the bottom of the section */
+    bottom: 20px;
+    /* Distance from the bottom of the section */
     right: 20px;
     left: 40px;
     font-size: 1rem;
@@ -419,12 +518,18 @@ body {
 
 .split-left .text-container::before {
     content: "";
-    width: 3px; /* Vertical line width */
-    height: 100%; /* Line spans the full content height */
-    background-color: white; /* Vertical line color */
-    position: absolute; /* Separate positioning for the line */
-    left: -10px; /* Position slightly to the left of the content */
-    top: 0; /* Align with the top of the content */
+    width: 3px;
+    /* Vertical line width */
+    height: 100%;
+    /* Line spans the full content height */
+    background-color: white;
+    /* Vertical line color */
+    position: absolute;
+    /* Separate positioning for the line */
+    left: -10px;
+    /* Position slightly to the left of the content */
+    top: 0;
+    /* Align with the top of the content */
 }
 
 .split-right {
@@ -432,42 +537,65 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
-    overflow-y: auto; /* Ensures the content is scrollable if it overflows */
-    max-height: 600px; /* Optional: Limit the height of the feed */
+    overflow-y: auto;
+    /* Ensures the content is scrollable if it overflows */
+    max-height: 600px;
+    /* Optional: Limit the height of the feed */
 }
 
 .twitter-feed {
-    max-height: 100%; /* Limit the height of the Twitter timeline */
-    overflow-y: scroll; /* Add vertical scrolling */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for aesthetics */
+    max-height: 100%;
+    /* Limit the height of the Twitter timeline */
+    overflow-y: scroll;
+    /* Add vertical scrolling */
+    border-radius: 8px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for aesthetics */
 }
 
 .arrow-button {
-    flex-shrink: 0; /* Prevent button from shrinking */
-    width: 40px; /* Fixed square size */
-    height: 40px; /* Fixed square size */
-    background-color: #ED1C24; /* Red background */
-    border: none; /* Remove default button styling */
-    border-radius: 4px; /* Rounded corners */
+    flex-shrink: 0;
+    /* Prevent button from shrinking */
+    width: 40px;
+    /* Fixed square size */
+    height: 40px;
+    /* Fixed square size */
+    background-color: #ED1C24;
+    /* Red background */
+    border: none;
+    /* Remove default button styling */
+    border-radius: 4px;
+    /* Rounded corners */
     cursor: pointer;
-    position: relative; /* Position for the arrow pseudo-element */
-    display: flex; /* Flexbox for arrow alignment */
-    justify-content: center; /* Center the arrow horizontally */
-    align-items: center; /* Center the arrow vertically */
+    position: relative;
+    /* Position for the arrow pseudo-element */
+    display: flex;
+    /* Flexbox for arrow alignment */
+    justify-content: center;
+    /* Center the arrow horizontally */
+    align-items: center;
+    /* Center the arrow vertically */
 }
 
 /* Arrow Shape in Button */
 .arrow-button::after {
     content: "";
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 42%; /* Adjust to move the arrow slightly left */
-    width: 10px; /* Arrow width */
-    height: 10px; /* Arrow height */
-    border-top: 2px solid white; /* Top part of the arrow */
-    border-right: 2px solid white; /* Right part of the arrow */
-    transform: translate(-50%, -50%) rotate(45deg); /* Rotate to create arrow */
+    top: 50%;
+    /* Center vertically */
+    left: 42%;
+    /* Adjust to move the arrow slightly left */
+    width: 10px;
+    /* Arrow width */
+    height: 10px;
+    /* Arrow height */
+    border-top: 2px solid white;
+    /* Top part of the arrow */
+    border-right: 2px solid white;
+    /* Right part of the arrow */
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* Rotate to create arrow */
 }
 
 @media (max-width: 1000px) {
@@ -495,9 +623,9 @@ body {
         background: rgba(0, 0, 0, 0.9);
         font-size: 2rem;
         font-weight: lighter;
-        
+
         z-index: 1000;
-        
+
         pointer-events: none;
         transition: opacity 0.3s ease-in-out;
     }
@@ -520,7 +648,8 @@ body {
 
     /* Dropdown Menu */
     .dropdown-menu {
-        position: absolute; /* Position relative to the parent .dropdown */
+        position: absolute;
+        /* Position relative to the parent .dropdown */
         top: 120%;
         left: 0;
         width: 100%;
@@ -536,14 +665,17 @@ body {
     }
 
     .dropdown-menu li {
-        padding: 10px; /* Add spacing between links */
+        padding: 10px;
+        /* Add spacing between links */
         text-align: center;
     }
 
     /* Dropdown Links */
     .dropdown-menu li a {
-        color: white; /* White text color */
-        text-decoration: none; /* Remove underline */
+        color: white;
+        /* White text color */
+        text-decoration: none;
+        /* Remove underline */
         font-size: 1.2rem;
     }
 
@@ -581,6 +713,18 @@ body {
     }
 
     .mission-statement-content p {
+        font-size: 1rem;
+    }
+
+    .our-location-content {
+        flex-direction: column;
+    }
+
+    .our-location-content p {
+        font-size: 1rem;
+    }
+
+    .our-team p {
         font-size: 1rem;
     }
 }
