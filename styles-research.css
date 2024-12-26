@@ -333,4 +333,8 @@ footer {
     .content-section p {
         font-size: 1rem;
     }
+
+    .content-section img {
+        padding: 20px;
+    };
 }

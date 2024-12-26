@@ -409,14 +409,14 @@ body {
 }
 
 .our-research ul {
-    padding: 0px 20px;
+    padding: 0px 20px 0px 40px;
 }
 
 .our-research li {
     padding: 5px;
     font-size: 1.25vw;
-    line-height: 1;
-    list-style-position: inside;
+    line-height: 1.2;
+    list-style-position: outside;
 }
 
 .feed {

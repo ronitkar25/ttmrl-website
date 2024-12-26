@@ -216,7 +216,10 @@ footer {
 }
 
 .content-section img {
+    max-height: 400px;
     width: 100%;
+    object-fit: cover;
+    padding: 0px 100px;
 }
 
 .content-section h1 {

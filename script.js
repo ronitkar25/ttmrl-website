@@ -1,7 +1,6 @@
 console.log("Script is running!");
 
-
-// Get references to elements
+// Hamburger menu functionality
 const hamburgerInput = document.querySelector('#hamburger-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navOverlay = document.querySelector('.nav-overlay');
@@ -29,51 +28,87 @@ navLinks.addEventListener('click', function (event) {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM fully loaded');
 
+    // Hero slider functionality
     const heroElement = document.querySelector('.hero');
     const heroTextElement = document.querySelector('#heroText');
 
-    if (!heroElement || !heroTextElement) {
-        console.error('Hero element or text element not found!');
-        return;
-    }
+    if (heroElement && heroTextElement) {
+        const slides = [
+            {
+                image: 'assets/images/home-hero-1.jpg',
+                text: 'Pioneering blood research to advance transfusion medicine and enhance outcomes for critically ill and trauma patients.'
+            },
+            {
+                image: 'assets/images/home-hero-3.jpg',
+                text: 'Utilizing novel microfluidic devices to study flow-dependent platelet function and high-shear platelet-rich thrombosis.'
+            },
+            {
+                image: 'assets/images/home-hero-4.jpg',
+                text: 'Revealing the spatial distribution of factor IX and its unique role in regulating hemostasis during traumatic injury.'
+            }
+        ];
 
-    console.log('Hero element:', heroElement);
-    console.log('Hero text element:', heroTextElement);
+        let currentIndex = 0;
 
-    const slides = [
-        {
-            image: 'assets/images/home-hero-1.jpg',
-            text: 'Pioneering blood research to advance transfusion medicine and enhance outcomes for critically ill and trauma patients.'
-        },
-        {
-            image: 'assets/images/home-hero-4.jpg',
-            text: 'Advancing trauma care through innovative research, clinical collaboration, and insights from the University of Pittsburgh and UPMC.'
+        function changeSlide() {
+            console.log('Changing to slide:', currentIndex + 1);
+
+            // Update background image
+            currentIndex = (currentIndex + 1) % slides.length;
+            heroElement.style.backgroundImage = `url(${slides[currentIndex].image})`;
+
+            // Fade out text
+            heroTextElement.classList.remove('visible');
+            setTimeout(() => {
+                // Change text and fade in
+                heroTextElement.textContent = slides[currentIndex].text;
+                heroTextElement.classList.add('visible');
+            }, 1000); // Sync with the CSS transition duration
         }
-    ];
 
-    let currentIndex = 0;
-
-    function changeSlide() {
-        console.log('Changing to slide:', currentIndex + 1);
-
-        // Update background image
-        currentIndex = (currentIndex + 1) % slides.length;
+        // Initial setup: Set background image and make text visible
         heroElement.style.backgroundImage = `url(${slides[currentIndex].image})`;
+        heroTextElement.textContent = slides[currentIndex].text;
+        heroTextElement.classList.add('visible'); // Add the visible class initially
 
-        // Fade out text
-        heroTextElement.classList.remove('visible');
-        setTimeout(() => {
-            // Change text and fade in
-            heroTextElement.textContent = slides[currentIndex].text;
-            heroTextElement.classList.add('visible');
-        }, 1000); // Sync with the CSS transition duration
+        console.log('Initial slide loaded');
+        setInterval(changeSlide, 6000); // Change slide every 6 seconds
+    } else {
+        console.error('Hero element or text element not found!');
     }
 
-    // Initial setup: Set background image and make text visible
-    heroElement.style.backgroundImage = `url(${slides[currentIndex].image})`;
-    heroTextElement.textContent = slides[currentIndex].text;
-    heroTextElement.classList.add('visible'); // Add the visible class initially
+    // News section functionality
+    const newsContainer = document.getElementById("news-container");
 
-    console.log('Initial slide loaded');
-    setInterval(changeSlide, 6000); // Change slide every 10 seconds
+    if (newsContainer) {
+        // Fetch the news JSON file
+        fetch("news.json")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Failed to load news data");
+                }
+                return response.json();
+            })
+            .then(newsItems => {
+                newsItems.forEach(item => {
+                    const newsItem = document.createElement("div");
+                    newsItem.classList.add("news-item");
+
+                    newsItem.innerHTML = `
+                        <h2>${item.title}</h2>
+                        <p>${item.text}</p>
+                        ${item.link ? `<a href="${item.link}" target="_blank">Read more</a>` : ""}
+                        ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ""}
+                    `;
+
+                    newsContainer.appendChild(newsItem);
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching news:", error);
+                newsContainer.innerHTML = "<p>Failed to load news items.</p>";
+            });
+    } else {
+        console.warn("News container not found on this page.");
+    }
 });
