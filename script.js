@@ -93,16 +93,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 newsItems.forEach(item => {
                     const newsItem = document.createElement("div");
                     newsItem.classList.add("news-item");
-
+                
+                    // Conditionally build the HTML content
                     newsItem.innerHTML = `
-                        <h2>${item.title}</h2>
-                        <p>${item.text}</p>
-                        ${item.link ? `<a href="${item.link}" target="_blank">Read more</a>` : ""}
                         ${item.image ? `<img src="${item.image}" alt="${item.title}">` : ""}
+                        <div>
+                            <h2>${item.title}</h2>
+                            ${item.date ? `<h3>${item.date}</h3>` : ""}
+                            <p>
+                                ${item.text}
+                                ${item.link ? `<a href="${item.link}" target="_blank">Read more</a>` : ""}
+                            </p>
+                        </div>
                     `;
-
+                
                     newsContainer.appendChild(newsItem);
                 });
+                
             })
             .catch(error => {
                 console.error("Error fetching news:", error);

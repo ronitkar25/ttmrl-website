@@ -213,6 +213,8 @@ footer {
 /* This is where the content goes */
 .content-section {
     padding: 20px 100px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .content-section h1 {
@@ -337,4 +339,10 @@ footer {
     .content-section img {
         padding: 20px;
     };
+}
+
+@media (min-width: 1600px) {
+    .content-section p {
+        font-size: 1.2rem;
+    }
 }

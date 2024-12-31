@@ -213,6 +213,8 @@ footer {
 /* This is where the content goes */
 .content-section {
     padding: 20px 100px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .content-section h1 {
@@ -224,7 +226,7 @@ footer {
 .content-section p {
     font-size: 1.25vw;
     line-height: 1.5;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .content-section img {
@@ -236,14 +238,29 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 0px;
 }
-
+/*
 .news-item {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 5px;
     background: #f9f9f9;
+    display: flex;
+    gap: 15px;
+    align-items: stretch;
+}*/
+
+.news-item {
+    display: flex;
+    gap: 15px;
+    border: 1px solid #ddd;
+    padding: 30px 15px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    align-items: center; /* Ensures children stretch to match container height */
+    height: auto; /* Container height adapts to its content */
+    min-height: 150px; /* Optional: Set a minimum height for uniformity */
 }
 
 .news-item h2 {
@@ -252,8 +269,14 @@ footer {
     color: #333;
 }
 
-.news-item p {
+.news-item h3 {
     margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.news-item p {
+    margin: 0px;
     font-size: 1rem;
     line-height: 1.5;
     color: #555;
@@ -261,6 +284,7 @@ footer {
 
 .news-item a {
     color: #ED1C24;
+    font-size: 1.2rem;
     text-decoration: underline;
 }
 
@@ -269,10 +293,19 @@ footer {
 }
 
 .news-item img {
-    max-width: 100%;
-    height: auto;
+    flex-shrink: 0;
+    width: 20%; /* Image takes 20% of the width */
+    padding: 0;
+    height: 100%; /* Image spans the full height of the .news-item container */
+    object-fit: cover; /* Ensures the image covers its container without distortion */
     border-radius: 5px;
-    margin-top: 10px;
+}
+
+.news-item div {
+    flex: 1; /* Ensures the text container takes up the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text content vertically */
 }
 
 
@@ -376,5 +409,28 @@ footer {
 
     .content-section p {
         font-size: 1rem;
+    }
+
+    .news-item {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Align content to the start */
+
+    }
+
+    .news-item img {
+        width: auto; /* Image takes full width */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 100px;;
+        margin-top: 10px; /* Add some spacing above the image */
+    }
+
+    .news-item div {
+        width: 100%; /* Ensure the text container takes full width */
+    }
+}
+
+@media (min-width: 1600px) {
+    .content-section p {
+        font-size: 1.2rem;
     }
 }

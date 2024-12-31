@@ -214,12 +214,8 @@ footer {
 /* This is where the content goes */
 .content-section {
     padding: 20px 100px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero {
@@ -622,5 +618,31 @@ body {
 
     .science-spotlight .overlay .overlay-text {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .mission-statement-content p {
+        font-size: 1.2rem;
+    }
+
+    .our-location-content p {
+        font-size: 1.2rem;
+    }
+
+    .our-team p {
+        font-size: 1.2rem;
+    }
+
+    .our-research p {
+        font-size: 1.2rem;
+    }
+
+    .our-research li {
+        font-size: 1.2rem;
+    }
+
+    .science-spotlight .overlay .overlay-text {
+        font-size: 1.2rem;
     }
 }

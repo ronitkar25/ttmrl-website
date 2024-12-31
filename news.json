@@ -1,20 +1,40 @@
 [
     {
-      "title": "Research Breakthrough",
-      "text": "Our lab has achieved a new milestone in trauma medicine.",
-      "link": "https://example.com/research-breakthrough",
-      "image": "assets/images/news/research-breakthrough.jpg"
+      "title": "Jove Publication",
+      "date": "November 8, 2024",
+      "text": "Emily Mihalko, Abiha Abdullah, Lara Hoteit, David Akinbode, Susan Shea, and Matthew Neal recently had their work in generating a platelet-rich thrombi under arterial flow conditions using a microfluidic device published in Jove.",
+      "link": "https://app.jove.com/t/67214/microfluidics-in-assessing-platelet-function",
+      "image": "assets/images/news/110824_jove.png"
     },
     {
-      "title": "Upcoming Conference",
-      "text": "Join us at the Trauma Medicine Symposium 2024.",
-      "link": "https://example.com/conference-details",
-      "image": "assets/images/news/conference.jpg"
+      "title": "Example News Item",
+      "text": "Join us at the International Society on Thrombosis and Hemostasis 2025.",
+      "link": "https://www.isth.org/"
     },
     {
-      "title": "Team Update",
-      "text": "Welcome our new team members!",
-      "image": "assets/images/news/team-update.jpg"
+      "title": "Example Team Update",
+      "date": "November 1, 2024",
+      "text": "Welcome our new team members! No picture on these bottom two items and no link on this item as a test!"
+    },
+    {
+      "title": "Example News Item",
+      "text": "Join us at the International Society on Thrombosis and Hemostasis 2025.",
+      "link": "https://www.isth.org/"
+    },
+    {
+      "title": "Example News Item",
+      "text": "Join us at the International Society on Thrombosis and Hemostasis 2025.",
+      "link": "https://www.isth.org/"
+    },
+    {
+      "title": "Example News Item",
+      "text": "Join us at the International Society on Thrombosis and Hemostasis 2025.",
+      "link": "https://www.isth.org/"
+    },
+    {
+      "title": "Example News Item",
+      "text": "Join us at the International Society on Thrombosis and Hemostasis 2025.",
+      "link": "https://www.isth.org/"
     }
   ]
   
