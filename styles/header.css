@@ -1,0 +1,71 @@
+/* DEBUG: Visualize all elements  */
+
+/* {
+    border: 1px dashed blue;
+  }*/
+
+/* === INSTITUTIONAL BANNER === */
+.institutional-banner {
+    line-height: 3.0;
+    padding: 8px 24px;
+    /* vertical | horizontal */
+    background: linear-gradient(to right, rgba(0, 79, 157, 0.6), rgba(76, 16, 74, 0.6));
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.institutional-banner a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.institutional-banner a:hover {
+    text-decoration: underline;
+}
+
+/* === SITE HEADER (STACKED) === */
+.site-header {
+    padding: 24px 100px;
+}
+
+/* Logo Area */
+.logo-area {
+    margin-bottom: 8px;
+}
+
+.lab-logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Navigation Links */
+.main-nav {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    /* Let links wrap on smaller screens */
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-family: 'Roboto Flex', sans-serif;
+    color: black;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+/* === DIVIDER GRADIENT BAR === */
+.gradient-divider {
+    height: 16px;
+    /* You can tweak this */
+    background: linear-gradient(to right,
+            rgba(80, 109, 158, 0),
+            rgba(80, 109, 158, 0.9),
+            rgba(156, 112, 178, 0.9),
+            rgba(156, 112, 178, 0));
+    margin: 0 auto;
+}

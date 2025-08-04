@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTMRL | Publications</title>
+
+     <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="assets/images/flavicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/publications.css" />
+</head>
+
+<body data-page="home">
+
+    <!-- Step 1 Component: Institutional Banner -->
+    <div class="institutional-banner">
+        <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+        <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+        <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+    </div>
+
+    <!-- === Site Header with Logo on Top and Nav Below === -->
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="our-research.html">Research</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="news.html">News</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- === Divider Banner === -->
+    <div class="gradient-divider"></div>
+
+    <!-- === Page Layout === -->
+    <!-- Page Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar-nav">
+            <div class="sidebar-title">Publication Year</div>
+            <nav class="sidebar-links" id="year-sidebar">
+                <!-- Populated dynamically -->
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="page-content" id="pub-container">
+            <!-- Populated dynamically -->
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
+            </a>
+            <div class="footer-links">
+                <a href="#">University of Pittsburgh</a>
+                <a href="#">Department of Surgery</a>
+                <a href="#">Trauma and Transfusion Medicine Research Center</a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p><strong>Biomedical Science Tower</strong></p>
+            <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="scripts/load-publications.js"></script>
+
+</body>
+
+</html>

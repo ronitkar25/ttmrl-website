@@ -1,85 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TTMRL - Our Team</title>
-        <link rel="stylesheet" href="styles-contact-us.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html" class="logo">
-                <img src="assets/images/ttmrl-logo-with-text.png" alt="Lab Logo">
-            </a>
-            <nav>
-                <label class="hamburger">
-                    <input type="checkbox" id="hamburger-toggle">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
-                <ul class="nav-links">
-                    <li><a href="our-team.html">Our Team</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li class="dropdown">
-                        Affiliations
-                        <ul class="dropdown-menu">
-                            <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                            <hr>
-                            <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                            <hr>
-                            <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">TTMRC</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="nav-hr"></div>
 
-        <div class="content-section">
-            <h1>Contact Us</h1>
-            <img src="assets/images/bst-pic.jpg" alt="">
-            <p>(Will replace image). We are located in the Biomedical Science Tower (BST South) Room W9??. 
-                <br>If you have any questions, feel free to reach out to research program manager Tirzah Griffin at <u>email address</u>.
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTMRL | Contact Us</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="assets/images/flavicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+</head>
+
+<body data-page="home">
+
+    <!-- Step 1 Component: Institutional Banner -->
+    <div class="institutional-banner">
+        <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+        <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+        <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+    </div>
+
+    <!-- === Site Header with Logo on Top and Nav Below === -->
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="our-research.html">Research</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="news.html">News</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- === Divider Banner === -->
+    <div class="gradient-divider"></div>
+
+    <!-- === Hero Banner === -->
+    <section class="hero-banner">
+        <img src="assets/images/bst-building.png" alt="Lab Hero" class="hero-image-no-opacity">
+
+        <div class="hero-overlay">
+            <div class="page-layout-contact hero-content-center">
+                <!-- Left Section -->
+                <div class="hero-left">
+                    <h1>Located in the Starzl Biomedical Science Tower, our lab sits at the center of biomedical
+                        innovation and clinical excellence.</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- === Page Layout === -->
+    <div class="page-layout no-sidebar">
+
+        <!-- Main Content Area -->
+         <main class="page-content">
+            <p class="project-description-contact">
+                The Trauma and Transfusion Medicine Research Laboratory (TTMRL) welcomes inquiries from highly motivated
+                researchers and collaborators. Our lab is focused on understanding platelet biology and leveraging
+                genomic tools to investigate mechanisms of injury, inflammation, and organ failure. We aim to translate
+                this knowledge into novel therapeutic strategies that improve outcomes for critically ill patients.
             </p>
-            <h1>Open Positions</h1>
-            <p><i>Copied from Kornblith lab</i><br><br>
-                The TTMRL is seeking highly motivated investigators interested in deciphering platelet function and leveraging the platelet genome to improve our understanding of injury and other diseases and develop novel therapeutic targets of organ failure. 
-                <br><br>
-                Details: 
-                <br><br>
-                Postdoctoral fellowships are fully-funded for up to 2-3 years. Ideal candidates will have an MD and/or PhD with a strong background in genomics, molecular techniques, and a great publication record. 
-                Strong problem-solving skills, creative thinking, and the ability to work well with others as needed are required. 
-                Applicants must possess good communication skills and be fluent in both spoken and written English. 
-                A background in molecular biology or biochemistry will be a strong plus. Prior experience with genetic, or clinical databases is a plus. 
-                To apply, please send your CV, a brief statement of research interests, and contact information for three references in one PDF document to <u>email.</u></p>
+         </main>
+        <main class="page-content-center">
+            <h2>Join Our Team</h2>
+            <p class="project-description-contact">
+                We are currently accepting applications for fully funded postdoctoral fellowships (2–3
+                years).
+                Ideal candidates will have an MD and/or PhD with a strong background in:
+            </p>
+
+            <ul class="project-description-contact">
+                <li>Genomics and molecular biology</li>
+                <li>Experimental techniques</li>
+                <li>Bioinformatics or clinical database analysis (preferred)</li>
+            </ul>
+
+            <p class="project-description-contact">
+                Successful applicants will demonstrate:
+            </p>
+
+            <ul class="project-description-contact">
+                <li>A strong publication record</li>
+                <li>Creative, independent problem-solving skills</li>
+                <li>Excellent communication skills (written and spoken English)</li>
+                <li>The ability to work well in collaborative research settings</li>
+            </ul>
+
+            <p class="project-description-contact">
+                To apply, please email the following as a single PDF document:
+            </p>
+
+            <ul class="project-description-contact">
+                <li>Curriculum vitae (CV)</li>
+                <li>A brief statement of research interests</li>
+                <li>Contact information for three professional references</li>
+            </ul>
+
+            <p class="project-description-contact">
+                Send applications to Tirzah Griffin: <a href="mailto:griffint@pitt.edu">griffint@pitt.edu</a>
+            </p>
+
+            <p class="project-last-updated">
+                Last Updated May 17, 2025
+            </p>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
+            </a>
+            <div class="footer-links">
+                <a href="#">University of Pittsburgh</a>
+                <a href="#">Department of Surgery</a>
+                <a href="#">Trauma and Transfusion Medicine Research Center</a>
+            </div>
         </div>
 
-        <footer>
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <h2>TTMRL</h2>
-                    <p><b>Trauma and Transfusion Medicine Research Laboratory</b></p>
-                    <ul>
-                        <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                        <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                        <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">Trauma and Transfusion Medicine Research Center (TTMRC)</a></li>
-                        <li><a href="https://www.upmc.com/" target="_blank">University of Pittsburgh Medical Center (UPMC)</a></li>
-                    </ul>
-                </div>
-                <div class="footer-top-right">
-                    <p><b>Contact Us</b></p>
-                    <p><a href="contact-us.html">We are looking for motivated scientists with a passion for trauma and transfusion medicine to join our team. If you are interested, <u><i>let us know.</i></u><a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 TTMRL. All rights reserved.</p>
-            </div>
-        </footer>
+        <div class="footer-right">
+            <p><strong>Biomedical Science Tower</strong></p>
+            <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+
+</body>
+
 </html>

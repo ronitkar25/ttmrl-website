@@ -1,142 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TTMRL</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="assets/images/flavicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <a href="index.html" class="logo">
-            <img src="assets/images/ttmrl-logo-negative-with-text.png" alt="Lab Logo">
-        </a>
-        <nav>
-            <label class="hamburger">
-                <input type="checkbox" id="hamburger-toggle">
-                <svg viewBox="0 0 32 32">
-                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                    <path class="line" d="M7 16 27 16"></path>
-                </svg>
-            </label>
-            <ul class="nav-links">
-                <li><a href="our-team.html">Our Team</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li class="dropdown">
-                    Affiliations
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                        <hr>
-                        <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                        <hr>
-                        <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">TTMRC</a></li>
-                    </ul>
-                </li>
-            </ul>
+
+<body data-page="home">
+
+    <!-- Step 1 Component: Institutional Banner -->
+    <div class="institutional-banner">
+        <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+        <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+        <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+    </div>
+
+    <!-- === Site Header with Logo on Top and Nav Below === -->
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="our-research.html">Research</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="news.html">News</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact-us.html">Contact Us</a>
         </nav>
     </header>
 
-    <div class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-text" id="heroText">Your Hero Text Here</div>
-    </div>    
-    
-    <div class="content-section">
-        <section class="mission-statement">
-            <h1>Our Mission Statement</h1>
-            <div class="mission-statement-content">
-                <img src="assets/images/pis-home.png" alt="Principal Investigators">
-                <p>Led by Dr. Susan Shea, PhD and Dr. Matthew Neal, MD, FACS, the Trauma and Transfusion Medicine Research Laboratory (TTMRL) is focused on improving clinical outcomes and quality of life for patients with trauma injury through improved prevention and interventions by conducting basic and translational science to using implementation and dissemination science principles to improve adoption of preventative measures to reduce traumatic injury, by describing the pathophysiology of traumatic injury, and advancing surgical and therapeutic strategies.
-                    <br><br>The mission also includes improving the effectiveness and safety of blood products for all critically ill patients by investigating the differential biologic effects of blood product manufacturing and leveraging these differences to achieve precision transfusion medicine where the blood products transfused is optimal based on the patients' clinical condition and genetic predisposition.</p>
-            </div>
-        </section>
-        <section class="our-location">
-            <div class="our-location-content">
-                <p>The TTMRL is uniquely positioned as part of the University of Pittsburgh and next to the University of Pittsburgh Medical Center (UPMC). This has led to 
-                    numerous opportunities for IRB-approved scientific investigation involving human patient samples, allowing us to optimize the clinical relevance of our work.</p>
-                <img src="assets/images/upmc.png" alt="Principal Investigators">
-            </div>
-        </section>
-        <br>
-        <section class="our-team">
-            <h1>Our Team</h1>
-            <p>The TTMRL team is an extraordinary group of individuals, each bringing their own expertise, experiences, and perspectives to our work. Together, we create a space where ideas collide, evolve, and lead to exciting new discoveries. It’s our team’s curiosity, creativity, and dedication that drive everything we do.
-                We couldn’t be prouder of the people who make up TTMRL. Their passion for exploration and their commitment to each other create an environment where everyone feels empowered and supported. We believe that the diversity of our team is our greatest strength, fueling innovation and allowing us to achieve things none of us could accomplish alone. <a href="our-team.html">Meet the team.</a>
-            </p>
-            <div class="team-pics-grid">
-                <div class="team-pic-item team-pic-item1"></div>
-                <div class="team-pic-item team-pic-item2"></div>
-                <div class="team-pic-item team-pic-item3"></div>
-                <div class="team-pic-item team-pic-item4"></div>
-                <div class="team-pic-item team-pic-item5"></div>
-                <div class="team-pic-item team-pic-item6"></div>
-                <div class="team-pic-item team-pic-item7"></div>
-                <div class="team-pic-item team-pic-item8"></div>
-              </div>              
-        </section>
-        <br>
-        <section class="our-research">
-            <div>
-                <h1>Our Research</h1>
-                <p>Trauma remains a leading cause of mortality worldwide. At TTMRL, our research focuses on unraveling the biological responses to trauma, including the role of blood system failure in poor outcomes, to develop targeted therapies and optimize treatments for injured patients.
-                    <br><br>
-                    Our work can be broken down into several key areas:
-                </p>       
-                <ul>
-                    <li>Biological Response to Trauma: Investigating how trauma-induced changes in the blood system, including thrombosis, inflammation, and thromboinflammation, contribute to patient outcomes.</li>
-                    <li>Transfusion Science: Exploring the hemostatic capabilities of blood products, whether stored, synthetically developed, or collected through various methods, to enhance transfusion strategies.</li>
-                    <li>Innovative Therapeutics: Identifying therapeutic targets through translational research with a focus on platelets and the blood system.</li>
-                    <li>Predictive Insights: Conducting large observational studies to determine predictors of adverse outcomes following trauma.</li>
-                    <li>Clinical Applications: Running clinical trials to test new therapeutics and resuscitation strategies for injured patients, ensuring our findings translate into real-world impact.</li>
-                </ul> 
-                <p>Our goal is to bridge biology and clinical care, improving survival and recovery for patients who suffer from severe injuries. <a href="research.html">Learn more.</a></p>
-            </div>
-            <img src="" alt="">
-        </section>
-        <section class="feed">
-            <div class="science-spotlight">
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <b>Science Spotlight</b>
-                        <br>VWF-targeting aptamers used to prevent reocculsion of platelet-rich thrombi in stroke. Recently published in <i>journal</i>.
+    <!-- === Divider Banner === -->
+    <div class="gradient-divider"></div>
+
+    <!-- === Hero Banner === -->
+    <section class="hero-banner">
+        <img src="assets/images/hero-image.png" alt="Lab Hero" class="hero-image">
+
+        <div class="hero-overlay">
+            <div class="page-layout hero-content">
+                <!-- Left Section -->
+                <div class="hero-left">
+                    <h1>Advancing trauma and transfusion research.
+                        <br>Improving patient outcomes.
+                    </h1>
+                    <p>Our research improves understanding of the biological response to traumatic injury
+                        and transfusion therapy. We aim to develop novel therapeutics and diagnostics
+                        to improve patient outcomes.
+                    </p>
+                    <a href="our-research.html" class="hero-button">Learn More</a>
+                </div>
+
+                <!-- Right Section: Spotlight Box -->
+                <div class="hero-right">
+                    <div class="spotlight-box">
+                        <h3>Spotlight</h3>
+                        <img src="assets/images/spotlight-thumb.jpg" alt="Spotlight image">
+                        <p><a href="https://doi.org/10.1097/TA.0000000000004557">Our new article analyzing platelet
+                                function assays in TBI patients
+                                has been published in the Journal of Trauma and Acute Care Surgery.
+                            </a></p>
                     </div>
                 </div>
             </div>
-            <div class="twitter-feed">
-                <a class="twitter-timeline" 
-                    href="https://twitter.com/SMSheaLab?ref_src=twsrc%5Etfw">
-                    Tweets by SMSheaLab
-                </a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
+
+
+    <!-- === Page Layout === -->
+    <div class="page-layout no-sidebar">
+
+        <!-- Main Content Area -->
+        <main class="page-content">
+            <h2>Our Purpose</h2>
+
+            <p class="project-description">
+                Our lab focuses on the biological response to traumatic injury and transfusion therapy.
+                We aim to develop novel therapeutics and diagnostics to improve patient outcomes.
+                Our research is centered around understanding the mechanisms of trauma-induced coagulopathy,
+                the role of platelets in hemostasis, and the impact of transfusion on patient outcomes.
+                We utilize a variety of techniques including in vitro assays, animal models, and clinical studies
+                to investigate these complex interactions. Our goal is to translate our findings into
+                clinically relevant therapies and diagnostics that can improve the care of trauma patients.
+                We collaborate with a multidisciplinary team of researchers and clinicians to achieve
+                these objectives. Our lab is committed to advancing the field of trauma and transfusion medicine
+                through innovative research and education.
+                <br><br>
+                We strive to foster a collaborative and inclusive
+                environment that encourages creativity and critical thinking. We believe that by working together,
+                we can make significant contributions to the field and ultimately improve patient care.
+                Our research is supported by a variety of funding sources including the National Institutes of Health,
+                the Department of Defense, and private foundations. We are grateful for the support of our funding
+                agencies and collaborators, which allows us to pursue our research goals. We are also committed
+                to training the next generation of scientists and clinicians. We provide opportunities for
+                undergraduate and graduate students, as well as postdoctoral fellows, to gain hands-on experience
+                in the lab and develop their research skills.
+            </p>
+
+            <h2>Our Leadership</h2>
+            <div class="leadership-section">
+                <img src="assets/images/susan-macky.png" alt="Dr. Susan Shea" class="leadership-photo" />
+                <p>
+                    The lab is co-led by Dr. Matthew Neal, MD and Dr. Susan Shea, PhD. Dr. Neal is a trauma surgeon
+                    and researcher with a focus on trauma-induced coagulopathy and transfusion medicine. He has
+                    extensive experience in clinical research and has published numerous articles in leading
+                    medical journals. Dr. Shea is a basic and translational scientist and biomedical engineer
+                    with expertise in platelet biology and hemostasis. She has a strong background in basic science
+                    research
+                    and has received several
+                    awards for her work in the field. Together, they bring a wealth of knowledge and experience
+                    to the lab and are committed to advancing the field of trauma and transfusion medicine.
+                    They are dedicated to mentoring and training the next generation of scientists and clinicians
+                    and are passionate about fostering a collaborative and inclusive research environment.
+                </p>
             </div>
-        </section>
+            <h2>Our Collaborators</h2>
+            <p>This section will be filled with logos/images of our collaborators/institutions.
+                <br><br>
+            </p>
+
+                <p class="project-last-updated">
+                    Last Updated May 17, 2025
+                </p>
+        </main>
     </div>
 
-    <footer>
-        <div class="footer-top">
-            <div class="footer-top-left">
-                <h2>TTMRL</h2>
-                <p><b>Trauma and Transfusion Medicine Research Laboratory</b></p>
-                <ul>
-                    <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                    <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                    <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">Trauma and Transfusion Medicine Research Center (TTMRC)</a></li>
-                    <li><a href="https://www.upmc.com/" target="_blank">University of Pittsburgh Medical Center (UPMC)</a></li>
-                </ul>
-            </div>
-            <div class="footer-top-right">
-                <p><b>Contact Us</b></p>
-                <p><a href="contact-us.html">We are looking for motivated scientists with a passion for trauma and transfusion medicine to join our team. If you are interested, <u><i>let us know.</i></u><a></p>
+    <footer class="site-footer">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
+            </a>
+            <div class="footer-links">
+                <a href="#">University of Pittsburgh</a>
+                <a href="#">Department of Surgery</a>
+                <a href="#">Trauma and Transfusion Medicine Research Center</a>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 TTMRL. All rights reserved.</p>
+
+        <div class="footer-right">
+            <p><strong>Biomedical Science Tower</strong></p>
+            <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
 </body>
+
 </html>

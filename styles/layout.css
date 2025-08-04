@@ -1,0 +1,17 @@
+.page-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 32px;
+    padding: 40px 100px;
+  }
+
+  .page-layout-contact {
+    display: grid;
+    padding: 40px 100px 0px 100px;
+  }
+  
+  .page-layout.no-sidebar {
+    display: block;
+    padding: 40px 100px;
+  }
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Member Bio</title>
+
+    <!-- Fonts and CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+</head>
+
+<body data-page="bio">
+
+    <!-- Top Banner -->
+    <div class="institutional-banner">
+        <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+        <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+        <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="our-research.html">Research</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="#">News</a>
+            <a href="#">Publications</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Divider -->
+    <div class="gradient-divider"></div>
+
+    <!-- Bio Content -->
+    <main class="bio-page">
+        <div class="bio-container">
+            <div class="bio-content">
+                <img id="bio-photo" src="" alt="Team member photo" />
+                <div class="bio-text-block">
+                    <h1 id="bio-name"></h1>
+                    <p id="bio-text"></p>
+                    <p class="project-last-updated">
+                        <br>Last Updated May 23, 2025
+                    </p>
+                </div>
+            </div>
+            <a href="our-team.html" class="read-bio-button">← Back to Team</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
+            </a>
+            <div class="footer-links">
+                <a href="#">University of Pittsburgh</a>
+                <a href="#">Department of Surgery</a>
+                <a href="#">Trauma and Transfusion Medicine Research Center</a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p><strong>Biomedical Science Tower</strong></p>
+            <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
+        </div>
+    </footer>
+
+    <!-- Bio Loader Script -->
+    <script src="scripts/load-bio.js"></script>
+
+</body>
+
+</html>

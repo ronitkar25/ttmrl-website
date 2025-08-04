@@ -1,0 +1,41 @@
+/* === PAGE LAYOUT GRID === */
+.page-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 32px;
+    padding: 40px 100px;
+  }
+  
+  /* === SIDEBAR STYLES === */
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-title {
+    background-color: #EE1C23; /* red header bar */
+    font-family: Roboto-Condensed, sans-serif;
+    color: white;
+    font-weight: 800;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-links a {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    background-color: #F2F2F2;
+    transition: background 0.2s;
+  }
+  
+  .sidebar-links a:hover,
+  .sidebar-links a.active {
+    font-weight: bolder;
+  }
+  

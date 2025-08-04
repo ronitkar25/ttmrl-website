@@ -1,0 +1,38 @@
+.pub-year-section {
+  margin-bottom: 48px;
+}
+
+.pub-year-section h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.publication {
+  margin-bottom: 24px;
+}
+
+.publication h3 {
+  margin-bottom: 4px;
+  font-size: 1.4rem;
+}
+
+.authors {
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.journal {
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.pub-links a {
+  color: #EE1C23;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}

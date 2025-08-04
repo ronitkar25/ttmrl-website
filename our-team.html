@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TTMRL - Our Team</title>
-        <link rel="stylesheet" href="styles-our-team.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html" class="logo">
-                <img src="assets/images/ttmrl-logo-with-text.png" alt="Lab Logo">
-            </a>
-            <nav>
-                <label class="hamburger">
-                    <input type="checkbox" id="hamburger-toggle">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
-                <ul class="nav-links">
-                    <li><a href="our-team.html">Our Team</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li class="dropdown">
-                        Affiliations
-                        <ul class="dropdown-menu">
-                            <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                            <hr>
-                            <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                            <hr>
-                            <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">TTMRC</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="nav-hr"></div>
 
-        <div class="content-section">
-            <h1>Our Team</h1>
-            <img src="assets/images/team-pic.png">
-            <p>This page is under construction</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis nulla diam, quis egestas orci volutpat nec. Pellentesque metus dolor, elementum nec nunc in, volutpat congue est. Quisque consectetur neque ac nibh ullamcorper bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sodales est nec massa ultrices, eget semper mi sodales. Sed volutpat tempus arcu vel dapibus. Vivamus blandit sapien a massa rutrum, eu tempus quam facilisis. Cras iaculis mollis dui, quis dignissim libero. Proin sit amet pellentesque risus. Duis tortor purus, finibus ac diam non, varius pharetra nibh. Sed eros mauris, malesuada sed sagittis et, hendrerit in diam. Praesent tincidunt pellentesque nisi, in convallis quam interdum a. Nunc at dignissim augue. Donec tempus nunc ligula, sagittis dapibus metus porta a. Phasellus tellus nunc, dapibus vitae iaculis vitae, consequat ut massa.
-                <br><br>
-                Phasellus mi ligula, faucibus nec tristique eu, ornare vitae erat. Nullam erat orci, pellentesque eget porta ut, dictum a ligula. Vestibulum vel pharetra mi. Donec at mi quis nunc pretium ornare. Nulla imperdiet nunc quis elementum luctus. Cras imperdiet diam gravida orci interdum eleifend. Donec auctor mi ac odio porttitor pulvinar. Nunc faucibus sem in ligula posuere, vel aliquam eros eleifend. Praesent porta eros erat, et bibendum odio gravida ut. Proin a aliquam tellus. Etiam ac lectus velit. Quisque rutrum diam a tellus eleifend, at volutpat arcu viverra. Donec eu ultrices lectus. Vestibulum nec arcu lacinia, ultricies justo sit amet, bibendum augue. Curabitur non interdum risus. Nullam ut nisi vitae massa pharetra consectetur.
-                <br><br>
-                Vestibulum a pharetra ipsum, at pretium mi. Sed efficitur odio vitae tortor placerat suscipit. Nullam sit amet odio felis. Ut tincidunt purus mi, eu suscipit arcu laoreet sed. Vivamus enim velit, blandit non odio dapibus, aliquet interdum nisl. Praesent sagittis libero eget dolor blandit, pharetra pellentesque ante placerat. Aenean nec lectus non sapien rutrum consequat nec vitae tortor. Aenean erat augue, mattis vel suscipit vitae, convallis sed nisi. Curabitur id ipsum dui. Fusce vulputate lectus ac elit finibus finibus non in mi. Vivamus porttitor, enim in lacinia malesuada, tellus nisi varius est, id sodales nisl purus sed nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam eu massa quis lacus tincidunt semper. Fusce non nibh id arcu euismod ornare. Pellentesque tincidunt blandit imperdiet.</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTMRL | Our Team</title>
+
+     <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="assets/images/flavicon.ico" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+</head>
+
+<body data-page="our-team">
+
+    <!-- Top Banner -->
+    <div class="institutional-banner">
+        <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+        <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+        <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <a href="our-research.html">Research</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="news.html">News</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Divider -->
+    <div class="gradient-divider"></div>
+
+    <!-- Layout -->
+    <div class="page-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar-nav">
+            <div class="sidebar-title">Team Members</div>
+            <nav class="sidebar-links">
+                <a href="#faculty-members">Faculty Members</a>
+                <a href="#scientists">Research Scientists & Research Engineers</a>
+                <a href="#post-doctorates">Post-doctorates</a>
+                <a href="#graduate-students">Graduate Students</a>
+                <a href="#undergraduate-students">Undergraduate Students</a>
+                <a href="#research-technicians">Research Technicians</a>
+                <a href="#staff">Staff</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content (Dynamic) -->
+        <main class="page-content" id="team-container">
+            <!-- All content will be dynamically generated -->
+            <section>
+                <!-- Team Image -->
+                <div class="project-image">
+                    <img src="assets/images/team-pic.png" alt="Team Picture">
+                </div>
+                <p>
+                    Our team is composed of a diverse group of individuals, each bringing unique skills and perspectives to our research. We are committed to fostering an inclusive and collaborative environment that encourages innovation and excellence in trauma and transfusion medicine research.
+                    <br><br>
+                </p>
+            </section>
+            
+        </main>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
+            </a>
+            <div class="footer-links">
+                <a href="#">University of Pittsburgh</a>
+                <a href="#">Department of Surgery</a>
+                <a href="#">Trauma and Transfusion Medicine Research Center</a>
+            </div>
         </div>
 
-        <footer>
-            <div class="footer-top">
-                <div class="footer-top-left">
-                    <h2>TTMRL</h2>
-                    <p><b>Trauma and Transfusion Medicine Research Laboratory</b></p>
-                    <ul>
-                        <li><a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a></li>
-                        <li><a href="https://www.surgery.pitt.edu/" target="_blank">Department of Surgery</a></li>
-                        <li><a href="https://www.ttmrc.pitt.edu/" target="_blank">Trauma and Transfusion Medicine Research Center (TTMRC)</a></li>
-                        <li><a href="https://www.upmc.com/" target="_blank">University of Pittsburgh Medical Center (UPMC)</a></li>
-                    </ul>
-                </div>
-                <div class="footer-top-right">
-                    <p><b>Contact Us</b></p>
-                    <p><a href="contact-us.html">We are looking for motivated scientists with a passion for trauma and transfusion medicine to join our team. If you are interested, <u><i>let us know.</i></u><a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 TTMRL. All rights reserved.</p>
-            </div>
-        </footer>
+        <div class="footer-right">
+            <p><strong>Biomedical Science Tower</strong></p>
+            <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
+        </div>
+    </footer>
 
-        <script src="script.js"></script>
-    </body>
+    <!-- JS Script -->
+    <script src="scripts/load-team.js"></script>
+</body>
+
 </html>

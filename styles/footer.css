@@ -1,0 +1,52 @@
+/* === CUSTOM FOOTER === */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 100px;
+    background: linear-gradient(to right, rgba(0, 79, 157, 0.6), rgba(76, 16, 74, 0.6));
+    color: white;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Left Section */
+  .footer-left {
+    max-width: 60%;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    margin-bottom: 12px;
+  }
+  
+  .lab-name-footer {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    display: inline-block;   /* Allows for consistent left alignment */
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right Section */
+  .footer-right {
+    text-align: right;
+    font-size: 1rem;
+  }
+  
+  .footer-right p {
+    margin: 8px 0;
+  }
+
+  .footer-right p strong {
+    font-size: 1.25rem;
+  }
+  
