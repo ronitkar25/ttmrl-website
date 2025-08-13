@@ -2,227 +2,243 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TTMRL | Our Research</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TTMRL | Our Research</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="assets/images/flavicon.ico" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/ico" href="assets/images/flavicon.ico" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/sidebar.css" />
-    <link rel="stylesheet" href="styles/content.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/sidebar.css" />
+  <link rel="stylesheet" href="styles/content.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/mobile.css" />
 </head>
 
 <body data-page="home">
 
-    <!-- Step 1 Component: Institutional Banner -->
-    <div class="institutional-banner">
-        <a href="https://www.pitt.edu/">University of Pittsburgh</a>
-        <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
-        <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+  <!-- Institutional Banner -->
+  <div class="institutional-banner">
+    <a href="https://www.pitt.edu/">University of Pittsburgh</a>
+    <a href="https://www.surgery.pitt.edu/">Department of Surgery</a>
+    <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="logo-area">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo lab-logo-full" />
+        <img src="assets/images/logo-short.png" alt="Lab Logo" class="lab-logo lab-logo-short" />
+      </a>
     </div>
 
-    <!-- === Site Header with Logo on Top and Nav Below === -->
-    <header class="site-header">
-        <div class="logo-area">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
-            </a>
+    <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg class="hamburger" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path class="line line1" d="M4 7h16" />
+        <path class="line line2" d="M4 12h16" />
+        <path class="line line3" d="M4 17h16" />
+      </svg>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="main-nav" id="primary-nav">
+      <a href="our-research.html">Research</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="news.html">News</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Divider Banner -->
+  <div class="gradient-divider"></div>
+
+  <!-- Page Layout -->
+  <div class="page-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar-nav">
+      <div class="sidebar-title">Research Areas</div>
+      <nav class="sidebar-links">
+        <a href="#project-1">Understanding the Biological Response to Trauma</a>
+        <a href="#project-2">Understanding the Effect of Transfusion Processes on Blood Products</a>
+        <a href="#project-3">Creating New Blood Product Solutions</a>
+        <a href="#project-4">Mediators & Therapies for Thromboembolism</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="page-content">
+      <section id="project-1">
+        <h2>Understanding the Biological Response to Trauma</h2>
+
+        <p class="project-description">
+          The biological response to trauma is a complex, dynamic process involving the immune system,
+          coagulation pathways, platelets, and endothelial function. Our lab investigates how traumatic injury
+          disrupts
+          homeostasis and initiates a cascade of dysregulated inflammatory and thrombotic responses. Key work
+          has explored
+          immune cell activation, including macrophage polarization and mobilization, platelet dysfunction,
+          and endothelial interactions that contribute to systemic
+          effects beyond the site of injury. Our work in this area is highly translational and aims to bridge
+          the gap between basic science and clinical application using trauma patient blood samples.
+          <br><br>
+          Research has demonstrated that trauma can provoke maladaptive hemostatic responses such as
+          trauma-induced coagulopathy (TIC), which is associated with poor outcomes and increased mortality.
+          Using in vivo models, clinical data, and specialized microfluidic devices, the lab has shown how
+          altered platelet function,
+          persistent von Willebrand factor multimer presence, and reduced ADAMTS13 activity exacerbate
+          thromboinflammation. These insights help us understand clinical findings such as non-surgical
+          bleeding, thrombotic
+          microangiopathies, and end-organ damage following trauma.
+          <br><br>
+          Our work extends to central nervous system trauma, where the lab has studied platelet dysfunction
+          in traumatic brain injury and the persistent inflammatory milieu it creates. The interplay between
+          coagulation factors, cellular responses, and the injured endothelium remains a key research
+          axis. These findings set the foundation for therapeutic strategies that modulate interactions
+          between hemostasis and the immune system
+          to improve outcomes in critically injured patients.
+        </p>
+
+        <!-- Project Image -->
+        <div class="project-image">
+          <img src="assets/images/project-1-figure.png" alt="TIC Diagram">
         </div>
-        <nav class="main-nav">
-            <a href="our-research.html">Research</a>
-            <a href="our-team.html">Our Team</a>
-            <a href="news.html">News</a>
-            <a href="publications.html">Publications</a>
-            <a href="contact-us.html">Contact Us</a>
-        </nav>
-    </header>
+      </section>
 
-    <!-- === Divider Banner === -->
-    <div class="gradient-divider"></div>
+      <section id="project-2">
+        <h2><br>Understanding the Effect of Transfusion Processes on Blood Products</h2>
 
-    <!-- === Page Layout === -->
-    <div class="page-layout">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar-nav">
-            <div class="sidebar-title">Research Areas</div>
-            <nav class="sidebar-links">
-                <a href="#project-1">Understanding the Biological Response to Trauma</a>
-                <a href="#project-2">Understanding the Effect of Transfusion Processes on Blood Products</a>
-                <a href="#project-3">Creating New Blood Product Solutions</a>
-                <a href="#project-4">Mediators & Therapies for Thromboembolism</a>
-            </nav>
-        </aside>
+        <p class="project-description">
+          Modern transfusion practices are critical in trauma care, yet there is limited understanding of how
+          storage, processing, and product manipulation affect blood component efficacy. The lab has studied
+          the impact of various factors, such as cold storage, agitation, leukoreduction, and apheresis
+          collection platforms, on platelet and plasma function. These studies have informed optimal handling
+          techniques to preserve hemostatic potential while reducing complications associated with storage
+          lesions and reduced metabolic integrity.
+          <br><br>
+          Work in this area includes evaluating key processing methods like pathogen reduction and the
+          production of plasma supernatants from late-storage whole blood. These approaches aim to retain
+          coagulation function and enhance shelf life while maintaining safety. The lab has also contributed
+          to understanding how transfusion timing, dose, and product composition influence outcomes in
+          patients with hemorrhagic shock, particularly through studies of low-titer group O whole blood use
+          in both pediatric and adult trauma populations.
+          <br><br>
+          By applying both bench and clinical research methodologies—including viscoelastic assays and
+          metabolomic profiling—the lab has helped define a more nuanced picture of what constitutes
+          "high-quality" transfusion products. These findings support the broader goal of personalized
+          transfusion strategies, where product selection is based not only on blood type compatibility but
+          also on functional performance tailored to patient needs.
+        </p>
 
-        <!-- Main Content Area -->
-        <main class="page-content">
-            <section id="project-1">
-                <h2>Understanding the Biological Response to Trauma</h2>
+        <!-- Project Image -->
+        <div class="project-image">
+          <img src="assets/images/project-2-figure.png" alt="Transfusion Diagram">
+        </div>
+      </section>
 
-                <p class="project-description">
-                    The biological response to trauma is a complex, dynamic process involving the immune system,
-                    coagulation pathways, platelets, and endothelial function. Our lab investigates how traumatic injury
-                    disrupts
-                    homeostasis and initiates a cascade of dysregulated inflammatory and thrombotic responses. Key work
-                    has explored
-                    immune cell activation, including macrophage polarization and mobilization, platelet dysfunction,
-                    and endothelial interactions that contribute to systemic
-                    effects beyond the site of injury. Our work in this area is highly translational and aims to bridge
-                    the gap between basic science and clinical application using trauma patient blood samples.
-                    <br><br>
-                    Research has demonstrated that trauma can provoke maladaptive hemostatic responses such as
-                    trauma-induced coagulopathy (TIC), which is associated with poor outcomes and increased mortality.
-                    Using in vivo models, clinical data, and specialized microfluidic devices, the lab has shown how
-                    altered platelet function,
-                    persistent von Willebrand factor multimer presence, and reduced ADAMTS13 activity exacerbate
-                    thromboinflammation. These insights help us understand clinical findings such as non-surgical
-                    bleeding, thrombotic
-                    microangiopathies, and end-organ damage following trauma.
-                    <br><br>
-                    Our work extends to central nervous system trauma, where the lab has studied platelet dysfunction
-                    in traumatic brain injury and the persistent inflammatory milieu it creates. The interplay between
-                    coagulation factors, cellular responses, and the injured endothelium remains a key research
-                    axis. These findings set the foundation for therapeutic strategies that modulate interactions
-                    between hemostasis and the immune system
-                    to improve outcomes in critically injured patients.
-                </p>
+      <section id="project-3">
+        <h2><br>Creating New Blood Product Solutions</h2>
 
-                <!-- Project Image -->
-                <div class="project-image">
-                    <img src="assets/images/project-1-figure.png" alt="TIC Diagram">
-                </div>
-            </section>
-            <section id="project-2">
-                <h2><br>Understanding the Effect of Transfusion Processes on Blood Products</h2>
+        <p class="project-description">
+          To address limitations of traditional transfusion therapy such as availability, shelf life, and
+          immunogenicity, the lab is developing synthetic and bioengineered blood products. SynthoPlate is a
+          leading example, designed to mimic platelet function through targeted nanoparticles that promote
+          hemostasis at injury sites. Studies have shown SynthoPlate enhances clot formation and reduces
+          bleeding in preclinical models, demonstrating its promise as a field-deployable hemostatic agent for
+          military and civilian trauma settings.
+          <br><br>
+          This effort extends beyond SynthoPlate to the conceptual development of other bioinspired products.
+          Research focuses on nanoparticle design,
+          surface ligand optimization, and in vivo efficacy testing to ensure these agents replicate critical
+          features of natural hemostasis. By bypassing reliance on donor-derived components, these products
+          aim to reduce risk of transfusion reactions and allow for scalable, long-term storage—essential for
+          austere or mass casualty environments.
+          <br><br>
+          The lab collaborates across disciplines including biological and biomedical engineering and
+          materials science to
+          optimize these technologies. Continued work in this area focuses on regulatory pathways, combination
+          therapies (e.g., pairing synthetic platelets with antifibrinolytics), and real-world deployment
+          models. These products hold the potential to revolutionize trauma care and fill gaps where
+          traditional transfusion products fall short.
+        </p>
 
-                <p class="project-description">
-                    Modern transfusion practices are critical in trauma care, yet there is limited understanding of how
-                    storage, processing, and product manipulation affect blood component efficacy. The lab has studied
-                    the impact of various factors, such as cold storage, agitation, leukoreduction, and apheresis
-                    collection platforms, on platelet and plasma function. These studies have informed optimal handling
-                    techniques to preserve hemostatic potential while reducing complications associated with storage
-                    lesions and reduced metabolic integrity.
-                    <br><br>
-                    Work in this area includes evaluating key processing methods like pathogen reduction and the
-                    production of plasma supernatants from late-storage whole blood. These approaches aim to retain
-                    coagulation function and enhance shelf life while maintaining safety. The lab has also contributed
-                    to understanding how transfusion timing, dose, and product composition influence outcomes in
-                    patients with hemorrhagic shock, particularly through studies of low-titer group O whole blood use
-                    in both pediatric and adult trauma populations.
-                    <br><br>
-                    By applying both bench and clinical research methodologies—including viscoelastic assays and
-                    metabolomic profiling—the lab has helped define a more nuanced picture of what constitutes
-                    "high-quality" transfusion products. These findings support the broader goal of personalized
-                    transfusion strategies, where product selection is based not only on blood type compatibility but
-                    also on functional performance tailored to patient needs.
-                </p>
+        <!-- Project Image -->
+        <div class="project-image">
+          <img src="assets/images/project-3-figure.png" alt="Blood Product Diagram">
+        </div>
+      </section>
 
-                <!-- Project Image -->
-                <div class="project-image">
-                    <img src="assets/images/project-2-figure.png" alt="Transfusion Diagram">
-                </div>
-            </section>
-            <section id="project-3">
-                <h2><br>Creating New Blood Product Solutions</h2>
+      <section id="project-4">
+        <h2><br>Mediators & Therapies for Thromboembolism</h2>
 
-                <p class="project-description">
-                    To address limitations of traditional transfusion therapy such as availability, shelf life, and
-                    immunogenicity, the lab is developing synthetic and bioengineered blood products. SynthoPlate is a
-                    leading example, designed to mimic platelet function through targeted nanoparticles that promote
-                    hemostasis at injury sites. Studies have shown SynthoPlate enhances clot formation and reduces
-                    bleeding in preclinical models, demonstrating its promise as a field-deployable hemostatic agent for
-                    military and civilian trauma settings.
-                    <br><br>
-                    This effort extends beyond SynthoPlate to the conceptual development of other bioinspired products.
-                    Research focuses on nanoparticle design,
-                    surface ligand optimization, and in vivo efficacy testing to ensure these agents replicate critical
-                    features of natural hemostasis. By bypassing reliance on donor-derived components, these products
-                    aim to reduce risk of transfusion reactions and allow for scalable, long-term storage—essential for
-                    austere or mass casualty environments.
-                    <br><br>
-                    The lab collaborates across disciplines including biological and biomedical engineering and
-                    materials science to
-                    optimize these technologies. Continued work in this area focuses on regulatory pathways, combination
-                    therapies (e.g., pairing synthetic platelets with antifibrinolytics), and real-world deployment
-                    models. These products hold the potential to revolutionize trauma care and fill gaps where
-                    traditional transfusion products fall short.
-                </p>
+        <p class="project-description">
+          Thromboembolic disease is driven by the pathological intersection of thrombosis and inflammation.
+          The lab’s work in this area focuses on uncovering the cellular and molecular mediators of clot
+          formation and resolution, particularly in the setting of trauma, stroke, and critical illness. Key
+          players such as platelets, neutrophils, and von Willebrand factor (VWF) are studied in detail to
+          understand how they contribute to thrombus initiation, stabilization, and resolution. Advanced
+          microfluidic models are leveraged to visualize these processes under physiologic flow, enabling
+          real-time assessment of clot dynamics and cellular interactions.
+          <br><br>
+          A major translational effort centers on therapeutically targeting VWF, a critical mediator of
+          arterial thrombosis. One study uses a microfluidic model of arterial occlusion to evaluate
+          BB-031, an aptamer that selectively blocks the VWF-A1 domain. This inhibitor demonstrated superior
+          thrombus clearance and reduced re-occlusive platelet deposition compared to conventional
+          fibrinolytics like Alteplase and Tenecteplase, even when administered hours after occlusion. These
+          findings highlight a paradigm shift in ischemic stroke treatment: from fibrinolysis to anti-adhesive
+          therapies that prevent sustained occlusion and secondary thrombus growth.
+          <br><br>
+          The lab’s broader vision includes developing precision therapies that can modulate
+          thromboinflammatory processes without impairing necessary hemostasis. This includes profiling
+          patient-specific coagulation signatures using thrombin generation assays and viscoelastic testing,
+          and identifying which individuals may benefit from agents like BB-031. By bridging mechanistic
+          insights with therapeutic development, this work offers hope for safer and more effective treatment
+          of thromboembolic disease—especially in settings where conventional anticoagulants and thrombolytics
+          fall short.
+        </p>
 
-                <!-- Project Image -->
-                <div class="project-image">
-                    <img src="assets/images/project-3-figure.png" alt="Blood Product Diagram">
-                </div>
-            </section>
-            <section id="project-4">
-                <h2><br>Mediators & Therapies for Thromboembolism</h2>
+        <!-- Project Image -->
+        <div class="project-image">
+          <img src="assets/images/project-4-figure.png" alt="BB-031 Diagram">
+        </div>
 
-                <p class="project-description">
-                    Thromboembolic disease is driven by the pathological intersection of thrombosis and inflammation.
-                    The lab’s work in this area focuses on uncovering the cellular and molecular mediators of clot
-                    formation and resolution, particularly in the setting of trauma, stroke, and critical illness. Key
-                    players such as platelets, neutrophils, and von Willebrand factor (VWF) are studied in detail to
-                    understand how they contribute to thrombus initiation, stabilization, and resolution. Advanced
-                    microfluidic models are leveraged to visualize these processes under physiologic flow, enabling
-                    real-time assessment of clot dynamics and cellular interactions.
-                    <br><br>
-                    A major translational effort centers on therapeutically targeting VWF, a critical mediator of
-                    arterial thrombosis. One study uses a microfluidic model of arterial occlusion to evaluate
-                    BB-031, an aptamer that selectively blocks the VWF-A1 domain. This inhibitor demonstrated superior
-                    thrombus clearance and reduced re-occlusive platelet deposition compared to conventional
-                    fibrinolytics like Alteplase and Tenecteplase, even when administered hours after occlusion. These
-                    findings highlight a paradigm shift in ischemic stroke treatment: from fibrinolysis to anti-adhesive
-                    therapies that prevent sustained occlusion and secondary thrombus growth.
-                    <br><br>
-                    The lab’s broader vision includes developing precision therapies that can modulate
-                    thromboinflammatory processes without impairing necessary hemostasis. This includes profiling
-                    patient-specific coagulation signatures using thrombin generation assays and viscoelastic testing,
-                    and identifying which individuals may benefit from agents like BB-031. By bridging mechanistic
-                    insights with therapeutic development, this work offers hope for safer and more effective treatment
-                    of thromboembolic disease—especially in settings where conventional anticoagulants and thrombolytics
-                    fall short.
-                </p>
+        <p class="project-last-updated">
+          Last Updated May 17, 2025
+        </p>
+      </section>
+    </main>
+  </div>
 
-                <!-- Project Image -->
-                <div class="project-image">
-                    <img src="assets/images/project-4-figure.png" alt="BB-031 Diagram">
-                </div>
-
-                <p class="project-last-updated">
-                    Last Updated May 17, 2025
-                </p>
-            </section>
-            
-        </main>
+  <footer class="site-footer">
+    <div class="footer-left">
+      <a href="index.html">
+        <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
+      </a>
+      <div class="footer-links">
+        <a href="#">University of Pittsburgh</a>
+        <a href="#">Department of Surgery</a>
+        <a href="#">Trauma and Transfusion Medicine Research Center</a>
+      </div>
     </div>
 
-    <footer class="site-footer">
-        <div class="footer-left">
-            <a href="index.html">
-                <img src="assets/images/logo-white.png" alt="Lab Logo" class="footer-logo" />
-            </a>
-            <div class="footer-links">
-                <a href="#">University of Pittsburgh</a>
-                <a href="#">Department of Surgery</a>
-                <a href="#">Trauma and Transfusion Medicine Research Center</a>
-            </div>
-        </div>
+    <div class="footer-right">
+      <p><strong>Biomedical Science Tower</strong></p>
+      <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
+    </div>
+  </footer>
 
-        <div class="footer-right">
-            <p><strong>Biomedical Science Tower</strong></p>
-            <p>200 Lothrop Street.<br>W900<br>Pittsburgh, PA 15261</p>
-        </div>
-    </footer>
-
+  <!-- Mobile nav script -->
+  <script src="scripts/nav.js" defer></script>
 </body>
 
 </html>

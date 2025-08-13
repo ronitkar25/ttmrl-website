@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="styles/content.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/publications.css" />
+    <link rel="stylesheet" href="styles/news.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
 </head>
 
 <body data-page="home">
@@ -35,19 +37,31 @@
 
     <!-- === Site Header with Logo on Top and Nav Below === -->
     <header class="site-header">
-        <div class="logo-area">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
-            </a>
-        </div>
-        <nav class="main-nav">
-            <a href="our-research.html">Research</a>
-            <a href="our-team.html">Our Team</a>
-            <a href="news.html">News</a>
-            <a href="publications.html">Publications</a>
-            <a href="contact-us.html">Contact Us</a>
-        </nav>
-    </header>
+  <div class="logo-area">
+    <a href="index.html" class="logo-link">
+      <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo lab-logo-full" />
+      <img src="assets/images/logo-short.png" alt="Lab Logo" class="lab-logo lab-logo-short" />
+    </a>
+  </div>
+
+  <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <svg class="hamburger" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+      <path class="line line1" d="M4 7h16" />
+      <path class="line line2" d="M4 12h16" />
+      <path class="line line3" d="M4 17h16" />
+    </svg>
+    <span class="sr-only">Menu</span>
+  </button>
+
+  <nav class="main-nav" id="primary-nav">
+    <a href="our-research.html">Research</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="news.html">News</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact-us.html">Contact Us</a>
+  </nav>
+</header>
+
 
     <!-- === Divider Banner === -->
     <div class="gradient-divider"></div>
@@ -57,14 +71,14 @@
     <div class="page-layout">
         <!-- Sidebar -->
         <aside class="sidebar-nav">
-            <div class="sidebar-title">Year</div>
+            <div class="sidebar-title">News Year</div>
             <nav class="sidebar-links" id="year-sidebar">
                 <!-- Populated dynamically -->
             </nav>
         </aside>
 
         <!-- Main Content -->
-        <main class="page-content" id="pub-container">
+        <main class="page-content" id="news-container">
             <!-- Populated dynamically -->
         </main>
     </div>
@@ -89,6 +103,7 @@
 
     <!-- JS -->
     <script src="scripts/load-news.js"></script>
+    <script src="scripts/nav.js"></script>
 
 </body>
 

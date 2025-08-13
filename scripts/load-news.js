@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data/news.json")
     .then(res => res.json())
     .then(data => {
-      const pubContainer = document.getElementById("pub-container");
+      const newsContainer = document.getElementById("news-container");
       const yearSidebar = document.getElementById("year-sidebar");
 
-      // Sort publications by date descending
+      // Sort news by date (most recent first)
       data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
       // Group by year
       const grouped = {};
-      data.forEach(pub => {
-        const year = pub.year;
+      data.forEach(item => {
+        const year = new Date(item.date).getFullYear();
         if (!grouped[year]) grouped[year] = [];
-        grouped[year].push(pub);
+        grouped[year].push(item);
       });
 
-      // Sidebar + content rendering
+      // Sidebar + News rendering
       Object.keys(grouped)
         .sort((a, b) => b - a)
         .forEach(year => {
@@ -28,61 +28,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // === Year Section ===
           const section = document.createElement("section");
-          section.classList.add("pub-year-section");
+          section.classList.add("news-year-section");
           section.id = `year-${year}`;
 
           const heading = document.createElement("h2");
           heading.textContent = year;
           section.appendChild(heading);
 
-          // === Publications List ===
-          grouped[year].forEach(pub => {
-            const pubDiv = document.createElement("div");
-            pubDiv.classList.add("publication");
+          // === News Items ===
+          grouped[year].forEach(item => {
+            const newsDiv = document.createElement("div");
+            newsDiv.classList.add("news-item");
+
+            if (item.image) {
+              const img = document.createElement("img");
+              img.src = item.image;
+              img.alt = item.title;
+              img.classList.add("news-image");
+              newsDiv.appendChild(img);
+            }
 
             const title = document.createElement("h3");
-            title.textContent = pub.title;
+            title.textContent = item.title;
+            newsDiv.appendChild(title);
 
-            const authors = document.createElement("p");
-            authors.className = "authors";
-            authors.textContent = pub.authors;
+            const desc = document.createElement("p");
+            desc.classList.add("news-description");
+            desc.textContent = item.description || "";
+            newsDiv.appendChild(desc);
 
-            const journal = document.createElement("p");
-            journal.className = "journal";
-            journal.textContent = pub.journal;
-
-            const links = document.createElement("p");
-            links.className = "pub-links";
-
-            if (pub.doi) {
-              const doiLink = document.createElement("a");
-              doiLink.href = pub.doi;
-              doiLink.target = "_blank";
-              doiLink.textContent = "View DOI";
-              links.appendChild(doiLink);
+            if (item.link) {
+              const linkEl = document.createElement("a");
+              linkEl.href = item.link;
+              linkEl.target = "_blank";
+              linkEl.textContent = "Read more";
+              newsDiv.appendChild(linkEl);
             }
 
-            if (pub.pdf) {
-              const pdfLink = document.createElement("a");
-              pdfLink.href = pub.pdf;
-              pdfLink.target = "_blank";
-              pdfLink.textContent = "Download PDF";
-              links.appendChild(document.createTextNode("| "));
-              links.appendChild(pdfLink);
-            }
-
-            pubDiv.appendChild(title);
-            pubDiv.appendChild(authors);
-            pubDiv.appendChild(journal);
-            pubDiv.appendChild(links);
-            section.appendChild(pubDiv);
+            section.appendChild(newsDiv);
           });
 
-          pubContainer.appendChild(section);
+          newsContainer.appendChild(section);
         });
     })
     .catch(err => {
-      console.error("Error loading publications:", err);
-      document.getElementById("pub-container").innerHTML = "<p>Failed to load publications.</p>";
+      console.error("Error loading news:", err);
+      document.getElementById("news-container").innerHTML = "<p>Failed to load news.</p>";
     });
 });

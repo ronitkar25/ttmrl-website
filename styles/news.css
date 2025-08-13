@@ -1,0 +1,56 @@
+/* Year section spacing */
+.news-year-section {
+  margin-bottom: 48px;
+}
+
+.news-year-section h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* News item spacing */
+.news-item {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Optional image styling */
+.news-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Title styling */
+.news-item h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Description styling */
+.news-description {
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Link styling */
+.news-item a {
+  color: #EE1C23;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: add subtle separation between items */
+.news-item:not(:last-child) {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}

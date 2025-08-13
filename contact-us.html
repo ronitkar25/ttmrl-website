@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/content.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
 </head>
 
 <body data-page="home">
@@ -35,11 +36,22 @@
     <!-- === Site Header with Logo on Top and Nav Below === -->
     <header class="site-header">
         <div class="logo-area">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo lab-logo-full" />
+                <img src="assets/images/logo-short.png" alt="Lab Logo" class="lab-logo lab-logo-short" />
             </a>
         </div>
-        <nav class="main-nav">
+
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="hamburger" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path class="line line1" d="M4 7h16" />
+                <path class="line line2" d="M4 12h16" />
+                <path class="line line3" d="M4 17h16" />
+            </svg>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="main-nav" id="primary-nav">
             <a href="our-research.html">Research</a>
             <a href="our-team.html">Our Team</a>
             <a href="news.html">News</a>
@@ -47,6 +59,7 @@
             <a href="contact-us.html">Contact Us</a>
         </nav>
     </header>
+
 
     <!-- === Divider Banner === -->
     <div class="gradient-divider"></div>
@@ -71,15 +84,15 @@
     <div class="page-layout no-sidebar">
 
         <!-- Main Content Area -->
-         <main class="page-content">
+        <main class="page-content">
             <p class="project-description-contact">
                 The Trauma and Transfusion Medicine Research Laboratory (TTMRL) welcomes inquiries from highly motivated
                 researchers and collaborators. Our lab is focused on understanding platelet biology and leveraging
                 genomic tools to investigate mechanisms of injury, inflammation, and organ failure. We aim to translate
                 this knowledge into novel therapeutic strategies that improve outcomes for critically ill patients.
             </p>
-         </main>
-        <main class="page-content-center">
+        </main>
+        <section class="page-content page-content-center">
             <h2>Join Our Team</h2>
             <p class="project-description-contact">
                 We are currently accepting applications for fully funded postdoctoral fellowships (2–3
@@ -121,7 +134,7 @@
             <p class="project-last-updated">
                 Last Updated May 17, 2025
             </p>
-        </main>
+        </section>
     </div>
 
     <footer class="site-footer">
@@ -142,7 +155,7 @@
         </div>
     </footer>
 
-
+    <script src="scripts/nav.js" defer></script>
 </body>
 
 </html>
