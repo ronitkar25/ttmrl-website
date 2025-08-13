@@ -249,4 +249,91 @@ html { scroll-behavior: smooth; }
   display: flex;
   justify-content: center;
 }
-.bio-container 
+.bio-container {
+  width: 100%;
+  padding: 40px 100px;
+}
+.bio-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+#bio-photo {
+  width: 400px;
+  flex-shrink: 0;
+}
+.bio-text-block { flex: 1; }
+#bio-name {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+#bio-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* =========================
+   HOME: LEADERSHIP (legacy)
+   ========================= */
+.leadership-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.leadership-photo {
+  width: 480px;
+  height: 280px;
+  object-fit: contain;
+  object-position: top;
+  flex-shrink: 0;
+}
+
+/* =========================
+   HOME: RESEARCH GRID
+   ========================= */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.research-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.research-card:hover {
+  border-color: #EE1C23;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+.research-card:focus-visible {
+  outline: none;
+  border-color: #EE1C23;
+  box-shadow: 0 0 0 3px rgba(238,28,35,0.25);
+}
+.research-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.research-title {
+  padding: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  color: #111;
+  background-color: #fff;
+}
