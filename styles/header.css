@@ -69,14 +69,3 @@
             rgba(156, 112, 178, 0));
     margin: 0 auto;
 }
-/* Desktop defaults */
-.lab-logo-full { display: block; }
-.lab-logo-short { display: none; }   /* hide short logo on desktop */
-.nav-toggle { display: none; }       /* hide hamburger on desktop */
-
-/* Desktop nav layout (make sure it shows horizontally) */
-.main-nav {
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-}
