@@ -19,10 +19,14 @@
 
 /* Optional image styling */
 .news-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 300px;          /* define the box height */
+  display: block;         /* avoid inline gaps */
+  object-fit: contain;    /* no cropping */
+  object-position: left center; /* <-- pin to the left */
   border-radius: 4px;
 }
+
 
 /* Title styling */
 .news-item h3 {
