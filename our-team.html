@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/content.css" />
     <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
 </head>
 
 <body data-page="our-team">
@@ -32,21 +33,32 @@
         <a href="https://www.ttmrc.pitt.edu/">Trauma and Transfusion Medicine Research Center</a>
     </div>
 
-    <!-- Header -->
-    <header class="site-header">
-        <div class="logo-area">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
-            </a>
-        </div>
-        <nav class="main-nav">
-            <a href="our-research.html">Research</a>
-            <a href="our-team.html">Our Team</a>
-            <a href="news.html">News</a>
-            <a href="publications.html">Publications</a>
-            <a href="contact-us.html">Contact Us</a>
-        </nav>
-    </header>
+    <!-- Site Header -->
+  <header class="site-header">
+    <div class="logo-area">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo lab-logo-full" />
+        <img src="assets/images/logo-short.png" alt="Lab Logo" class="lab-logo lab-logo-short" />
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg class="hamburger" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+        <path class="line line1" d="M4 7h16" />
+        <path class="line line2" d="M4 12h16" />
+        <path class="line line3" d="M4 17h16" />
+      </svg>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="main-nav" id="primary-nav">
+      <a href="our-research.html">Research</a>
+      <a href="our-team.html">Our Team</a>
+      <a href="news.html">News</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact-us.html">Contact Us</a>
+    </nav>
+  </header>
 
     <!-- Divider -->
     <div class="gradient-divider"></div>
@@ -106,6 +118,7 @@
 
     <!-- JS Script -->
     <script src="scripts/load-team.js"></script>
+    <script src="scripts/nav.js" defer></script>
 </body>
 
 </html>

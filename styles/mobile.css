@@ -1,4 +1,5 @@
-@media (max-width: 768px) {
+@media (max-width: 813px) {
+
   /* === Page Layout / Sidebar === */
   .page-layout {
     display: flex !important;
@@ -17,6 +18,7 @@
     font-size: 1.1rem;
     padding: 12px 16px;
   }
+
   .sidebar-links a {
     display: block;
     padding: 14px 16px;
@@ -44,8 +46,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 8px 8px 16px;
-    display: block;         /* no flex centering */
-    min-height: 0;          /* remove tall gaps */
+    display: block;
+    /* no flex centering */
+    min-height: 0;
+    /* remove tall gaps */
   }
 
   .project-image img {
@@ -55,7 +59,7 @@
 }
 
 /* === Footer Responsive === */
-@media (max-width: 768px) {
+@media (max-width: 813px) {
   .site-footer {
     flex-direction: column;
     align-items: center;
@@ -90,7 +94,7 @@
 }
 
 /* === Institutional Banner Responsive === */
-@media (max-width: 768px) {
+@media (max-width: 813px) {
   .institutional-banner {
     line-height: 2.4;
     font-size: 0.85rem;
@@ -104,15 +108,18 @@
     color: white;
     text-decoration: none;
     position: relative;
-    font-size: 0; /* hide original text visually */
+    font-size: 0;
+    /* hide original text visually */
   }
 
   .institutional-banner a:nth-child(1)::after {
     content: "University of Pittsburgh";
   }
+
   .institutional-banner a:nth-child(2)::after {
     content: "Department of Surgery";
   }
+
   .institutional-banner a:nth-child(3)::after {
     content: "TTMRC";
   }
@@ -128,7 +135,7 @@
 }
 
 /* === Header / Mobile Nav === */
-@media (max-width: 768px) {
+@media (max-width: 813px) {
   .site-header {
     padding: 10px 12px;
     display: flex;
@@ -146,6 +153,7 @@
     display: flex;
     align-items: center;
   }
+
   .logo-link {
     display: inline-flex;
     align-items: center;
@@ -158,7 +166,10 @@
     width: auto;
     margin-left: 10px;
   }
-  .lab-logo-full { display: none; }
+
+  .lab-logo-full {
+    display: none;
+  }
 
   /* Toggle button – clean style */
   .nav-toggle {
@@ -171,27 +182,47 @@
     background: #fff;
     border-radius: 10px;
     margin-right: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     cursor: pointer;
   }
-  .nav-toggle:active { transform: scale(0.98); }
 
-  /* Hamburger icon lines - clean center rotation */
+  .nav-toggle:active {
+    transform: scale(0.98);
+  }
+
+  /* make sure the rotation origin is the element's own box center */
   .hamburger .line {
     stroke: #111;
     stroke-width: 2.2;
     stroke-linecap: round;
-    transform-origin: 12px 12px;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    /* important for SVGs */
     transition: transform 200ms ease, opacity 200ms ease;
   }
+
+  /* closed state (3 parallel lines) */
   .hamburger .line1,
   .hamburger .line2,
-  .hamburger .line3 { transform: none; }
+  .hamburger .line3 {
+    transform: none;
+  }
 
-  /* Open state -> X */
-  .site-header[data-open] .hamburger .line1 { transform: rotate(45deg); }
-  .site-header[data-open] .hamburger .line2 { opacity: 0; }
-  .site-header[data-open] .hamburger .line3 { transform: rotate(-45deg); }
+  /* open state -> perfect X */
+  .site-header[data-open] .hamburger .line1 {
+    /* move top line to center, then rotate */
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .site-header[data-open] .hamburger .line2 {
+    opacity: 0;
+  }
+
+  /* hide middle */
+  .site-header[data-open] .hamburger .line3 {
+    /* move bottom line to center, then rotate */
+    transform: translateY(-4px) rotate(-45deg);
+  }
 
   /* Dropdown menu */
   .main-nav {
@@ -202,7 +233,7 @@
     background: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     padding: 8px;
     display: block;
     max-height: 0;
@@ -210,7 +241,11 @@
     opacity: 0;
     transition: max-height 220ms ease, opacity 180ms ease;
   }
-  .site-header[data-open] .main-nav { max-height: 320px; opacity: 1; }
+
+  .site-header[data-open] .main-nav {
+    max-height: 320px;
+    opacity: 1;
+  }
 
   .main-nav a {
     display: block;
@@ -223,30 +258,47 @@
     color: #111;
     font-size: 1rem;
   }
-  .main-nav a + a { margin-top: 6px; }
-  .main-nav a:hover { background: #eee; }
+
+  .main-nav a+a {
+    margin-top: 6px;
+  }
+
+  .main-nav a:hover {
+    background: #eee;
+  }
 
   /* Accessibility helper */
   .sr-only {
     position: absolute !important;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px; overflow: hidden;
-    clip: rect(0,0,1px,1px); white-space: nowrap; border: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
   }
 }
 
 /* === Contact page mobile polish (no-sidebar) === */
-@media (max-width: 768px) {
+@media (max-width: 813px) {
+
   /* Shorter hero and truly centered text */
-  .hero-banner { height: 320px; }
+  .hero-banner {
+    height: 320px;
+  }
 
   /* Only affects the contact hero since it uses .hero-content-center */
   .hero-content-center {
-    align-items: center;   /* vertical center */
-    justify-items: center; /* grid centering */
+    align-items: end;
+    /* vertical center */
+    justify-items: center;
+    /* grid centering */
     padding: 0 16px;
-    margin: 0;
+    margin-bottom: 20px;
   }
+
   .hero-content-center h1 {
     font-size: 1.3rem;
     line-height: 1.35;
@@ -255,15 +307,22 @@
   .page-content-center {
     padding: 20px 10px;
   }
+
+  .page-layout.no-sidebar {
+    margin-top: 20px;
+    padding: 0px 20px;
+  }
+
   /* For no-sidebar pages (e.g., Contact), remove excess padding/margin */
   .page-layout.no-sidebar .page-content,
   .page-layout.no-sidebar .page-content-center {
     max-width: 820px;
     width: 100%;
     margin: 0 auto;
-    padding: 4px 12px 12px;  /* smaller all-around padding */
-    display: block;         /* normal flow */
-    min-height: 0;          /* no huge vertical gaps */
+    display: block;
+    /* normal flow */
+    min-height: 0;
+    /* no huge vertical gaps */
   }
 
   /* Tighter spacing for paragraph text and lists */
@@ -271,5 +330,258 @@
   .page-layout.no-sidebar .project-description-contact li {
     margin-bottom: 6px;
     line-height: 1.35;
+  }
+}
+
+/* === Team page responsive tweaks === */
+@media (max-width: 813px) {
+  .team-section {
+    margin-top: 20px;
+    display: flex;
+    /* enable flexbox for section */
+    flex-direction: column;
+    /* keep heading + grid stacked */
+    align-items: center;
+    /* horizontal centering */
+    justify-content: center;
+    /* vertical centering */
+  }
+
+  .team-grid {
+    justify-content: center;
+  }
+}
+
+
+/* === Home hero: mobile fix === */
+@media (max-width: 813px) {
+
+  /* Give the hero a reliable canvas so overlay content isn't clipped */
+  .hero-banner {
+    position: relative;
+    height: auto;
+    /* allow it to grow with content */
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    /* top:0 right:0 bottom:0 left:0 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fill the whole hero area */
+    z-index: 0;
+    /* behind content */
+    filter: brightness(60%);
+    /* keep your darkening */
+  }
+
+  /* Center content vertically in the overlay */
+  .hero-overlay {
+    position: relative;
+    /* was absolute on desktop */
+    inset: auto;
+    /* clear any previous insets */
+    display: block;
+    z-index: 1;
+    /* above the image */
+    color: #fff;
+  }
+
+  /* Stack hero text above a small spotlight; keep things readable */
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Typographic scaling */
+  .hero-left h1 {
+    font-size: 1.6rem;
+    line-height: 1.28;
+    margin-bottom: 10px;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .hero-button {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  /* Spotlight: small, centered, and spaced from text */
+  .hero-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .spotlight-box {
+    padding: 12px;
+  }
+
+  .spotlight-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .spotlight-box img {
+    width: auto;
+    max-height: 160px;
+    display: block;
+    margin: 0 auto 6px;
+  }
+}
+
+@media (max-width: 940px) {
+
+  /* Give the hero a reliable canvas so overlay content isn't clipped */
+  .hero-banner {
+    position: relative;
+    height: auto;
+    /* allow it to grow with content */
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    /* top:0 right:0 bottom:0 left:0 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* fill the whole hero area */
+    z-index: 0;
+    /* behind content */
+    filter: brightness(60%);
+    /* keep your darkening */
+  }
+
+  /* Center content vertically in the overlay */
+  .hero-overlay {
+    position: relative;
+    /* was absolute on desktop */
+    inset: auto;
+    /* clear any previous insets */
+    display: block;
+    z-index: 1;
+    /* above the image */
+    color: #fff;
+  }
+
+  /* Stack hero text above a small spotlight; keep things readable */
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Typographic scaling */
+  .hero-left h1 {
+    font-size: 1.6rem;
+    line-height: 1.28;
+    margin-bottom: 10px;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .hero-button {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  /* Spotlight: small, centered, and spaced from text */
+  .hero-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .spotlight-box {
+    padding: 12px;
+  }
+
+  .spotlight-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+  .spotlight-box img {
+    width: auto;
+    max-height: 160px;
+    display: block;
+    margin: 0 auto 6px;
+  }
+}
+
+/* === Bio page: mobile layout === */
+@media (max-width: 813px) {
+  /* Center the page and reduce horizontal padding */
+  .bio-page {
+    padding: 0 12px;
+  }
+
+  .bio-container {
+    padding: 24px 0;              /* was 40px 100px */
+  }
+
+  /* Stack photo over text and center things nicely */
+  .bio-content {
+    flex-direction: column;        /* stack on mobile */
+    align-items: center;           /* center the photo + text block */
+    gap: 16px;                     /* comfortable spacing */
+    margin-bottom: 8px;
+    padding: 0px 20px;
+  }
+
+  /* Responsive headshot */
+  #bio-photo {
+    width: min(100%, 320px);       /* scale down on small screens */
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Text block spans full width with readable line length */
+  .bio-text-block {
+    width: 100%;
+    max-width: 42rem;              /* keeps lines readable */
+  }
+
+  /* Tighter, mobile-friendly type scale */
+  #bio-name {
+    font-size: 1.6rem;             /* was 2rem */
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  #bio-title {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  #bio-text {
+    font-size: 1rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;       /* prevent overflow from long tokens */
+  }
+
+  /* Email after bio: smaller, wraps gracefully */
+  #bio-email {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    overflow-wrap: anywhere;
   }
 }

@@ -3,12 +3,16 @@
         "id": "dr-matthew-neal",
         "name": "Matthew Neal, MD FACS",
         "role": "Faculty Members",
+        "title": "Professor of Surgery and Watson Fund in Surgery Chair \n Co-Director, Pittsburgh Trauma and Transfusion Medicine Research Center",
+        "email": "neal2@upmc.edu",
         "image": "matthew-neal.jpg",
         "bio": "Dr. Matthew Neal is a surgeon-scientist with a clinical practice consisting of trauma, emergency general surgery, and surgical critical care as well as a translational research focus on hemostasis and thrombosis. His basic science laboratory studies the mechanisms of trauma-induced coagulopathy (TIC) with a focus on innate immune signaling and platelet function. He is the principal investigator or co-investigator on several ongoing translational efforts in trauma and surgical care and have served as a Trans-Agency Consortium for Trauma Induced Coagulopathy (TACTIC) investigator since inception of the program. He directs the Pittsburgh Trauma and Transfusion Medicine Research Center, which is a coordinating center to leverage collaboration and resources in trauma research.\n\nHe also serves as one of the directors of the Coordinating Center and the co-chair of the in-patient clinical trial committee for the NIH funded Accelerating COVID-19 Therapeutic Interventions and Vaccines 4 (ACTIV-4) pandemic response. He serves as a mentor to numerous students, fellows, and junior faculty, including a recent recipient of an NIGMS Diversity Supplement (3R35GM119526-07S1). His group is also co-leading a DARPA funded initiative to generate a synthetic whole blood analogue, leveraging our expertise in animal modeling and nanomedicine approaches to hemostasis. He also serves as the Chief Medical Officer of Haima Therapeutics, a biotechnology company focused on platelet-inspired therapies."
     },
     {
         "id": "dr-susan-shea",
         "name": "Susan Shea, PhD",
+        "title": "Assistant Professor of Surgery and Bioengineering",
+        "email": "smshea@pitt.edu",
         "role": "Faculty Members",
         "image": "susan-shea.jpg",
         "bio": "Dr. Susan Shea is an Assistant Professor of Surgery and Bioengineering, and her research program is dedicated to investigation of the contributions of platelets to thrombosis and hemostasis, to include efficacy of platelet-specific thrombolytic therapeutic approaches. She has a broad background in bioengineering with specific training and experience in fluid mechanics, in vitro and ex vivo blood flow assay development and validation, flow chamber design and development, hemostasis and thrombosis, and devices. She has developed flow assays to answer specific questions on both the macro and micro scale.\n\nOne current focus of her research program is to elucidate and identify mechanisms of trauma-induced coagulopathy (TIC), to further identify and develop the most efficacious hemostatic resuscitation strategies. To investigate this, she designs and builds microfluidic assays to study hemostasis under flow in robust platforms. Specifically, we have used microfluidic devices designed and implemented in her lab to study TIC, blood products, including having established a collaboration with Dr. Leeper to study pediatric trauma."
@@ -16,6 +20,8 @@
     {
         "id": "emily-mihalko",
         "name": "Emily Mihalko, PhD",
+        "title": "Research Associate Professor",
+        "email": "epm35@pitt.edu",
         "role": "Faculty Members",
         "image": "emily-mihalko.jpg",
         "bio": "Dr. Emily Mihalko is a Research Assistant Professor in the Department of Surgery at the University of Pittsburgh. She earned her B.S.E. in Bioengineering from the University of Pittsburgh, followed by a Ph.D. in Biomedical Engineering through the joint program at North Carolina State University and the University of North Carolina at Chapel Hill. After completing her doctoral studies, she returned to Pittsburgh for postdoctoral training in thrombosis and hemostasis, which shaped her research focus on clot biology and therapeutic development.\n\nHer work centers on developing targeted therapeutics for thrombotic and bleeding disorders, leveraging both in vivo models and microfluidic systems to study clot formation, platelet function, and fibrinolysis. Dr. Mihalko has contributed to advancing nanoparticle drug delivery systems for conditions such as myocardial infarction, disseminated intravascular coagulation, and stroke. She also plays a key role in research on synthetic platelet technologies and adjunct hemostatic therapies for trauma care, helping bridge translational science and clinical need.\n\nOutside of her research, Dr. Mihalko enjoys creative and active pursuits, including sewing, gardening, making pasta, and running."
@@ -23,6 +29,8 @@
     {
         "id": "pearlson-austin-suthanthiraraj",
         "name": "Pearlson Austin Suthanthiraraj, PhD",
+        "title": "Research Lead Engineer",
+        "email": "pea40@pitt.edu",
         "role": "Research Scientists & Research Engineers",
         "image": "pearlson-austin-suthanthiraraj.jpg",
         "bio": "Pearlson Austin Suthanthiraraj is a dedicated member of the Trauma and Transfusion Medicine Research Laboratory, where they contribute to cutting-edge investigations in staff. Their work supports the lab\u2019s mission to improve outcomes for critically injured patients through innovation and discovery.\n\nIn addition to their research responsibilities, Pearlson Austin Suthanthiraraj collaborates closely with other departments and contributes to interdisciplinary initiatives across the university. They are passionate about scientific rigor, collaboration, and translating lab findings into meaningful clinical improvements."
@@ -30,6 +38,8 @@
     {
         "id": "casey-hicks",
         "name": "Casey Hicks",
+        "title": "Data Scientist I",
+        "email": "clh234@pitt.edu",
         "role": "Research Scientists & Research Engineers",
         "image": "casey-hicks.jpg",
         "bio": ""
@@ -37,6 +47,8 @@
     {
         "id": "irona-khandaker",
         "name": "Irona Khandaker, MBBS PhD",
+        "title": "Research Scientist",
+        "email": "irk14@pitt.edu",
         "role": "Research Scientists & Research Engineers",
         "image": "irona-khandaker.jpg",
         "bio": "Irona Khandaker is a dedicated member of the Trauma and Transfusion Medicine Research Laboratory, where they contribute to cutting-edge investigations in scientists. Their work supports the lab\u2019s mission to improve outcomes for critically injured patients through innovation and discovery.\n\nIn addition to their research responsibilities, Irona Khandaker collaborates closely with other departments and contributes to interdisciplinary initiatives across the university. They are passionate about scientific rigor, collaboration, and translating lab findings into meaningful clinical improvements."
@@ -44,6 +56,8 @@
     {
         "id": "kelly-williamson",
         "name": "Kelly Williamson, PhD",
+        "title": "Research Lead Program Coordinator",
+        "email": "williamsonk5@upmc.edu",
         "role": "Research Scientists & Research Engineers",
         "image": "kelly-williamson.jpg",
         "bio": "Dr. Kelly Williamson began her research career with a BS in Biochemistry at Texas State University in San Marcos, Texas, before continuing to a Biochemistry PhD program at Texas A&M University, where she studied the role of chromatin structure and histone modifications in gene silencing. She completed her postdoctoral training in the Department of Neurological Surgery at the University of Pittsburgh, researching early gene-editing tools to model and repair human genetic diseases. During this time, she gained valuable experience culturing human induced pluripotent stem cells (iPSCs) and fibroblasts. Dr. Williamson then worked as a Senior Research Associate in the Department of Psychiatry at UPMC, identifying antiviral compounds targeting HSV-1 lytic and latent infections in patient-derived IPSCs, neural stem cells, and primary neurons. She subsequently joined the Department of Orthopaedics, where she researched chronic tendon inflammation and tendinopathy, and contributed to NIH, DOD, and VA grant applications, IACUC and IRB protocols, and to an Investigational New Drug application to the FDA. \n\n In her current role as a Lead Research Program Coordinator, Dr. Williamson supports trauma-related research investigations, including animal models of trauma and multi-center research studies. Her research interests include understanding how megakaryocytes are affected by trauma and thus how platelets produced from these trauma megakaryocytes may affect healing and recovery. When she’s not in the lab, Kelly enjoys spending time in her garden, playing board games and puzzles, and being with family and friends."
@@ -51,6 +65,8 @@
     {
         "id": "abiha-abdullah",
         "name": "Abiha Abdulla, MBBS",
+        "title": "Visiting Scholar",
+        "email": "aba267@pitt.edu",
         "role": "Post-doctorates & Visiting Scholars",
         "image": "abiha-abdullah.jpg",
         "bio": "Dr. Abiha Abdullah, is a research scholar in the Trauma and Transfusion Medicine Research Lab (TTMRL) at the University of Pittsburgh. She earned her medical degree from the Aga Khan University in Pakistan in 2023, where she was actively involved in clinical research and community health initiatives. Her early work in health equity sparked an interest in developing accessible, resource-efficient therapeutics for acute care, particularly in trauma settings, which led her to join TTMRL to bridge laboratory research with clinical impact. \n\n At TTMRL, Abiha’s research focuses on platelet biology in trauma-induced coagulopathy and the development of novel biomimetic therapeutics, including synthetic platelet technologies. She works across preclinical models, microfluidic platforms, and coagulation assays to study platelet function, mechanotransduction, and biomaterial-based hemostatic interventions. Her projects include evaluating intraosseous administration of lyophilized synthetic platelets, integrating synthetic platelets into collagen matrices, and investigating platelet dysfunction in trauma patients. She has presented her work at national conferences and is building a publication record spanning both basic science and clinical outcomes research. \n\n Outside of the lab, Abiha can be found at the gym or spending quality time with her friends and family."
@@ -58,6 +74,8 @@
     {
         "id": "rida-zakar",
         "name": "Rida Zakar, MD",
+        "title": "Visiting Scholar",
+        "email": "rzakar@pitt.edu",
         "role": "Post-doctorates & Visiting Scholars",
         "image": "rida-zakar.jpg",
         "bio": "Dr. Rida Zakar is a postdoctoral research fellow at the University of Pittsburgh, working in the Trauma and Transfusion Medicine Research Lab (TTMRL). Originally from Lebanon, he earned his M.D. from Saint-Joseph University in Beirut. His clinical background spans trauma, vascular and neurosurgical settings, and includes hands-on experience in critical care and emergent interfacility patient transfers for hemodynamically unstable patients. \n\n At TTMRL, Rida is involved in both clinical and translational research focused on trauma-induced coagulopathy and organ dysfunction. His work explores the role of microvascular thrombosis in acute kidney injury and other complications of critical illness. He contributes to biomarker analyses from randomized trials, mechanistic studies in murine models, and collaborative projects on platelet biogenesis and endothelial injury. Rida has co-authored multiple peer-reviewed publications and is pursuing a career as a surgeon-scientist. He comes from a diverse background, having lived in Guinea, France, the UAE and Lebanon.  Outside of work, he enjoys traveling, practicing Muay Thai and watching Formula 1."
@@ -65,6 +83,8 @@
     {
         "id": "garret-campbell",
         "name": "Garrett Campbell",
+        "title": "Bioengineering PhD Student",
+        "email": "gwc18@pitt.edu",
         "role": "Graduate Students",
         "image": "garrett-campbell.jpg",
         "bio": ""
@@ -72,6 +92,8 @@
     {
         "id": "jack-killinger",
         "name": "Jack Killinger",
+        "title": "Bioengineering PhD Student",
+        "email": "jrk184@pitt.edu",
         "role": "Graduate Students",
         "image": "jack-killinger.jpg",
         "bio": "Jack Killinger is a Ph.D. student in Bioengineering at the University of Pittsburgh and a researcher in the Trauma and Transfusion Medicine Research Lab (TTMRL). He earned his B.S. in Biological Sciences from the University of Pittsburgh, where he first discovered his passion for science through his research in chemistry. After graduation, he worked as a patient care technician in the Surgical Trauma ICU, an experience that deepened his interest in the physiological challenges of critical illness and led him to join TTMRL as a research technician before beginning his doctoral training. \n\n At TTMRL, Jack’s work focuses on the role of platelet dysfunction in trauma-induced coagulopathy and its downstream effects on immune and endothelial cells. He uses advanced microfluidic platforms, flow cytometry, and animal models to study the dynamics of platelet behavior following severe injury, with the goal of identifying novel therapeutic targets to mitigate long-term complications like organ failure. His projects span pediatric and adult trauma populations and incorporate both molecular analysis and translational modeling. He has presented his work at national and international conferences and is building a strong publication record as he advances toward an academic career in hemostasis and thrombosis research. Outside of the lab, Jack is currently training for a half Ironman later this year!"
@@ -79,6 +101,8 @@
     {
         "id": "kaelyn-mcclain",
         "name": "Kaelyn McClain",
+        "title": "Bioengineering PhD Student",
+        "email": "krm253@pitt.edu",
         "role": "Graduate Students",
         "image": "kaelyn-mcclain.jpg",
         "bio": "Kaelyn McClain is a Ph.D. student in Bioengineering at the University of Pittsburgh and a researcher in the Trauma and Transfusion Medicine Research Lab (TTMRL). She earned her B.S. in Biomedical Engineering from West Virginia University, where she conducted undergraduate research in the Microfluidics & Electrokinetics bioSeparation and Analysis (MESA) Laboratory. During her time at WVU, she was also a student-athlete on the Division I swimming team, balancing rigorous academics with elite athletics. Her early exposure to engineering applications in medicine inspired her continued focus on translational research in critical care. \n\n At TTMRL, Kaelyn’s work focuses on elucidating the emerging role of platelet-specific triggering receptor expressed on myeloid cells (TREM)–like transcript 1 (TLT-1) in hemostasis, thrombosis, and inflammation. She uses microfluidic modeling and immunofluorescent microscopy to study platelet behavior under physiological flow conditions. Her research contributes to a broader effort to identify novel biomarkers and therapeutic targets aimed at preventing long-term complications for traumatically injured patients. She was recognized with an Honorable Mention for the NSF Graduate Research Fellowship Program in 2025. Outside of lab, Kaelyn can be found taking a cycle class or exploring the Shadyside neighborhood and its many coffee shops."
@@ -86,6 +110,8 @@
     {
         "id": "katelin-rahn",
         "name": "Katelin Rahn",
+        "title": "Bioengineering PhD Student",
+        "email": "kcr37@pitt.edu",
         "role": "Graduate Students",
         "image": "katelin-rahn.jpg",
         "bio": "Katelin Rahn is a Bioengineering Ph.D. student at the University of Pittsburgh within the Trauma and Transfusion Medicine Research Lab (TTMRL). She earned her B.S. in Kinesiology from Penn State University, where she developed a strong interest in human physiology and the body’s acute response to trauma. During her undergraduate years, Katelin worked briefly as an EMT, an experience that exposed her to the frontlines of emergency care and deepened her curiosity about the science behind traumatic injury. This blend of clinical exposure and academic training inspired her to pursue graduate research aimed at bridging the gap between basic science and trauma care. \n\n At TTMRL, Katelin’s research focuses on the role of von Willebrand Factor (VWF) in regulating hemostatic potential in both stored platelet products and traumatically injured patients. Her work integrates molecular assays, flow cytometry, and clotting analyses to better understand how VWF influences transfusion efficacy and contributes to trauma-induced coagulopathy. Through this work, she aims to improve the design and clinical application of blood products to enhance outcomes in critically ill patients. Katelin has presented her research at both national and international conferences and, in recognition of her potential to contribute to scientific advancement, was awarded the prestigious National Science Foundation Graduate Research Fellowship in 2025, providing full academic funding through 2028. \n\n Outside of research, Katelin enjoys drinking tea and continues on her quest to find the perfect chai latte."
@@ -93,6 +119,8 @@
     {
         "id": "aarushi-bajpai",
         "name": "Aarushi Bajpai",
+        "title": "Medical Student - Physician Scientist Training Program",
+        "email": "bajpai.aarushi@medstudent.pitt.edu",
         "role": "Graduate Students",
         "image": "aarushi-bajpai.png",
         "bio": "Aarushi graduated from UCLA with a Bachelor of Science in Molecular and Developmental Biology and a minor in Biomedical Research. She has previously  worked in a cancer immunotherapy lab, where she studied the synergistic effects of iNKT cells and chemotherapy in multiple myeloma. Currently, she is a medical student in the five year Physician Scientist Training Program (PSTP) at the University of Pittsburgh School of Medicine. \n\n At the Trauma and Transfusion Medicine Research Lab (TTMRL), Aarushi’s research focuses on understanding platelet dysfunction by investigating the roles of intrinsic versus extrinsic mediators in trauma blood compared to healthy blood. She utilizes microfluidic bioengineering techniques, light transmission aggregometry, viscoelastic testing, and flow cytometry to elucidate mechanisms of hemostasis and platelet behavior. Her work aims to advance therapeutic strategies for trauma-induced coagulopathy. In the future, she aims to be a physician scientist who combines clinical care with translational research. Outside of the lab, she enjoys playing competitive table tennis, painting with friends, and stargazing."
@@ -100,6 +128,8 @@
     {
         "id": "morgan-mollen",
         "name": "Morgan-Mollen",
+        "title": "Undergraduate Student",
+        "email": "mhm77@pitt.edu",
         "role": "Undergraduate Students",
         "image": "morgan-mollen.jpg",
         "bio": "Morgan Mollen is an undergraduate at the University of Pittsburgh completing a B.S. in Chemistry and a certificate in Gender, Sexuality, and Women’s Studies. After a year of gaining experience in cell biology research, she decided to join TTMRL and put her effort towards translational research, as she plans to pursue a career in the medical field. \n\n At TTMRL, Morgan has focused primarily on studying Factor IX, a coagulation protein that uniquely binds collagen, forming a hemostatic reservoir. This novel study aims to quantify the activity and concentration of extravascular Factor IX in rat and human tissues to understand the protein’s contribution to hemostasis at sites of injury. Additionally, Morgan studies postpartum hemorrhage, utilizing microfluidic platforms to gain insight into platelet behavior in affected patients. The aim of this project is to better understand the role of platelet disfunction in the development of this condition. \n\n Outside of the lab, Morgan enjoys volunteering with Girls Inc., where she spends time getting to know and mentoring young girls."
@@ -107,6 +137,8 @@
     {
         "id": "jason-brandon",
         "name": "Jason Brandon",
+        "title": "Laboratory Research Technician I",
+        "email": "jab998@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "jason-brandon.jpg",
         "bio": "Jason Brandon is a Research Technician for the University of Pittsburgh in the Trauma and Transfusion Medicine Research Lab (TTMRL). He earned his B.S. in Neuroscience with a minor in Computer Science from Juniata College, where he conducted research in a Drosophila Melanogaster model of Parkinson’s disease. He is currently completing his Master's in Bioinformatics where he is gaining skills relevant to computational biology. Since graduation, Jason has been developing skills relevant to platelet hemostatic function assessments and trauma induced coagulopathy research. \n\n At TTMRL, Jason is a part of studies such as CHIPSiv, where he assesses platelet hemostatic function of cold-stored platelet products. Outside of this, Jason’s work focuses on evaluating fibrin structure and endogenous fibrinolysis of platelet products between cold-stored and room-temperature conditions. Jason has developed several workflow skills, many of which include flow cytometry, confocal microscopy, plate reader assays, and many others. \n\n Outside of the lab, Jason can be found listening to music and reading thriller books!"
@@ -114,6 +146,8 @@
     {
         "id": "juliana-briggs",
         "name": "Juliana Briggs",
+        "title": "Laboratory Research Technician I",
+        "email": "jmb463@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "",
         "bio": ""
@@ -121,6 +155,8 @@
     {
         "id": "rebecca-cleaver",
         "name": "Rebecca Cleaver",
+        "title": "Clinical Research Assistant II",
+        "email": "rlc116@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "rebecca-cleaver.jpg",
         "bio": "Rebecca Cleaver is ASCP certified, she works at the BST Tower. She has 0ver 26 years' experience in Phlebotomy. She was a supervisor at Mercy hospital before coming to Pitt. She is Part of the TTMRL group. She performs apheresis on platelet donors, and she also coordinates all the studies in the group. She performs small volume blood draws. Rebecca also recruits and schedules and screens new donors. She helps with modifications with the IRB. \n\n One of the major studies she is working on is CHIPSIV ( chilled platelet study in vitro). This study is to investigate how the storage temperature of platelet units affects their clotting capabilities. She also works on other studies in the lab and does recruiting and scheduling and screening for those studies as well. Rebecca hobbies are boating, canoeing, kayaking, and fishing. Her main priority is her family.  She loves animals and would save all of them if she could. Her dream is to hit the lottery and open up her own shelter for all the animals that need help."
@@ -128,6 +164,8 @@
     {
         "id": "lauren-jackson",
         "name": "Lauren Jackson",
+        "title": "Laboratory Research Technician III",
+        "email": "lyj10@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "lauren-jackson.jpg",
         "bio": "Lauren Jackson is a research animal technician in the Trauma and Transfusion Medicine Research Lab (TTMRL). She has led multiple DOD/DARPA studies as primary animal surgeon. She has also acted as a lab animal trainer, working with researchers on murine and lapine protocols. Lauren also has experience shadowing non-human primate (NHP), porcine and ovine surgical study procedures within research settings. She graduated with her Bachelor's of Science in Biological Sciences from the University of Pittsburgh. During her undergrad and currently, Lauren worked as a veterinary assistant from settings such as general practice to zoological institutions. She is currently working on her MSc in OneHealth through Ross University's School of Veterinary Medicine. She plans to apply to Doctor of Veterinary Medicine (DVM) programs soon. \n\n Lauren's research interests are extensive but are not limited to animal studies. Within the lab research umbrella in surgical research, she focuses on hemorrhagic shock and resuscitation therapies, synthetic platelets infusion and associated trauma-induced coagulopathies (TIC). She has presented her work at international conferences and conventions and is working towards a strong publication record for her career goals. \n\n Outside the lab, Lauren enjoys hiking and fishing with her fiance Austin. She also enjoys making mixed media art, crocheting, reading and baking while spending time at home with her four pets: Phil (black cat), Rango (leopard gecko), Cleo (ball python) and Rose (bearded dragon)."
@@ -135,6 +173,8 @@
     {
         "id": "nick-rocchio-giordano",
         "name": "Nick Rocchio-Giordano",
+        "title": "Laboratory Research Technician II",
+        "email": "nsr45@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "nick-rocchio-giordano.jpg",
         "bio": "Nicholas Rocchio-Giordano is a research technician at the University of Pittsburgh's Trauma and Transfusion Medicine Research Lab (TTMRL). Nicholas received a B.A. in Music from Boston College. After graduation, he joined Teach for America and worked as a high school math teacher in Clarksdale, Mississippi for two years before he returned to school and pursued a career in medicine. While in school, he worked as a community health worker and medical interpreter for Clinica Esperanza, a free clinic for uninsured patients in Providence, Rhode Island. Nicholas joined the TTMRL in 2023, eager to engage with research into the physiology and treatment of traumatic hemorrhage under the guidance of experts in trauma, transfusion, and biomedical engineering. Nicholas plans to attend medical school at the University of Michigan in 2026. \n\n At the TTMRL, Nicholas is part of a diverse and multidisciplinary team focused on the assessment and characterization of novel hemostatic resuscitation strategies in trauma.  As a lab technician for the ongoing Chilled Platelet Study in vitro (CHIPSiv), Nicholas employs a variety of microfluidic techniques to explore the use of cold-stored platelet concentrates as a therapy option in cases of trauma. \n\n Outside of the lab, Nicholas enjoys making music, taking photos, and exploring Pittsburgh with his wife, Amanda."
@@ -142,6 +182,8 @@
     {
         "id": "tvisha-subhasish",
         "name": "Tvisha Subhasish",
+        "title": "Laboratory Research Technician II",
+        "email": "tvs9@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "tvisha-subhasish.jpg",
         "bio": ""
@@ -149,6 +191,8 @@
     {
         "id": "rob-voinchet",
         "name": "Rob Voinchet",
+        "title": "Laboratory Research Technician II",
+        "email": "rgv9@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "rob-voinchet.jpg",
         "bio": "Rob Voinchet is a research technician in the Thrombosis and Transfusion Medicine Research Lab (TTMRL). He earned his B.S. in Chemistry from the University of Pittsburgh. After graduation, he worked as a research technician for the Department of Surgery at the University of Pittsburgh. \n\n At TTMRL, Rob focuses his work on the CONCERT research project. This project involves the development of a whole blood analogue comprising of a hemoglobin-based oxygen carrier, a platelet mimetic and freeze-dried plasma. To do this, he is assisting in the development of a rabbit trauma model involving hemorrhagic shock and trauma induced coagulopathy. Outside of the lab, Rob enjoys golfing, weight training, and is currently pursuing a Master of Business Administration at the University of Pittsburgh."
@@ -156,6 +200,8 @@
     {
         "id": "victor-young",
         "name": "Victor Young",
+        "title": "Clinical Research Coordinator II",
+        "email": "viy25@pitt.edu",
         "role": "Research Technicians & Assistants",
         "image": "victor-young.jpg",
         "bio": "Victor Young is a Clinical Research Coordinator (CRC) for the Surgery department at the University of Pittsburgh. He started his career in healthcare after attending the University of Akron. He has been a phlebotomist since 2010, working in labs, blood banks, and doctors' offices all over Ohio and western Pennsylvania. Victor's research career started at Cleveland Clinic in early 2023 where he worked in the pathology department. In his current position, Victor's primary responsibilities include facilitating blood and blood product collections, alongside recruiting, screening, and consenting potential research subjects. \n\n The Shea/Neal lab has many ongoing studies that help Victor grow as a researcher and coordinator. The main CHIPSiv study keeps him busy with consistent participant scheduling and collections of blood and platelets. He is also in charge of writing up and modifying protocols as well as SOPs to keep the lab in compliance. When not in the lab, you can find Victor cycling around the city, paddleboarding nearby lakes and rivers, as well as singing his heart out with some late-night karaoke."
@@ -163,6 +209,8 @@
     {
         "id": "scott-donahue",
         "name": "Scott Donahue",
+        "title": "Research Program Manager",
+        "email": "sjd138@pitt.edu",
         "role": "Staff & Managers",
         "image": "scott-donahue.jpg",
         "bio": "Scott Donahue is a Research Program Manager in the Trauma and Transfusion Medicine Research Center. He received a B.S. in Biology from Penn State University. Scott has gained many years of experience in the laboratory through several industry jobs that were heavily protein chemistry-focused. This includes 17 years spent working on Department of Defense funded contracts to develop technologies for the detection and decontamination of chemical warfare agents. \n\n Scott is currently working on the DARPA funded Fieldable Solutions for Hemorrhage with bio-Artificial Resuscitation Products (FSHARP) Program, which aims to develop a shelf-stable whole blood analog that can be used for treatment of trauma patients in austere environments where traditional blood product availability may be limited. Scott spends his spare time trying to make sense of the world and telling his dog to stop eating weird stuff she finds on the ground. He’s been unsuccessful at both."
@@ -170,6 +218,8 @@
     {
         "id": "tirzah-griffin",
         "name": "Tirzah Griffin",
+        "title": "Research Program Manager",
+        "email": "griffint@pitt.edu",
         "role": "Staff & Managers",
         "image": "tirzah-griffin.jpg",
         "bio": "Tirzah Griffin is the Research Program Manager and Executive Assistant for Dr. Susan Shea in the Trauma and Transfusion Medicine Research Labs (TTMRL). She has honed her administrative and project support skills over the last 25 years, specializing in research administration for the last 15 years since joining the University of Pittsburgh in 2010. \n\n In her free time Tirzah hangs out with her husband and two rescue pups, doing house projects or adventuring in the outdoors."
@@ -177,6 +227,8 @@
     {
         "id": "kestrel-merritt",
         "name": "Kestrel Merritt",
+        "title": "klm319@pitt.edu",
+        "email": "Assistant Lab Manager",
         "role": "Staff & Managers",
         "image": "kestrel-merritt.jpg",
         "bio": "Kestrel earned a B.S. in Bioengineering from the Swanson School of Engineering at the University of Pittsburgh, where they developed an interest in translational research and biomedical applications. Following graduation, they worked in animal research, beginning at the Division of Laboratory Animal Resources where they were responsible for maintaining murine colonies. They later joined Carnegie Mellon University, where they specialized in training non-human primates, further expanding their experience in preclinical research. \n\n Kestrel originally joined the TTMRL as a research technician working on CHIPSiv, comparing the functionality of cold stored platelets to room temperature stored platelets. Since then, Kestrel has transitioned to the more administrative side of things and now serves as the TTMRL's assistant lab manager. They are still involved in CHIPS but now focus more on the regulatory side of things. They keep the lab in gloves and pipette tips and make sure the equipment functions as intended. \n\n Outside of the lab, Kestrel enjoys video games and ecumenical geotheological substrate collection."
@@ -184,6 +236,8 @@
     {
         "id": "javonn-musgrove",
         "name": "Javonn Musgrove",
+        "title": "Lab Manager",
+        "email": "jmm444@pitt.edu",
         "role": "Staff & Managers",
         "image": "javonn-mugrove.jpg",
         "bio": ""

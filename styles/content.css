@@ -18,7 +18,7 @@ html { scroll-behavior: smooth; }
   display: block;
 }
 
-.hero-image { filter: brightness(40%); }
+.hero-image { filter: brightness(70%); }
 
 .hero-overlay {
   position: absolute;
@@ -43,7 +43,7 @@ html { scroll-behavior: smooth; }
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 0 200px;
+  padding: 0 200px; /* This is on the sides */
   margin-bottom: 20px;
 }
 
@@ -74,14 +74,20 @@ html { scroll-behavior: smooth; }
   border-radius: 0; /* square edges */
   transition: background 0.3s, color 0.3s;
 }
-.hero-button:hover { background-color: #fff; color: #222; }
+.hero-button:hover { background-color: #EE1C23; color: #fff; }
 
 /* Spotlight (right) */
 .hero-right {
   justify-self: end;
   align-self: start;
   width: 300px;
-  border-top: #EE1C23 10px solid;
+  border-top: 10px solid transparent;
+border-image: linear-gradient(
+    to right,
+    rgba(80, 109, 158, 1),
+    rgba(156, 112, 178, 1),
+    rgba(156, 112, 178, 1)
+) 1;
 }
 
 .spotlight-box {
@@ -267,7 +273,7 @@ html { scroll-behavior: smooth; }
 .bio-text-block { flex: 1; }
 #bio-name {
   font-size: 2rem;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   color: #111;
 }
 #bio-text {
@@ -276,6 +282,24 @@ html { scroll-behavior: smooth; }
   color: #333;
   white-space: pre-line;
 }
+
+#bio-title {
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 1rem;
+}
+
+#bio-email {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+#bio-email a {
+  color: #EE1C23;
+  text-decoration: none;
+}
+#bio-email a:hover { text-decoration: underline; }
+
+
 
 /* =========================
    HOME: LEADERSHIP (legacy)
@@ -336,4 +360,62 @@ html { scroll-behavior: smooth; }
   text-align: center;
   color: #111;
   background-color: #fff;
+}
+
+
+/* === Collaborators container === */
+.collab-logos {
+  display: flex;
+  flex-wrap: wrap;       /* wrap to new lines when needed */
+  gap: 28px;             /* space between cards */
+  justify-content: center;
+}
+
+/* Card container */
+.collab-card {
+  text-align: center;
+}
+
+/* Clickable image link */
+.collab-card a {
+  display: inline-block;   /* shrink/grow to fit the image */
+  border-radius: 100px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover/Focus styles (copied from research-card) */
+.collab-card a:hover {
+  border-color: #EE1C23;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.collab-card a:focus-visible {
+  outline: none;
+  border-color: #EE1C23;
+  box-shadow: 0 0 0 3px rgba(238,28,35,0.25);
+}
+
+/* Image sizing */
+.collab-card img {
+  height: clamp(130px, 10vw, 240px); /* consistent height */
+  width: auto;                       /* expand width as needed */
+  display: block;
+}
+
+/* Text below image */
+.collab-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.collab-institution {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
 }

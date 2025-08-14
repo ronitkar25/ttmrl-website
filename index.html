@@ -36,11 +36,22 @@
     <!-- === Site Header with Logo on Top and Nav Below === -->
     <header class="site-header">
         <div class="logo-area">
-            <a href="index.html">
-                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo" />
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Lab Logo" class="lab-logo lab-logo-full" />
+                <img src="assets/images/logo-short.png" alt="Lab Logo" class="lab-logo lab-logo-short" />
             </a>
         </div>
-        <nav class="main-nav">
+
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="hamburger" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                <path class="line line1" d="M4 7h16" />
+                <path class="line line2" d="M4 12h16" />
+                <path class="line line3" d="M4 17h16" />
+            </svg>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav class="main-nav" id="primary-nav">
             <a href="our-research.html">Research</a>
             <a href="our-team.html">Our Team</a>
             <a href="news.html">News</a>
@@ -49,12 +60,13 @@
         </nav>
     </header>
 
+
     <!-- === Divider Banner === -->
     <div class="gradient-divider"></div>
 
     <!-- === Hero Banner === -->
     <section class="hero-banner">
-        <img src="assets/images/hero-image.png" alt="Lab Hero" class="hero-image">
+        <img src="/assets/images/bst-building.png" alt="Lab Hero" class="hero-image">
 
         <div class="hero-overlay">
             <div class="page-layout hero-content">
@@ -63,8 +75,8 @@
                     <h1>Advancing trauma and transfusion research.
                         <br>Improving patient outcomes.
                     </h1>
-                    <p>Our research improves understanding of the biological response to traumatic injury
-                        and transfusion therapy. We aim to develop novel therapeutics and diagnostics
+                    <p>Our research aims to improve our understanding of the biological response to traumatic injury
+                        and transfusion therapy. We work to develop novel therapeutics and diagnostics
                         to improve patient outcomes.
                     </p>
                     <a href="our-research.html" class="hero-button">Learn More</a>
@@ -75,7 +87,7 @@
                     <div class="spotlight-box">
                         <h3>Spotlight</h3>
                         <img src="assets/images/spotlight-thumb.jpg" alt="Spotlight image">
-                        <p><a href="https://doi.org/10.1097/TA.0000000000004557">Our new article analyzing platelet
+                        <p><a href="https://doi.org/10.1097/TA.0000000000004557">Our new article looking at platelet
                                 function assays in TBI patients
                                 has been published in the Journal of Trauma and Acute Care Surgery.
                             </a></p>
@@ -119,18 +131,18 @@
             <h2>Our Research</h2>
             <div class="research-grid">
                 <a href="our-research.html#project-1" class="research-card">
-                    <img src="assets/images/project-1-figure.png" alt="Biological Response to Trauma">
-                    <div class="research-title">Trauma-Induced Coagulopathy</div>
+                    <img src="assets/images/project-1-figure-2.png" alt="Biological Response to Trauma">
+                    <div class="research-title">Biological Response to Trauma</div>
                 </a>
 
                 <a href="our-research.html#project-2" class="research-card">
-                    <img src="assets/images/project-2-figure.png" alt="Effect of Transfusion">
-                    <div class="research-title">Effect of Transfusion</div>
+                    <img src="assets/images/project-2-figure.jpeg" alt="Effect of Transfusion">
+                    <div class="research-title">Transfusion Product Biology</div>
                 </a>
 
                 <a href="our-research.html#project-3" class="research-card">
-                    <img src="assets/images/project-3-figure.png" alt="Novel Blood Products">
-                    <div class="research-title">Novel Blood Products</div>
+                    <img src="assets/images/project-3-figure.jpg" alt="Novel Blood Products">
+                    <div class="research-title">Engineering Novel Blood Products</div>
                 </a>
 
                 <a href="our-research.html#project-4" class="research-card">
@@ -140,13 +152,59 @@
             </div>
 
             <h2>Our Collaborators</h2>
-            <p>This section will be filled with logos/images of our collaborators/institutions.
-                <br><br>
-            </p>
+            <div class="collab-logos">
+                <div class="collab-card">
+                    <a
+                        href="https://research.vitalant.org/Investigators/Individual-Investigators/Kimberly-A-Thomas,-Ph-D.aspx">
+                        <img src="assets/images/collaborators/kim-thomas.jpg" alt="Kim Thomas">
+                    </a>
+                    <div class="collab-name">Dr. Kim Thomas</div>
+                    <div class="collab-institution">Vitalant Research Institute</div>
+                </div>
 
-            <p class="project-last-updated">
-                Last Updated August 12, 2025
-            </p>
+                <div class="collab-card">
+                    <a href="https://kornblithlab.ucsf.edu/">
+                        <img src="assets/images/collaborators/lucy-kornblith.png" alt="Lucy Kornblith">
+                    </a>
+                    <div class="collab-name">Dr. Lucy Kornblith</div>
+                    <div class="collab-institution">UCSF</div>
+                </div>
+
+                <div class="collab-card">
+                    <a
+                        href="https://www.surgery.pitt.edu/research/labs/general-surgery-and-vascular-labs/lab-pis/leeper-lab">
+                        <img src="assets/images/collaborators/christine-leeper.jpg" alt="Christine Leeper">
+                    </a>
+                    <div class="collab-name">Dr. Christine Leeper</div>
+                    <div class="collab-institution">UPMC</div>
+                </div>
+
+                <div class="collab-card">
+                    <a href="https://case.edu/cancer/members/member-directory/anirban-sen-gupta">
+                        <img src="assets/images/collaborators/anirban-sengupta.avif" alt="Anirban Sen Gupta">
+                    </a>
+                    <div class="collab-name">Dr. Anirban Sen Gupta</div>
+                    <div class="collab-institution">Case Western</div>
+                </div>
+
+                <div class="collab-card">
+                    <a href="https://profiles.wustl.edu/en/persons/frederik-denorme">
+                        <img src="assets/images/collaborators/frederick-denorme.png" alt="frederick-denorme">
+                    </a>
+                    <div class="collab-name">Dr. Frederick Denorme</div>
+                    <div class="collab-institution">WashU</div>
+                </div>
+
+                <div class="collab-card">
+                    <a href="https://profiles.wustl.edu/en/persons/frederik-denorme">
+                        <img src="assets/images/collaborators/chris-reed.jpg" alt="chris-reed">
+                    </a>
+                    <div class="collab-name">Dr. Christopher Reed</div>
+                    <div class="collab-institution">Duke</div>
+                </div>
+
+            </div>
+
         </main>
     </div>
 
@@ -168,7 +226,7 @@
         </div>
     </footer>
 
-
+    <script src="scripts/nav.js" defer></script>
 </body>
 
 </html>
