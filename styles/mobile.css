@@ -585,3 +585,58 @@
     overflow-wrap: anywhere;
   }
 }
+@media (max-width: 813px) {
+  /* Contact hero only (keyed by .hero-image-no-opacity) */
+  .hero-banner:has(> .hero-image-no-opacity) {
+    position: relative;          /* ensure a containing block for abs children */
+    min-height: 320px;           /* give the hero real height on mobile */
+    overflow: hidden;
+  }
+
+  .hero-banner > .hero-image-no-opacity {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .hero-banner > .hero-image-no-opacity + .hero-overlay {
+    position: absolute;          /* keep text on top of the image */
+    inset: 0;
+    display: grid;
+    place-items: end center;     /* matches your contact layout */
+    padding: 0 16px 0px;
+    color: #fff;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 940px) {
+  /* Contact hero only (keyed by .hero-image-no-opacity) */
+  .hero-banner:has(> .hero-image-no-opacity) {
+    position: relative;          /* ensure a containing block for abs children */
+    min-height: 320px;           /* give the hero real height on mobile */
+    overflow: hidden;
+  }
+
+  .hero-banner > .hero-image-no-opacity {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .hero-banner > .hero-image-no-opacity + .hero-overlay {
+    position: absolute;          /* keep text on top of the image */
+    inset: 0;
+    display: grid;
+    place-items: end center;     /* matches your contact layout */
+    padding: 0 16px 0px;
+    color: #fff;
+    z-index: 1;
+  }
+}
