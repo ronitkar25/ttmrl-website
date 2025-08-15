@@ -1,5 +1,30 @@
 [
   {
+    "title": "Dr. Emily Mihalko promotion",
+    "description": "Dr. Emily Mihalko, who was previously a postdoctoral associate and research scientist in TTMRL, was promoted to Research Assistant Professor in the Department of Surgery. Congratulations Dr. Mihalko!!",
+    "image": "assets/images/headshots/emily-mihalko.jpg",
+    "date": "2025-01-10"
+  },
+  {
+    "title": "NSF Awards to TTMRL Grad Students",
+    "description": "Both Katelin Rahn and Kaelyn McCain received recognition from the National Science Foundation! Katelin was awarded the prestigious Graduate Research Fellowship Program (GFRP) award. Kaelyn received an honorable mention for her NSF GFRP application. Congrats Katelin and Kaelyn!!",
+    "link": "https://news.engineering.pitt.edu/new-round-of-nsf-fellowships-support-pitt-engineering-graduate-students/",
+    "image": "assets/images/news/04112025_nsf.png",
+    "date": "2025-04-11"
+  },
+  {
+    "title": "New publication in Blood VTH",
+    "description": "New pub! @Kim Thomas demonstrated that cryoprecipitate improves hemostatic resuscitation of dilutional coagulopathy compared with fibrinogen concentrate in a microfluidic model.",
+    "link": "https://doi.org/10.1016/j.bvth.2025.100076",
+    "date": "2025-04-28"
+  },
+  {
+    "title": "New publication in Current Opinion in Hematology",
+    "description": "New pub! @Rida Zakar review protein and enzymatic interactions that regulate hemostasis and thrombosis, and how these interactions can be targeted for therapeutic benefit.",
+    "link": "https://doi.org/10.1097/MOH.0000000000000884",
+    "date": "2025-09-01"
+  },
+  {
     "title": "New publication in Frontiers in Bioengineering and Biotechnology",
     "description": "New pub!🥳 @Emily Mihalko. We designed a microfluidic model of vessel transection that quantifies blood loss. Key finding: in ex vivo #transfusion, cold platelets retain function & show promise in coagulopathy settings where RT platelets fall short.",
     "link": "https://doi.org/10.3389/fbioe.2025.1568113",
@@ -7,14 +32,15 @@
     "date": "2025-08-14"
   },
   {
-    "title": "New lab website!",
-    "description": "We started a new lab website to keep everyone updated on our latest research and publications.",
-    "date": "2025-08-14"
-  },
-  {
     "title": "Labsgiving 2024",
-    "description": "Amazingly diverse potluck - holiday treats from around the world! Gratefule for this awesome team",
+    "description": "Amazingly diverse potluck - holiday treats from around the world! We're all grateful for this awesome team.",
     "image": "assets/images/news/11252024_labsgiving.jpeg",
     "date": "2024-11-25"
+  },
+  {
+    "title": "RBC Factory Funding",
+    "description": "Researchers at the University of Pittsburgh and Carnegie Mellon University will use a $5.4 million grant from the Defense Advanced Research Projects Agency (DARPA) to develop techniques and technologies for inserting drug molecules into red blood cells. @Susan Shea will work with Carnegie Mellon scientists in engineering and robotics on the 21-month research through DARPA Red Blood Cell Factory program.",
+    "link": "https://www.pittwire.pitt.edu/accolades-honors/2025/08/05/red-blood-cells-drug-delivery-darpa-grant",
+    "date": "2025-08-05"
   }
 ]

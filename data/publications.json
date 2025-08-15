@@ -1,5 +1,13 @@
 [
   {
+    "title": "Platelet recruitment kinetics are impacted by von Willebrand factor quality in hemostatic adjuncts",
+    "authors": "Kimberly A. Thomas, Alice Liu, David L. Bark Jr., Philip C. Spinella, Susan M. Shea",
+    "journal": "Blood VTH, Vol. 2, Issue 3",
+    "year": 2025,
+    "date": "2025-04-28",
+    "doi": "https://doi.org/10.1016/j.bvth.2025.100076"
+  },
+  {
     "title": "The use of low‐titer group O whole blood is independently associated with improved survival compared to component therapy in adults with severe traumatic hemorrhage",
     "authors": "Susan M Shea, Amanda M Staudt, Kimberly A Thomas, Douglas Schuerer, James E Mielke, Danielle Folkerts, Ethan Lowder, Callista Martin, Grant V Bochicchio, Philip C Spinella",
     "journal": "Transfusion, Vol. 60, Pages S2-S9",
@@ -357,5 +365,13 @@
     "date": "2025-04-01",
     "doi": "https://doi.org/10.1097/TA.0000000000004557",
     "pdf": "assets/pubs/alsaadi-jtacs-2025.pdf"
+  },
+  {
+    "title": "Targeting hemostatic enzymes: from mechanistic insights to therapeutic frontiers",
+    "authors": "Rida Zakar, Matthew D Neal, Susan M Shea",
+    "journal": "Current Opinion in Hematology",
+    "year": 2025,
+    "date": "2025-09-01",
+    "doi": "https://doi.org/10.1097/10.1097/MOH.0000000000000884"
   }
 ]
