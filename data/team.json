@@ -144,6 +144,33 @@
         "bio": "Morgan Mollen is an undergraduate at the University of Pittsburgh completing a B.S. in Chemistry and a certificate in Gender, Sexuality, and Women’s Studies. After a year of gaining experience in cell biology research, she decided to join TTMRL and put her effort towards translational research, as she plans to pursue a career in the medical field. \n\n At TTMRL, Morgan has focused primarily on studying Factor IX, a coagulation protein that uniquely binds collagen, forming a hemostatic reservoir. This novel study aims to quantify the activity and concentration of extravascular Factor IX in rat and human tissues to understand the protein’s contribution to hemostasis at sites of injury. Additionally, Morgan studies postpartum hemorrhage, utilizing microfluidic platforms to gain insight into platelet behavior in affected patients. The aim of this project is to better understand the role of platelet disfunction in the development of this condition. \n\n Outside of the lab, Morgan enjoys volunteering with Girls Inc., where she spends time getting to know and mentoring young girls."
     },
     {
+        "id": "pierce-shipp",
+        "name": "Pierce Shipp",
+        "title": "Undergraduate Student",
+        "email": "pjs126@pitt.edu",
+        "role": "Undergraduate Students",
+        "image": "pierce-shipp.jpg",
+        "bio": "Pierce Shipp is an undergraduate bioengineering student at the University of Pittsburgh working in the Trauma and Transfusion Medicine Research Lab (TTMRL). He is the Advocacy Coordinator of University of Pittsburgh Habitat for Humanity and is currently working as an EMT. In the TTMRL, Pierce contributes to forming and analyzing fibrin clot structure via confocal microscopy.\n\nOutside of lab, Pierce enjoys playing the guitar and drums and hiking."
+    },
+    {
+        "id": "dylan-tost",
+        "name": "Dylan Tost",
+        "title": "Undergraduate Student",
+        "email": "dmt103@pitt.edu",
+        "role": "Undergraduate Students",
+        "image": "dylan-tost.jpg",
+        "bio": "Dylan is an undergraduate research assistant at the Trauma and Transfusion Medicine Research Lab. He is a sophomore biochemistry student at the University of Pittsburgh and plans to apply to medical schools with an interest in pursuing a surgical specialty. He is an EMT student and plans to work in EMS throughout his undergrad. At TTMRL, Dylan is involved in research focused on the role of neutrophils and microthrombi in end-organ dysfunction.\n\nOutside of TTMRL, Dylan enjoys fishing, biking, and rock climbing. He is an employee at the Pitt Bike Cave and an Outdoors Club Climbing Officer at Pitt."
+    },
+    {
+        "id": "anthony-tudisco",
+        "name": "Anthony Tudisco",
+        "title": "Undergraduate Student",
+        "email": "awt28@pitt.edu",
+        "role": "Undergraduate Students",
+        "image": "anthony-tudisco.jpg",
+        "bio": "Anthony Tudisco is a third-year undergraduate student at the University of Pittsburgh pursuing a degree in Public Health, and certificate in bioethics on a pre-medical track. Anthony investigates at the Trauma and Transfusion Medicine Research Lab (TTMRL) in understanding platelet functionality and changes in Red Blood Cell (RBC) morphology. He also does community-engaged research through the School of Public Health at the University of Pittsburgh analyzing health disparities in mainstream TV shows on the portrayal of CPR.\n\nAfter graduation, Anthony plans to attend medical school and continue to pursue his passions in clinical and translational research. He enjoys cooking, with his favorite dish to make being steak and roasted potatoes, listening to EDM, as well as actively training in Muy Thai."
+    },
+    {
         "id": "jason-brandon",
         "name": "Jason Brandon",
         "title": "Laboratory Research Technician I",
@@ -171,6 +198,15 @@
         "bio": "Rebecca Cleaver is ASCP certified, she works at the BST Tower. She has 0ver 26 years' experience in Phlebotomy. She was a supervisor at Mercy hospital before coming to Pitt. She is Part of the TTMRL group. She performs apheresis on platelet donors, and she also coordinates all the studies in the group. She performs small volume blood draws. Rebecca also recruits and schedules and screens new donors. She helps with modifications with the IRB. \n\n One of the major studies she is working on is CHIPSIV ( chilled platelet study in vitro). This study is to investigate how the storage temperature of platelet units affects their clotting capabilities. She also works on other studies in the lab and does recruiting and scheduling and screening for those studies as well. Rebecca hobbies are boating, canoeing, kayaking, and fishing. Her main priority is her family.  She loves animals and would save all of them if she could. Her dream is to hit the lottery and open up her own shelter for all the animals that need help."
     },
     {
+        "id": "alyssa-falcione",
+        "name": "Alyssa Falcione",
+        "title": "Research Veterinary Technician IV",
+        "email": "adf65@pitt.edu",
+        "role": "Research Technicians & Assistants",
+        "image": "alyssa_falcione.jpg",
+        "bio": "Alyssa Falcione, LATG, is a Research IV Veterinary Technician at the University of Pittsburgh, currently supporting the Trauma and Transfusion Medicine Research Lab on a large-animal coagulopathy model. Originally from Italy and educated in the United States, she has over ten years of experience in biomedical research, including roles within DLAR, orthopedic surgery, cardiology, and regenerative medicine at the McGowan Institute. Her background includes perioperative support in survival and non-survival studies, along with extensive knowledge of regulatory standards such as GLP, IACUC guidelines, and institutional compliance requirements.\n\nAlyssa’s experience spans surgical assistance, anesthesia support, and protocol implementation across a range of research models. She also holds a degree in software engineering and previously founded a dog rescue organization in Colombia.\n\nIn her free time, Alyssa enjoys kayaking, camping, fishing, and exploring new places. She is also actively involved in animal rescue efforts and contributes to organizations focused on animal welfare."
+    },
+    {
         "id": "lauren-jackson",
         "name": "Lauren Jackson",
         "title": "Laboratory Research Technician III",
@@ -180,6 +216,15 @@
         "bio": "Lauren Jackson is a research animal technician in the Trauma and Transfusion Medicine Research Lab (TTMRL). She has led multiple DOD/DARPA studies as primary animal surgeon. She has also acted as a lab animal trainer, working with researchers on murine and lapine protocols. Lauren also has experience shadowing non-human primate (NHP), porcine and ovine surgical study procedures within research settings. She graduated with her Bachelor's of Science in Biological Sciences from the University of Pittsburgh. During her undergrad and currently, Lauren worked as a veterinary assistant from settings such as general practice to zoological institutions. She is currently working on her MSc in OneHealth through Ross University's School of Veterinary Medicine. She plans to apply to Doctor of Veterinary Medicine (DVM) programs soon. \n\n Lauren's research interests are extensive but are not limited to animal studies. Within the lab research umbrella in surgical research, she focuses on hemorrhagic shock and resuscitation therapies, synthetic platelets infusion and associated trauma-induced coagulopathies (TIC). She has presented her work at international conferences and conventions and is working towards a strong publication record for her career goals. \n\n Outside the lab, Lauren enjoys hiking and fishing with her fiance Austin. She also enjoys making mixed media art, crocheting, reading and baking while spending time at home with her four pets: Phil (black cat), Rango (leopard gecko), Cleo (ball python) and Rose (bearded dragon)."
     },
     {
+        "id": "megan-jordan",
+        "name": "Megan Jordan",
+        "title": "Laboratory Research Technician",
+        "email": "mnj33@pitt.edu",
+        "role": "Research Technicians & Assistants",
+        "image": "megan-jordan.jpg",
+        "bio": "Megan Jordan is a research technician with 3 years of clinical veterinary experience as well as being a certified veterinary technician. Megan graduated from Pittsburgh Career Institute in 2023 and received Specialized Associates of Science in Veterinary Technology. She passed the Veterinary Technician National Exam on her first attempt in July of 2023. Inthe TTMRL, she’s part of the CONCERT project led by Dr. Neal.\n\nOutside of the lab, Megan enjoys drawing, painting, cosplaying, and playing the viola in a community orchestra."
+    },
+    {
         "id": "nick-rocchio-giordano",
         "name": "Nick Rocchio-Giordano",
         "title": "Laboratory Research Technician II",
@@ -187,6 +232,15 @@
         "role": "Research Technicians & Assistants",
         "image": "nick-rocchio-giordano.jpg",
         "bio": "Nicholas Rocchio-Giordano is a research technician at the University of Pittsburgh's Trauma and Transfusion Medicine Research Lab (TTMRL). Nicholas received a B.A. in Music from Boston College. After graduation, he joined Teach for America and worked as a high school math teacher in Clarksdale, Mississippi for two years before he returned to school and pursued a career in medicine. While in school, he worked as a community health worker and medical interpreter for Clinica Esperanza, a free clinic for uninsured patients in Providence, Rhode Island. Nicholas joined the TTMRL in 2023, eager to engage with research into the physiology and treatment of traumatic hemorrhage under the guidance of experts in trauma, transfusion, and biomedical engineering. Nicholas plans to attend medical school at the University of Michigan in 2026. \n\n At the TTMRL, Nicholas is part of a diverse and multidisciplinary team focused on the assessment and characterization of novel hemostatic resuscitation strategies in trauma.  As a lab technician for the ongoing Chilled Platelet Study in vitro (CHIPSiv), Nicholas employs a variety of microfluidic techniques to explore the use of cold-stored platelet concentrates as a therapy option in cases of trauma. \n\n Outside of the lab, Nicholas enjoys making music, taking photos, and exploring Pittsburgh with his wife, Amanda."
+    },
+    {
+        "id": "sladjana-stratimirovic",
+        "name": "Sladjana Stratimirovic",
+        "title": "Research Specialist",
+        "email": "sls96@pitt.edu",
+        "role": "Research Technicians & Assistants",
+        "image": "sladjana-stratimirovic.jpg",
+        "bio": "Sladjana has been a research specialist at the University of Pittsburgh since 2006, working under multiple principal investigators. She holds a B.S. in Crop Science from the University of Belgrade and nursing degrees from Serbia. Her early research focused on plant and crop diseases caused by fungi, bacteria, and viruses. She also worked as a nurse in gastroenterology office in Serbia.\n\nBefore joining Pitt, Sladjana worked at CMU for few years, where she contributed to studies on alternative pre-mRNA splicing and its role in cell function and disease, performing DNA/RNA extractions from Drosophila embryos and adults, PCR, electrophoresis, and maintaining large Drosophila fly stock. At Pitt, her work expanded to projects investigating inflammation, organ injury in obese mouse models of hemorrhagic shock, and therapeutic targets for sepsis. She specialized in cell culture, organ processing, protein/RNA extraction, Western blotting, real-time PCR, ELISA, and immunostaining. She has co-authored several peer-reviewed publications. As part of the TTMRL team, Sladjana has been part of LyoSP and CHIPSiv projects, conducting assays for platelet product sample assessment.\n\nSladjana likes to stay active by walking  and swimming during summer. She enjoys spending time with family and friends. She loves animals and she owns dog, birds, lizard and fish."
     },
     {
         "id": "tvisha-subhasish",

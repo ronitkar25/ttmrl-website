@@ -20,13 +20,13 @@
   },
   {
     "title": "New publication in Current Opinion in Hematology",
-    "description": "New pub! @Rida Zakar review protein and enzymatic interactions that regulate hemostasis and thrombosis, and how these interactions can be targeted for therapeutic benefit.",
+    "description": "New pub! 🥳 @Rida Zakar, et al. review protein and enzymatic interactions that regulate hemostasis and thrombosis, and how these interactions can be targeted for therapeutic benefit.",
     "link": "https://doi.org/10.1097/MOH.0000000000000884",
     "date": "2025-09-01"
   },
   {
     "title": "New publication in Frontiers in Bioengineering and Biotechnology",
-    "description": "New pub!🥳 @Emily Mihalko. We designed a microfluidic model of vessel transection that quantifies blood loss. Key finding: in ex vivo #transfusion, cold platelets retain function & show promise in coagulopathy settings where RT platelets fall short.",
+    "description": "New pub! 🥳 @Emily Mihalko. We designed a microfluidic model of vessel transection that quantifies blood loss. Key finding: in ex vivo #transfusion, cold platelets retain function & show promise in coagulopathy settings where RT platelets fall short.",
     "link": "https://doi.org/10.3389/fbioe.2025.1568113",
     "image": "assets/images/news/08142025_epm_paper.jpeg",
     "date": "2025-08-14"
@@ -48,5 +48,11 @@
     "description": "This week, we replaced our research meeting with a social afternoon in Pittsburgh’s beautiful Schenley Park. Incredible to have all of this energy together. We love our diverse group of innovators, and they bring new energy and life to our science on a daily basis.",
     "image": "assets/images/news/10192025_fall_gathering.jpeg",
     "date": "2025-10-19"
+  },
+  {
+    "title": "New publication in the Journal Thrombosis and Haemostasis",
+    "description": "New pub! 🥳 @Zeyu Liu, et al. investigated the hemostatic efficacy of lyophilized synthetic platelets administered via intraosseous route in a rat model of traumatic hemorrhage.",
+    "link": "https://doi.org/10.1016/j.jtha.2025.10.030",
+    "date": "2025-11-10"
   }
 ]
