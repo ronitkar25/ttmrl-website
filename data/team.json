@@ -144,6 +144,15 @@
         "bio": "Morgan Mollen is an undergraduate at the University of Pittsburgh completing a B.S. in Chemistry and a certificate in Gender, Sexuality, and Women’s Studies. After a year of gaining experience in cell biology research, she decided to join TTMRL and put her effort towards translational research, as she plans to pursue a career in the medical field. \n\n At TTMRL, Morgan has focused primarily on studying Factor IX, a coagulation protein that uniquely binds collagen, forming a hemostatic reservoir. This novel study aims to quantify the activity and concentration of extravascular Factor IX in rat and human tissues to understand the protein’s contribution to hemostasis at sites of injury. Additionally, Morgan studies postpartum hemorrhage, utilizing microfluidic platforms to gain insight into platelet behavior in affected patients. The aim of this project is to better understand the role of platelet disfunction in the development of this condition. \n\n Outside of the lab, Morgan enjoys volunteering with Girls Inc., where she spends time getting to know and mentoring young girls."
     },
     {
+        "id": "lillian-scarlett",
+        "name": "Lillian Scarlett",
+        "title": "Undergraduate Student",
+        "email": "lgs63@pitt.edu",
+        "role": "Undergraduate Students",
+        "image": "lillian-scarlett.jpg",
+        "bio": "Lillian Scarlett is an undergraduate Bioengineering student at the University of Pittsburgh in the Swanson School of Engineering. At TTMRL she is involved with platelet clotting research within microfluidics. Her current work is focused on the involvement of fibrin rescue drugs in platelet clotting.\n\nHer future goals include working with biomaterials and continuing cellular research. Outside of school she enjoys traveling, reading, and board games."
+    },
+    {
         "id": "pierce-shipp",
         "name": "Pierce Shipp",
         "title": "Undergraduate Student",
@@ -169,6 +178,15 @@
         "role": "Undergraduate Students",
         "image": "anthony-tudisco.jpg",
         "bio": "Anthony Tudisco is a third-year undergraduate student at the University of Pittsburgh pursuing a degree in Public Health, and certificate in bioethics on a pre-medical track. Anthony investigates at the Trauma and Transfusion Medicine Research Lab (TTMRL) in understanding platelet functionality and changes in Red Blood Cell (RBC) morphology. He also does community-engaged research through the School of Public Health at the University of Pittsburgh analyzing health disparities in mainstream TV shows on the portrayal of CPR.\n\nAfter graduation, Anthony plans to attend medical school and continue to pursue his passions in clinical and translational research. He enjoys cooking, with his favorite dish to make being steak and roasted potatoes, listening to EDM, as well as actively training in Muy Thai."
+    },
+    {
+        "id": "keller-ulrich",
+        "name": "Keller Ulrich",
+        "title": "Undergraduate Student",
+        "email": "kju14@pitt.edu",
+        "role": "Undergraduate Students",
+        "image": "keller-ulrich.jpg",
+        "bio": "Bio: Keller Ulrich is an undergraduate student volunteer studying bioengineering at the University of Pittsburgh, working in the Trauma and Transfusion Medicine Research Lab. He primarily assists and learns from senior researchers in their projects.\n\nOutside of TTMRL, Keller enjoys playing basketball, ultimate frisbee, and cooking."
     },
     {
         "id": "jason-brandon",
