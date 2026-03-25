@@ -99,6 +99,15 @@
         "bio": ""
     },
     {
+        "id": "ronit-kar",
+        "name": "Ronit (Papai) Kar",
+        "title": "MD Candidate",
+        "email": "rok73@pitt.edu",
+        "role": "Graduate Students",
+        "image": "the-creator.jpg",
+        "bio": "Ronit Kar is a MD student at the University of Pittsburgh and a researcher in the Trauma and Transfusion Medicine Research Lab (TTMRL). He earned his B.S. in Biological Sciences from the University of Pittsburgh, where he first discovered his passion for science through his research in chemistry. After graduation, he worked as a patient care technician in the Surgical Trauma ICU, an experience that deepened his interest in the physiological challenges of critical illness and led him to join TTMRL as a research technician before beginning his doctoral training.\n\nAt TTMRL, Jack’s work focuses on the role of platelet dysfunction in trauma-induced coagulopathy and its downstream effects on immune and endothelial cells. He uses advanced microfluidic platforms, flow cytometry, and animal models to study the dynamics of platelet behavior following severe injury, with the goal of identifying novel therapeutic targets to mitigate long-term complications like organ failure. His projects span pediatric and adult trauma populations and incorporate both molecular analysis and translational modeling. He has presented his work at national and international conferences and is building a strong publication record as he advances toward an academic career in hemostasis and thrombosis research. Outside of the lab, Jack is currently training for a half Ironman later this year!"
+    },
+    {
         "id": "jack-killinger",
         "name": "Jack Killinger",
         "title": "Bioengineering PhD Student",
