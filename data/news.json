@@ -1,12 +1,6 @@
 
 [
-  {
-    "title": "Dr. Matthew D. Neal elected to the Association of American Physicians",
-    "description": "Congratulations to Dr. Matthew Neal for being elected to the Association of American Physicians!",
-    "link": "https://www.ccm.pitt.edu/news/matthew-d-neal-md-facs-elected-association-american-physicians-aap",
-    "date": "2026-03-17"
-  },
-  {
+   {
     "title": "Dr. Emily Mihalko promotion",
     "description": "Dr. Emily Mihalko, who was previously a postdoctoral associate and research scientist in TTMRL, was promoted to Research Assistant Professor in the Department of Surgery. Congratulations Dr. Mihalko!!",
     "image": "assets/images/headshots/emily-mihalko.jpg",
@@ -62,4 +56,10 @@
     "link": "https://doi.org/10.1016/j.jtha.2025.10.030",
     "date": "2025-11-10"
   }
+   {
+    "title": "Dr. Matthew D. Neal elected to the Association of American Physicians",
+    "description": "Congratulations to Dr. Matthew Neal for being elected to the Association of American Physicians!",
+    "link": "https://www.ccm.pitt.edu/news/matthew-d-neal-md-facs-elected-association-american-physicians-aap",
+    "date": "2026-03-17"
+  },
 ]
