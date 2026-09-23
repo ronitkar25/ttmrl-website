@@ -325,7 +325,7 @@
     "pdf": "assets/pubs/moore-tsaco-2024.pdf"
   },
   {
-     "title": "Trauma patients have reduced ex vivo flow-dependent platelet hemostatic capacity in a microfluidic model of vessel injury",
+    "title": "Trauma patients have reduced ex vivo flow-dependent platelet hemostatic capacity in a microfluidic model of vessel injury",
     "authors": "Kimberly A Thomas, Rassam MG Rassam, Ronit Kar, Devin M Dishong, Katelin C Rahn, Ricardo Fonseca, Melissa Canas, Jose Aldana, Hussain Afzal, Kelly Bochicchio, Matthew D Neal, Grant V Bochicchio, Philip C Spinella, Susan M Shea",
     "journal": "Plos one",
     "year": 2024,
@@ -367,13 +367,14 @@
     "doi": "https://doi.org/10.1016/j.bvth.2025.100076"
   },
   {
-    "title": "Targeting hemostatic enzymes: from mechanistic insights to therapeutic frontiers",
-    "authors": "Rida Zakar, Matthew D Neal, Susan M Shea",
-    "journal": "Current Opinion in Hematology",
+    "title": "Microfluidic transection injury and high-shear thrombus formation demonstrate increased hemostatic efficacy of cold-stored platelets and in vitro resuscitation in induced coagulopathy models",
+    "authors": "Emily P Mihalko, Refael Munitz, Devin M Dishong, Skye Clayton, Susan M Shea",
+    "journal": "Front Bioeng Biotechnol",
     "year": 2025,
-    "date": "2025-09-01",
-    "doi": "https://doi.org/10.1097/10.1097/MOH.0000000000000884"
-  },
+    "date": "2025-05-12",
+    "doi": "https://doi.org/10.3389/fbioe.2025.1568113",
+    "pdf": "assets/pubs/Microfluidic transection injury and high-shear thrombus formation demonstrate increased hemostatic efficacy of cold-stored platelets and in vitro resuscitation in induced coagulopathy models.pdf"
+   },
   {
     "title": "Beyond the count: platelet dysfunction profile in pediatric trauma patients",
     "authors": "Ronit Kar, Erin V Feeney, Jack R Killinger, Katrina M Morgan, Devin M Dishong, Katelin C Rahn, Rassam MG Rassam, Grace A Ballentine, Philip C Spinella, Matthew D Neal, Barbara A Gaines, Susan M Shea, Christine M Leeper",
@@ -381,6 +382,14 @@
     "year": 2025,
     "date": "2025-08-26",
     "doi": "https://doi.org/10.1016/j.rpth.2025.103160"
+  },
+  {
+    "title": "Targeting hemostatic enzymes: from mechanistic insights to therapeutic frontiers",
+    "authors": "Rida Zakar, Matthew D Neal, Susan M Shea",
+    "journal": "Current Opinion in Hematology",
+    "year": 2025,
+    "date": "2025-09-01",
+    "doi": "https://doi.org/10.1097/10.1097/MOH.0000000000000884"
   },
   {
     "title": "Intraosseous administration of lyophilized synthetic platelets renders hemostatic efficacy in rat model of traumatic hemorrhage",
@@ -391,30 +400,81 @@
     "doi": "https://doi.org/10.1016/j.jtha.2025.10.030"
   },
   {
-     "title": "Platelet Molecular Maturation Links Platelet Aging and the Platelet Storage Lesion",
+    "title": "Racing toward a common biology of venous thromboembolism prophylaxis: the small interfering RNA fibrinogen knockdown strategy",
+    "authors": "Annie M Apffel, Emily Mosher, Matthew D Neal",
+    "journal": "J Thromb Haemost",
+    "year": 2026,
+    "date": "2026-02",
+    "doi": "https://doi.org/10.1016/j.jtha.2025.09.045"
+  },
+  {
+    "title": "Drug-loaded nanoparticles reduced platelet aggregation and blood coagulation",
+    "authors": "Sarah Majin, Afrida Malik, Pratima Poudel, E Vincent S Faustino, Nubia Zuverza-Mena, John Hwa, Seyedtaghi Takyar, Susan Shea, Kagya A Amoako",
+    "journal": "Front Med Technol",
+    "year": 2026,
+    "date": "2026-02-04",
+    "doi": "https://doi.org/10.3389/fmedt.2025.1690389",
+    "pdf": "assets/pubs/Drug-loaded nanoparticles reduced platelet aggregation and blood coagulation.pdf"
+  },
+  {
+    "title": "Platelet Molecular Maturation Links Platelet Aging and the Platelet Storage Lesion",
     "authors": "Cedric M V Bainton, Yale Santos, Fahima Mayer, Alexander Fields, Karl Zoghbi, Nasima Mayer, Danielle Williamson, Greg Chinn, Katelin C Rahn, Javonn M Musgrove, Kimberly A Thomas, Jeff Sall, Susan M Shea, Lucy Z Kornblith, Roland J Bainton",
     "journal": "bioRxiv",
     "year": 2026,
     "date": "2026-02-05",
     "doi": "https://doi.org/10.64898/2026.02.03.703379",
-    "pdf": " "
+    "pdf": "assets/pubs/Platelet Molecular Maturation Links Platelet Aging and the Platelet Storage Lesion.pdf"
   },
   {
-      "title": "Leveraging the Multifaceted Platelet Storage Lesion to Advance Precision Platelet Transfusion Medicine",
+    "title": "An Oasis in the Platelet Desert?",
+    "authors": "Matthew D Neal, Philip C Spinella, Lucy Z Kornblith",
+    "journal": "JAMA",
+    "year": 2026,
+    "date": "2026-02-17",
+    "doi": "https://doi.org/10.1001/jama.2025.24442"
+  },
+  {
+    "title": "Leveraging the Multifaceted Platelet Storage Lesion to Advance Precision Platelet Transfusion Medicine",
     "authors": "Susan M. Shea, Philip C. Spinella, Kimberly A. Thomas",
     "journal": "Anesthesiology",
     "year": 2026,
     "date": "2026-03-01",
     "doi": "https://doi.org/10.1097/aln.0000000000005746"
-   },
-    {
+  },
+  {
+    "title": "Bayesian Statistics to Reanalyze Data From the STAAMP Trial",
+    "authors": "Danielle S Gruen, James Matuk, Francis X Guyette, Joshua B Brown, Christine M Leeper, Brian J Eastridge, Raminder Nirula, Gary A Vercruysse, Terence O'Keeffe, Bellal Joseph, Stephen Wisniewski, Matthew D Neal, Jason L Sperry",
+    "journal": "JAMA Network Open",
+    "year": 2026,
+    "date": "2026-03-17",
+    "doi": "https://doi.org/10.1001/jamanetworkopen.2026.2112",
+    "pdf": "assets/pubs/BayesianStatisticstoReanalyzeDataFromtheSTAAMPTrial.pdf"
+  },
+  {
+    "title": "PlateChek: a surface-functionalized dielectric microsensor for specific detection of platelet-related hemostatic impairment in whole blood",
+    "authors": "Dante Disharoon, Sina Pourang, Christopher A Delianides Selvin Hernandez, Calvin Abonga, Hanif Alizadeh, Emily Song, Ryan J Summers, Matthew D Neal, Sanjay P Ahuja, Michael A Suster, Pedram Mohseni, Anirban Sen Gupta",
+    "journal": "J Thromb Haemost",
+    "year": 2026,
+    "date": "2026-04",
+    "doi": "https://doi.org/10.1016/j.jtha.2025.12.008",
+    "pdf": "assets/pubs/PlateChek_a surface-functionalized dielectric microsensor for specific detection of platelet-related hemostatic impairment in whole blood.pdf"
+  },
+  {
     "title": "Platelet function assays fail to detect differences between transfusion of cold or room temperature platelets in traumatic brain injury patients",
     "authors": "Killinger, Jack R. BS; Alsaadi, Nijmeh MD; Luther, James F. MA; Abdullah, Abiha MBBS; Agnone, Allison G. BSN, RN, DNP; Arivudainambi, Aishwarrya BS; Dishong, Devin M. BS; Faine, Brett A. PharmD, MS; Filicky, Amanda BSN, RN; Guyette, Francis X. MD, MS, MPH, FACEP, FAEMS; Hahner, Thomas MS; Hoteit, Lara MD; Kaplan, Alesia MD; Kar, Ronit BS; Loughran, Patricia A. PhD; McIntyre, Peyton MS; Mihalko, Emily P. PhD; Mohr, Nicholas M. MD, MS; Puccio, Ava M. RN, PhD; Raymond, Olivia MS; Shea, Susan M. PhD; Spinella, Philip C. MD, FCCM; Srinivasan, Amudan J. MD; Vincent, Laura E. MS, RN; Younes, Reem MD; Wisniewski, Stephen R. PhD; Okonkwo, David MD, PhD; Sperry, Jason L. MD, MPH; Neal, Matthew D. MD, FACS",
     "journal": "The Journal of Trauma and Acute Care Surgery",
     "year": 2026,
     "date": "2026-04-01",
     "doi": "https://doi.org/10.1097/TA.0000000000004894" 
-    },
+  },
+  {
+    "title": "Hernia recurrence after concomitant laparoscopic ventral hernia repair using intraperitoneal biologic mesh: a retrospective analysis",
+    "authors": "Callie Hlavin, Jack K Donohue, Natasha Mayer, Liling Lu, Karla Bernardi, Joshua Brown, Matthew D Neal, Anita Courcoulas",
+    "journal": "Hernia",
+    "year": 2026,
+    "date": "2026-04-28",
+    "doi": "https://doi.org/10.1007/s10029-026-03681-z"
+  },
   {
     "title": "Whole blood storage time impairs clot strength with minimal change in functional fibrinogen concentration",
     "authors": "Elizabeth R. Maginot1, Nicolle K. Barmettler, Flobater I. Gawargi, Collin M. White, Natasha Goodman1, Timothy R. Billiar, Refael Munitz, Scott A. Koepsell, Shelly M. Williams, Aleh Bobr, Phillip C. Spinella, Susan M. Shea, Reynold Henry, Christopher D. Barrett",
@@ -423,7 +483,16 @@
     "date": "2026-05",
     "doi": "https://doi.org/10.1111/trf.70150",
     "pdf": "assets/pubs/Whole blood storage time impairs clot strength with minimal change in functional fibrinogen concentration.pdf"
- },
+  },
+  {
+    "title": "Soluble Thrombomodulin Links Viremia and Mortality During COVID-19: Results From the ACTIV-4a Trial",
+    "authors": "Benjamin E Zuchelkowski, Kyle W Inman, S Mehdi Nouraie, Neeharika Beru, Asma Naqvi, Shulin Qin, Calvin H Yeh, Yingze Zhang, Faraaz A Shah, Lokesh Sharma, Charles S Dela Cruz, Lianghui Zhang, Bryan J McVerry, Alison Morris, Matthew D Neal, Jansen Seheult, Georgios D Kitsios, John W Mellors, Daniel A Lawrence, Paul Y Kim, Jana L Jacobs, William G Bain",
+    "journal": "J Am Heart Assoc",
+    "year": 2026,
+    "date": "2026-05-19",
+    "doi": "https://doi.org/10.1161/jaha.125.047693",
+    "pdf": "assets/pubs/zuchelkowski-et-al-2026-soluble-thrombomodulin-links-viremia-and-mortality-during-covid-19-results-from-the-activ-4a (1).pdf"
+  },
   {
     "title": "Platelet clotting defects in severe trauma identified by a whole blood microfluidic assay",
     "authors": "Gian Rivera Crespo, Jack Killinger, Christopher Bresette, Susan M Shea, David Ku",
@@ -433,7 +502,67 @@
     "doi": "https://doi.org/10.1111/trf.70198",
     "pdf": "assets/pubs/Transfusion - 2026 - Crespo - Platelet clotting defects in severe trauma identified by a whole blood microfluidic assay.pdf"
   },
-   {
+  {
+    "title": "Defining and quantifying oxygen delivery potency of blood products",
+    "authors": "Stephen C Rogers, Mary Brummet, Kevin V Tobin, Zohreh Safari, Aishwarya Anand, Daniel Bennett, Regina Adao, Elizabeth McAslan, Mette Jacobsen, Anna Parrish, Ankita Joshi, Esma Alp, Elizabeth Zheleznyakova, Paul W Buehler, Andre F Palmer, Tanmay Salvi, Griffin Beyer, Mohd Asim Khan, Antonio Renaldo, Ashlee Conway, Tobi Rowden, William McGhee, Shelby McCauley, Anirban Sen Gupta, Michael A Bruckman, Christa L Pawlowski, Susan Shea, Matthew D Neal, Philip C Spinella, Dipanjan Pan, Allan Doctor",
+    "journal": "Blood Red Cells Iron",
+    "year": 2026,
+    "date": "2026-06",
+    "doi": "https://doi.org/10.1016/j.brci.2026.100054",
+    "pdf": "assets/pubs/Defining and quantifying oxygen delivery potency of blood products.pdf"
+  },
+  {
+    "title": "Prehospital Resuscitation with Type O Whole Blood for Trauma and Hemorrhage",
+    "authors": "Jason L Sperry, Francis X Guyette, Bryan A Cotton, James F Luther, Richard B Utarnachitt, Matthew E Kutcher, Brian J Daley, Allan B Peetz, Mayur B Patel, Michael D Goodman, Jeffrey A Claridge, Nimitt Patel, Brian G Harbrecht, Zain G Hashmi, Ryan Zarychanski, Matthew D Neal, Mark H Yazer, Christian Martin-Gill, Laura E Vincent, Ashley M Harner, David E Meyer, Andrew J Latimer, Bryce R Robinson, Catherine L McKnight, William R Hinckley, Keith R Miller, Jan O Jansen, Douglas Martin, Erin E Fox, Bedda L Rosario-Rivera, Stephen R Wisniewski; TOWAR Study Group",
+    "journal": "N Engl J Med",
+    "year": 2026,
+    "date": "2026-06-18",
+    "doi": "https://doi.org/10.1056/nejmoa2602167"
+  },
+  {
+    "title": "Intermediate dose heparin thromboprophylaxis among critically ill patients with COVID-19: a randomized clinical trial",
+    "authors": "Randomized Embedded Multifactorial Adaptive Platform for Community-acquired Pneumonia (REMAP-CAP) Investigators; Charlotte A Bradbury, Bryan J McVerry, Patrick R Lawler, Derek C Angus, Djillali Annane, Yaseen M Arabi, Diptesh Aryal, Carly Au, Abigail Beane, Scott M Berry, Lindsay R Berry, Janis Best-Lane, Shailesh Bihari, Marc Bonten, Frank Brunkhorst, Aidan Burrell, Meredith Buxton, Marc Carrier, Maurizio Cecconi, Allen C Cheng, Matthew Cove, Lennie P G Derde, Michelle A Detry, Lise J Estcourt, Dean A Fergusson, Mark Fitzgerald, Rob A Fowler, Ewan C Goligher, Cameron Green, Rashan Haniffa, David A Harrison, Leanne M C Hays, Alisa M Higgins, Thomas Hills, Christopher M Horvat, David T Huang, Beverley J Hunt, Nao Ichihara, Devachandran Jayakumar, Stephanie Keattch, Anand Kumar, Michael A Laffan, Francois Lamontagne, Christine M Leeper, Roger J Lewis, Elizabeth Lorenzi, Sylvain A Lother, John C Marshall, Colin J McArthur, Daniel F McAuley, Anna McGlothlin, Shay P McGuinness, Zoe K McQuilten, Saskia Middeldorp, Susan Morpeth, Paul R Mouncey, Srinivas Murthy, Matthew D Neal, Alistair D Nichol, Rachael L Parke, Jane C Parker, Svenja Peters, Lusi Felipe Reyes, Kathryn Rowan, Hiroki Saito, Marlene Santos, Christina T Saunders, Roger E G Schutgens, Christopher W Seymour, Manu Shankar Hari, Vanessa Singh, Simon J Stanworth, Alexis F Turgeon, Anne M Turner, Frank L van de Veerdonk, Anthony C Gordon, Steve A Webb, Ryan Zarychanski",
+    "journal": "J Thromb Haemost",
+    "year": 2026,
+    "date": "2026-07",
+    "doi": "https://doi.org/10.1016/j.jtha.2026.03.006"
+  },
+  {
+    "title": "Thrombotic and thromboembolic events were not associated with tranexamic acid in three large randomized controlled trials",
+    "authors": "Alexandra M P Brito, James E Kenny, Biswadev Mitra, Matthew D Neal, Russell Gruen, Christopher D Barrett, Stephen Bernard, Robert Medcalf, Susan Rowell, Jason L Sperry, Martin A Schreiber",
+    "journal": "J Trauma Acute Care Surg",
+    "year": 2026,
+    "date": "2026-07-01",
+    "doi": "https://doi.org/10.1097/ta.0000000000005010",
+    "pdf": "assets/pubs/Thrombotic and thromboembolic events were not associated with tranexamic acid in three large randomized controlled trials.pdf"
+  },
+  {
+    "title": "Adopting common data elements for the National Trauma Research Repository: the results of a prehospital Delphi survey",
+    "authors": "Nathan James White, Cynthia Lizette Villarreal, Eileen M Bulger, Mirinda Ann Gormley, Jennifer Margaret Gurney, James Hill Homes, Mary J Homer, N Clay Mann, Matthew D Neal, Craig Douglas Newgard, Susan E Rowell, William Arthur Teeter, Olga Volk; NTRR Investigator Group",
+    "journal": "Trauma Surg Acute Care Open",
+    "year": 2026,
+    "date": "2026-07-02",
+    "doi": "https://doi.org/10.1136/tsaco-2025-002135"
+  },
+  {
+    "title": "A stochastic, physiology-based digital twin model of hemostasis and oxygenation in trauma resuscitation",
+    "authors": "Casey Vieni, Anika Iftekharuddin, Kevin Ward, Roland Pittman, Andrew P Norgan, Matthew D Neal, Darrell Triulzi, Phillip Spinella, Jason Sperry, Mark Yazer, Jansen Seheult",
+    "journal": "Research Square",
+    "year": 2026,
+    "date": "2026-07-08",
+    "doi": "https://doi.org/10.21203/rs.3.rs-10273801/v1",
+    "pdf": "assets/pubs/A stochastic, physiology-based digital twin model of hemostasis and oxygenation in trauma resuscitation.pdf"
+  },
+  {
+    "title": "Von Willebrand factor A1 blockade prevents platelet-mediated sustained occlusion for the treatment of arterial thrombosis",
+    "authors": "Emily P Mihalko, Ronit Kar, Blake Holthaus, Rassam M G Rassam, Riya Sharma, Debra Wheeler, Shahid M Nimjee, Susan M Shea",
+    "journal": "Commun Biol",
+    "year": 2026,
+    "date": "2026-07-11",
+    "doi": "https://doi.org/10.1038/s42003-026-10616-y",
+    "pdf": "assets/pubs/Von Willebrand factor A1 blockade prevents platelet-mediated sustained occlusion for the treatment of arterial thrombosis.pdf"
+  },
+  {
     "title": "Lyophilized Synthetic Platelets: In Vitro Characterization and In Vivo Evaluation in Mouse Thrombocytopenia Model",
     "authors": "Ujjal Didar Singh Sekhon, Dante Disharoon, Shrijal S Desai, Baylee Traylor, Emily Gahagan, Emma Quill, Kristin Aldridge, Norman F Luc, Sonali Rohiwal, Shruti Raghunathan, Rebecca Ahn, Sana Syed, Alexander Dornback, Bipin Chakravarthy Paruchuri, Andrew Ditto, Susan M Shea, Philip C Spinella, Matthew D Neal, Michael A Bruckman, Christa L Pawlowski, Anirban Sen Gupta",
     "journal": "Advanced Science",
@@ -442,7 +571,39 @@
     "doi": "https://doi.org/10.1002/advs.202600002",
     "pdf": "assets/pubs/ADVS-13-e00002.pdf"
   },
-   {
+  {
+    "title": "Bayesian analysis of the early cold stored platelet transfusion following severe injury randomized clinical trial",
+    "authors": "Justin Gerard, Jason L Sperry, Francis X Guyette, Bedda L Rosario-Rivera, Matthew E Kutcher, Lucy Kornblith, Bryan A Cotton, Chad T Wilson, Kenji Inaba, Laura Vincent, Ashley M Harner, Matthew D Neal, Stephen R Wisniewski, Brian Daley, Catherine McKnight; The Cold Stored Platelet for Hemorrhagic Shock (CRISP-HS) Study Group",
+    "journal": "Trauma Surg Acute Care Open",
+    "year": 2026,
+    "date": "2026-07-23",
+    "doi": "https://doi.org/10.1136/tsaco-2025-002145"
+  },
+  {
+    "title": "Building an emergency general surgery registry to track and benchmark outcomes",
+    "authors": "Patrick B Murphy, Caroline Reinke, Susannah Nicholson, Nicole L Werner, Samuel W Ross, Catherine McKnight, Erik Kuncir, Stephanie A Savage, Matthew D Neal",
+    "journal": "Trauma Surg Acute Care Open",
+    "year": 2026,
+    "date": "2026-07-27",
+    "doi": "https://doi.org/10.1136/tsaco-2026-002323"
+  },
+  {
+    "title": "Timing, Translation, and Preparedness: Lessons Learned From COVID-19 Anticoagulation in Noncritically Ill Hospitalized Patients",
+    "authors": "Tobias Tritschler, Valentin Fuster, Patrick R Lawler, Michael E Farkouh, Caterina E Marx, Matthew D Neal, Michelle Sholzberg, Alex C Spyropoulos, Steven Y C Tong, Nuria Muñoz-Rivas, Marc Blondon, Jeffrey S Berger, Behnood Bikdeli, Marco Cattaneo, Mary Cushman, Mark Goldin, Ewan C Goligher, Judith S Hochman, Peter Jüni, Zoe K McQuilten, Nuccia Morici, Parham Sadeghipour, Balasubramanian Venkatesh, Stéphane Zuily, Alain Amstutz, Drahomir Aujesky, Marc Carrier, Robin V Hofstetter, Srinivas Murthy, Marc Rodger, Leslie Skeith, Areti A Veroniki, Brian Hutton, Ryan Zarychanski, Gregg W Stone, Grégoire Le Gal; Anticoagulation in COVID-19 Investigators",
+    "journal": "Journal of the American College of Cardiology",
+    "year": 2026,
+    "date": "2026-07-28",
+    "doi": "https://doi.org/10.1016/j.jacc.2026.05.028"
+  },
+  {
+    "title": "Cold and Room-Temperature Platelets in Cardiac Surgery: The CHIPS Randomized Clinical Trial",
+    "authors": "Philip C Spinella, Nicole D Zantek, John M VanBuren, Susan C Nicolson, Ashish K Khanna, Allan M Klompas, Michael L Boisen, Tiffany M Williams, Matthew Monteleone, Dalia A Bashir, Warren Pavey, Bradford B Smith, M Iqbal Ahmed, Robert A Niebler, Eric Jeng, Brigid C Flynn, Ravi V Joshi, James F Preuss, Dheeraj Goswami, Chisa Yamada, Choy Lewis, Claudia S Cohn, Hlaing Tint, Jenny Kwak, Neel Sodha, Eric R Simon, Philbert Y Van, Philip E Greilich, Frank V McL Booth, Camille P Carter, Anastazia Keegan, Andrew P Cap, James Matuk, Anna McGlothlin, Nicholas S Berry, Roger J Lewis, Marie E Steiner; CHIPS Investigator Group",
+    "journal": "JAMA",
+    "year": 2026,
+    "date": "2026-08-17",
+    "doi": "https://doi.org/10.1001/jama.2026.13328"
+  },
+  {
     "title": "Evaluation of Rhesus and Cynomolgus Macaque Whole Blood During Prolonged Cold Storage",
     "authors": "Alejandra L. Lorenzen, Susan M. Shea, Leslie E. Neidert, Clifford G. Morgan, Sylvain Cardin, Michael M. Tiller",
     "journal": "Shock",
@@ -450,20 +611,29 @@
     "date": "2026-09-01",
     "doi": "https://doi.org/10.1097/shk.0000000000002794"
   },
-   {
-    "title": "",
-    "authors": "",
-    "journal": "",
-    "year": 2026,
-    "date": "2026--",
-    "doi": ""
-     },
   {
-    "title": "",
-    "authors": "",
-    "journal": "",
+    "title": "Thrombin-Antithrombin Complex and Fibrinogen Predict Microangiopathic Acute Kidney Injury in Injured Patients",
+    "authors": "Rida Zakar, Gena V Topper, Abiha Abdullah, Morgan Mollen, Tvisha Subhasish, Reem Younes, Mazen S Zenati, Kimberly A Thomas, Tanya Egodage, Bryce A Kerlin, Grant V Bochicchio, Emily P Mihalko, Julia R Coleman, Philip C Spinella, Susan M Shea, Matthew D Neal",
+    "journal": "Blood Adv",
     "year": 2026,
-    "date": "2026--",
-    "doi": ""
+    "date": "2026-09-01",
+    "doi": "https://doi.org/10.1182/bloodadvances.2026020806",
+    "pdf": "assets/pubs/Thrombin-Antithrombin Complex and Fibrinogen Predict Microangiopathic Acute Kidney Injury in Injured Patients.pdf"
+  },
+  {
+    "title": "Chasing Value in an Evolving Era of Robotic Cholecystectomy",
+    "authors": "Evelyn Truong, Matthew D Neal, Brian S Zuckerbraun",
+    "journal": "JAMA Surg",
+    "year": 2026,
+    "date": "2026-09-01",
+    "doi": "https://doi.org/10.1001/jamasurg.2026.2645"
+  },
+  {
+    "title": "Effect of Surgical Subspecialty on Time to Development of Postoperative Venous Thromboembolism",
+    "authors": "Insiyah Campwala, Liling Lu, Pooja Humar, Maryanna Owoc, Caroline Kettering, Kathleen Marie Inman Fuentes, Adnan Hassoune, Jurgis Alvikas, Elizabeth Andraska, Sara P Myers, Robert Handzel, Matthew D Neal",
+    "journal": "J Am Coll Surg",
+    "year": 2026,
+    "date": "2026-09-22",
+    "doi": "https://doi.org/10.1097/xcs.0000000000002225"
   }
 ]
