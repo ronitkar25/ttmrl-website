@@ -59,7 +59,27 @@
     "title": "Dr. Matthew D. Neal elected to the Association of American Physicians",
     "description": "Congratulations to Dr. Matthew Neal for being elected to the Association of American Physicians!",
     "link": "https://www.ccm.pitt.edu/news/matthew-d-neal-md-facs-elected-association-american-physicians-aap",
+    "image": "assets/images/headshots/matthew-neal.jpg",
     "date": "2026-03-17"
+  },
+  {
+    "title": "Celebrating a summer of wins in the lab",
+    "description": "The lab celebrates the hardwork and many accomplishments of various lab members during our lab meeting.",
+    "image": "assets/images/news/2026 Summer Lab Wins.jpeg",
+    "date": "2026-08"
+  },
+  {
+    "title": "F31 Fellowship Awarded! Congratulations Jack!",
+    "description": "PhD student, Jack Killinger was awarded a three year Ruth L. Kirschstein National Research Service Award (NRSA) program F31 Fellowship by the NIH! This fellowship supports promising predoctoral students through individualized, mentored research training under the guidance of experienced faculty while they conduct biomedical research.",
+    "link": "https://grants.nih.gov/grants/guide/pa-files/PA-25-422.html.",
+    "image": "assets/images/headshots/jack-killinger.jpg",
+    "date": "2026-08"
+  },
+  {
+    "title": "Congratulations to Dr. Neal!!!",
+    "description": " Dr. Matthew D. Neal, Watson Family Professor of Surgery, has been appointed interim chair of the Department of Surgery, University of Pittsburgh",
+    "image": "assets/images/headshots/matthew-neal.jpg",
+    "date": "2026-09-14"
   }
 ]
 
