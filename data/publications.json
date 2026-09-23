@@ -391,6 +391,23 @@
     "doi": "https://doi.org/10.1016/j.jtha.2025.10.030"
   },
   {
+     "title": "Platelet Molecular Maturation Links Platelet Aging and the Platelet Storage Lesion",
+    "authors": "Cedric M V Bainton, Yale Santos, Fahima Mayer, Alexander Fields, Karl Zoghbi, Nasima Mayer, Danielle Williamson, Greg Chinn, Katelin C Rahn, Javonn M Musgrove, Kimberly A Thomas, Jeff Sall, Susan M Shea, Lucy Z Kornblith, Roland J Bainton",
+    "journal": "bioRxiv",
+    "year": 2026,
+    "date": "2026-02-05",
+    "doi": "https://doi.org/10.64898/2026.02.03.703379",
+    "pdf": " "
+  },
+  {
+      "title": "Leveraging the Multifaceted Platelet Storage Lesion to Advance Precision Platelet Transfusion Medicine",
+    "authors": "Susan M. Shea, Philip C. Spinella, Kimberly A. Thomas",
+    "journal": "Anesthesiology",
+    "year": 2026,
+    "date": "2026-03-01",
+    "doi": "https://doi.org/10.1097/aln.0000000000005746"
+   },
+    {
     "title": "Platelet function assays fail to detect differences between transfusion of cold or room temperature platelets in traumatic brain injury patients",
     "authors": "Killinger, Jack R. BS; Alsaadi, Nijmeh MD; Luther, James F. MA; Abdullah, Abiha MBBS; Agnone, Allison G. BSN, RN, DNP; Arivudainambi, Aishwarrya BS; Dishong, Devin M. BS; Faine, Brett A. PharmD, MS; Filicky, Amanda BSN, RN; Guyette, Francis X. MD, MS, MPH, FACEP, FAEMS; Hahner, Thomas MS; Hoteit, Lara MD; Kaplan, Alesia MD; Kar, Ronit BS; Loughran, Patricia A. PhD; McIntyre, Peyton MS; Mihalko, Emily P. PhD; Mohr, Nicholas M. MD, MS; Puccio, Ava M. RN, PhD; Raymond, Olivia MS; Shea, Susan M. PhD; Spinella, Philip C. MD, FCCM; Srinivasan, Amudan J. MD; Vincent, Laura E. MS, RN; Younes, Reem MD; Wisniewski, Stephen R. PhD; Okonkwo, David MD, PhD; Sperry, Jason L. MD, MPH; Neal, Matthew D. MD, FACS",
     "journal": "The Journal of Trauma and Acute Care Surgery",
@@ -416,7 +433,7 @@
     "doi": "https://doi.org/10.1111/trf.70198",
     "pdf": "assets/pubs/Transfusion - 2026 - Crespo - Platelet clotting defects in severe trauma identified by a whole blood microfluidic assay.pdf"
   },
-  {
+   {
     "title": "Lyophilized Synthetic Platelets: In Vitro Characterization and In Vivo Evaluation in Mouse Thrombocytopenia Model",
     "authors": "Ujjal Didar Singh Sekhon, Dante Disharoon, Shrijal S Desai, Baylee Traylor, Emily Gahagan, Emma Quill, Kristin Aldridge, Norman F Luc, Sonali Rohiwal, Shruti Raghunathan, Rebecca Ahn, Sana Syed, Alexander Dornback, Bipin Chakravarthy Paruchuri, Andrew Ditto, Susan M Shea, Philip C Spinella, Matthew D Neal, Michael A Bruckman, Christa L Pawlowski, Anirban Sen Gupta",
     "journal": "Advanced Science",
@@ -424,5 +441,29 @@
     "date": "2026-07-13",
     "doi": "https://doi.org/10.1002/advs.202600002",
     "pdf": "assets/pubs/ADVS-13-e00002.pdf"
+  },
+   {
+    "title": "Evaluation of Rhesus and Cynomolgus Macaque Whole Blood During Prolonged Cold Storage",
+    "authors": "Alejandra L. Lorenzen, Susan M. Shea, Leslie E. Neidert, Clifford G. Morgan, Sylvain Cardin, Michael M. Tiller",
+    "journal": "Shock",
+    "year": 2026,
+    "date": "2026-09-01",
+    "doi": "https://doi.org/10.1097/shk.0000000000002794"
+  },
+   {
+    "title": "",
+    "authors": "",
+    "journal": "",
+    "year": 2026,
+    "date": "2026--",
+    "doi": ""
+     },
+  {
+    "title": "",
+    "authors": "",
+    "journal": "",
+    "year": 2026,
+    "date": "2026--",
+    "doi": ""
   }
 ]
